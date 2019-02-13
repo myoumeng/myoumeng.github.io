@@ -28,6 +28,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
 
 
 
@@ -93,16 +100,16 @@
 <link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/oumeng9.png?v=6.7.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/oumeng10.png?v=6.7.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/oumeng9.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/oumeng10.png?v=6.7.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/oumeng9.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/oumeng10.png?v=6.7.0">
 
 
-  <link rel="mask-icon" href="/images/oumeng9.svg?v=6.7.0" color="#222">
+  <link rel="mask-icon" href="/images/oumeng10.svg?v=6.7.0" color="#222">
 
 
 
@@ -143,7 +150,7 @@
 <meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-04T03:58:21.844Z">
+<meta property="og:updated_time" content="2019-02-06T09:44:27.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
 
@@ -406,7 +413,36 @@
       <div class="post-body">
         
         
-          
+          <div class="category-all-page">
+            <div class="category-all-title">
+              
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+              目前共计 5 个分类
+            </div>
+            <div class="category-all">
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/HEXO/">HEXO</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/uncategorized/">uncategorized</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/无法阻挡的好奇之心/">无法阻挡的好奇之心</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/语言语法/">语言语法</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/语言语法/HTML/">HTML</a><span class="category-list-count">2</span></li></ul></li></ul>
+            </div>
+          </div>
         
       </div>
       
@@ -442,7 +478,7 @@
     </div>
   </div>
 
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar" style="display:block;">
     
     <div class="sidebar-inner">
 
@@ -459,7 +495,7 @@
             </a>
             
               <p class="site-author-name" itemprop="name">欧萌</p>
-              <p class="site-description motion-element" itemprop="description">胡思乱想与胡言乱语，爱疯爱玩爱吃也爱学</p>
+              <p class="site-description motion-element" itemprop="description">胡思乱想与胡言乱语<br>爱闹爱玩爱吃也爱学</p>
           </div>
 
           
@@ -469,7 +505,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -479,7 +515,7 @@
                 
                 
                 <div class="site-state-item site-state-categories">
-                  
+                  <a href="/categories/index.html">
                     
                     
                       
@@ -490,9 +526,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -500,7 +538,7 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -547,9 +585,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">22</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -677,6 +723,12 @@
     </footer>
 
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
     
@@ -1175,18 +1227,18 @@
   <script src="/lib/needsharebutton/needsharebutton.js"></script>
   <script>
     
-      pbOptions = {};
-      
-        pbOptions.iconStyle = "box";
-      
-        pbOptions.boxForm = "horizontal";
-      
-        pbOptions.position = "bottomCenter";
-      
-        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-postbottom', pbOptions);
     
+      flOptions = {};
+      
+        flOptions.iconStyle = "box";
+      
+        flOptions.boxForm = "horizontal";
+      
+        flOptions.position = "middleRight";
+      
+        flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 
@@ -1286,9 +1338,24 @@
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-  <script>
+<!-- 背景  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<!-- 鼠标特效  -->
+<script type="text/javascript" src="/js/src/fuqiangtexiao.js"></script>
+<script>
   $("body").backstretch("http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg");
-  </script>
+</script>
+
+
+
+<script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant=""></script>
+<script data-no-instant="">InstantClick.init();
+</script>
+
+
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
 </body>
+
 </html>
