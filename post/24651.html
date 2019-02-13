@@ -97,6 +97,11 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
+<!--自己加的fontawesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!--#自己加的aplayer-->
+
+
 <link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
 
@@ -145,18 +150,18 @@
 
 
 
-  <meta name="description" content="总有些意想不到的好看的样式，嘻嘻，我就借鉴过来了吖">
+  <meta name="description" content="总有些意想不到的好看的样式 嘻嘻，我就借鉴过来了吖">
 <meta name="keywords" content="keyword1,keyword2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用HEXO打造更个性化的个人博客（三）">
 <meta property="og:url" content="http://yoursite.com/post/24651.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
-<meta property="og:description" content="总有些意想不到的好看的样式，嘻嘻，我就借鉴过来了吖">
+<meta property="og:description" content="总有些意想不到的好看的样式 嘻嘻，我就借鉴过来了吖">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-13T02:50:52.081Z">
+<meta property="og:updated_time" content="2019-02-13T08:49:17.112Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用HEXO打造更个性化的个人博客（三）">
-<meta name="twitter:description" content="总有些意想不到的好看的样式，嘻嘻，我就借鉴过来了吖">
+<meta name="twitter:description" content="总有些意想不到的好看的样式 嘻嘻，我就借鉴过来了吖">
 
 
 
@@ -450,7 +455,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-13 10:50:52" itemprop="dateModified" datetime="2019-02-13T10:50:52+08:00">2019-02-13</time>
+                <time title="修改时间：2019-02-13 16:49:17" itemprop="dateModified" datetime="2019-02-13T16:49:17+08:00">2019-02-13</time>
               
             
           </span>
@@ -513,7 +518,9 @@
       
 
       
-        <p class="description">总有些意想不到的好看的样式，嘻嘻，我就借鉴过来了吖</p>
+        <blockquote class="blockquote-center"><p>总有些意想不到的好看的样式<br>
+嘻嘻，我就借鉴过来了吖</p>
+</blockquote>
 <a id="more"></a>
 <h1 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h1>
 <p>寻寻觅觅，在hexo next的个性化道路上，我也陆陆续续发现了许许多多不错的甚至是接近perfect的博客，令我好生羡慕，后来发现，很多时候是自己没有用好hexonext的自带功能，以及由于我html、css接触不深，导致配置的成果都是不如人意的。</p>
@@ -593,10 +600,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% button /path/to/url/, text, icon [class], title %&#125;</span><br><span class="line">or:</span><br><span class="line">&#123;% btn /path/to/url/, text, icon [class], title %&#125;</span><br></pre></td></tr></table></figure>
 <a class="btn" href="url(https://www.baidu.com)"><i class="fa fa-download fa-lg fa-fw"></i>点击我下载百度</a>
 <a class="btn" href="url(https://www.baidu.com)"><i class="fa fa-download fa-2x"></i>点击下载百度吧</a>
-<a class="btn" href="url(https://www.baidu.com)"><i class="fa fa-home fa-3x fa-fw"></i>点击下载百度啦啦啦</a>
-<a class="btn" href="url(https://www.baidu.com)" title="嘿嘿这是标题"><i class="fa fa-home fa-3x"></i>点击下载百度笑嘻嘻</a>
+<a class="btn" href="url(https://www.baidu.com)"><i class="fa fa-home fa-3x fa-fw"></i>啦啦啦</a>
+<a class="btn" href="url(https://www.baidu.com)" title="嘿嘿这是标题"><i class="fa fa-home fa-3x"></i>笑嘻嘻</a>
 <a class="btn" href="#">Text</a>
 <a class="btn" href="#" title="Title">Text & Title</a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn url(https://www.baidu.com), 点击我下载百度, download fa-lg fa-fw %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% btn url(https://www.baidu.com), 点击下载百度吧, download fa-2x %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% btn url(https://www.baidu.com), 啦啦啦, home fa-3x fa-fw %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% btn url(https://www.baidu.com), 笑嘻嘻, home fa-3x, 嘿嘿这是标题 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% btn #, Text %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% btn #, Text &amp; Title,, Title %&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="自定义样式-数字块"><a class="markdownIt-Anchor" href="#自定义样式-数字块"></a> 自定义样式 数字块</h1>
 <p>需加入custom.styl的代码：</p>
 <figure class="highlight html"><figcaption><span>文件位置：~/blog/themes/next/source/css/_custom/custom.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 自定义的数字块</span><br><span class="line">span#inline-toc &#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    border-radius: 80% 100% 90% 20%;</span><br><span class="line">    background-color: rgb(227, 242, 253);</span><br><span class="line">    color: #555;</span><br><span class="line">    padding: 0.05em 0.4em;</span><br><span class="line">    margin: 2px 5px 2px 0px;</span><br><span class="line">    line-height: 1.5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -922,10 +930,14 @@ Enable module in NexT<code>_config.yml file:</code></p>
           
             
           
+                <!--添加音乐播放-->
+                
           
-
         </div>
       </div>
+
+
+
 
       
       <!--noindex-->
@@ -1660,8 +1672,35 @@ Enable module in NexT<code>_config.yml file:</code></p>
 <!-- 鼠标特效  -->
 <script type="text/javascript" src="/js/src/fuqiangtexiao.js"></script>
 <script>
-  $("body").backstretch("http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg");
+$("body").backstretch([
+    "http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+    "http://pic.bizhi360.com/bbpic/92/6792.jpg",
+    "https://ws4.sinaimg.cn/large/006tNc79gy1g04od3wnk6j31400p076d.jpg",
+    "https://ws1.sinaimg.cn/large/006tNc79gy1g04oe716mvj31hc0u0tmf.jpg",
+    "https://ws1.sinaimg.cn/large/006tNc79gy1g04of03rw8j31hc0u0goq.jpg",
+    "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc1a09154.jpg",
+    "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc169ce59.jpg",
+  ], {duration:10000,fade:4000,animateFirst:!0});
 </script>
+
+
+<!--从上到下依次是：
+m蓝色美女1："http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+m2：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+
+m3：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+
+风景1：http://pic.bizhi360.com/bbpic/92/6792.jpg
+
+v字仇杀队1，
+v2
+v3
+x星空1
+x2
+-->
+
 
 
 

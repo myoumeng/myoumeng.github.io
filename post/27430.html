@@ -97,6 +97,11 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
+<!--自己加的fontawesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!--#自己加的aplayer-->
+
+
 <link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
 
@@ -164,7 +169,7 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79gy1fzotsv4mwqj304m0cw0t8.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1fzoulbtbcxj30nk0f775q.jpg">
 <meta property="og:image" content="http://www.runoob.com/images/box-model.gif">
-<meta property="og:updated_time" content="2019-02-07T13:40:55.621Z">
+<meta property="og:updated_time" content="2019-02-13T02:55:41.177Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习CSS自定义样式，让博客焕然一新（一）">
 <meta name="twitter:description" content="不得不说，HTML和CSS真是一对好兄弟，我有很多想法，还是得靠他们合作才能实现吧！那我就要继续记笔记咯！ 搬起小板凳，开始好奇地学习CSS吧！">
@@ -462,7 +467,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-07 21:40:55" itemprop="dateModified" datetime="2019-02-07T21:40:55+08:00">2019-02-07</time>
+                <time title="修改时间：2019-02-13 10:55:41" itemprop="dateModified" datetime="2019-02-13T10:55:41+08:00">2019-02-13</time>
               
             
           </span>
@@ -511,8 +516,48 @@
 搬起小板凳，开始好奇地学习CSS吧！
 </p>
 <a id="more"></a>
-唔，内容有点多，所以，还是分批次写吧~本文目录如下：
-@[TOC]
+<p>唔，内容有点多，所以，还是分批次写吧~本文目录如下：<br>
+<ul class="markdownIt-TOC">
+<li><a href="#css%E4%B8%8Ehtml">CSS与HTML</a></li>
+<li><a href="#css%E8%A7%84%E5%88%99%E7%94%B1%E9%80%89%E6%8B%A9%E5%99%A8%E5%A3%B0%E6%98%8E%E7%BB%84%E6%88%90">CSS规则由<code>选择器+声明</code>组成</a></li>
+<li><a href="#id%E9%80%89%E6%8B%A9%E5%99%A8">id选择器</a></li>
+<li><a href="#class%E9%80%89%E6%8B%A9%E5%99%A8">class选择器</a></li>
+<li><a href="#id%E9%80%89%E6%8B%A9%E5%99%A8id-selectoris">ID选择器（ID selector，IS）</a></li>
+<li><a href="#%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8class-selectorcs">类选择器（class selector，CS）</a></li>
+<li><a href="#%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8element-selectores%E5%8F%88%E5%8F%AB%E6%A0%87%E7%AD%BE%E9%80%89%E6%8B%A9%E5%99%A8">元素选择器（element selector，ES）又叫标签选择器</a></li>
+<li><a href="#%E5%8C%85%E5%90%AB%E9%80%89%E6%8B%A9%E5%99%A8package-selectorps">包含选择器（package selector，PS）</a></li>
+<li><a href="#%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8external-style-sheet">外部样式表(External style sheet)</a></li>
+<li><a href="#%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8internal-style-sheet">内部样式表(Internal style sheet)</a></li>
+<li><a href="#%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8Finline-style">内联样式(Inline style)</a></li>
+<li><a href="#%E5%A4%9A%E9%87%8D%E6%A0%B7%E5%BC%8F">多重样式</a></li>
+<li><a href="#%E5%A4%9A%E9%87%8D%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7">多重样式优先级</a></li>
+<li><a href="#background-size%E8%83%8C%E6%99%AF%E5%B0%BA%E5%AF%B8">background-size背景尺寸</a></li>
+<li><a href="#background-color%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2">background-color背景颜色</a></li>
+<li><a href="#background-image%E8%83%8C%E6%99%AF%E5%9B%BE%E5%83%8F">background-image背景图像</a></li>
+<li><a href="#background-repeat%E5%B9%B3%E9%93%BA">background-repeat平铺</a></li>
+<li><a href="#background-attachment%E5%9B%BA%E5%AE%9Aor%E6%BB%9A%E5%8A%A8">background-attachment固定or滚动</a></li>
+<li><a href="#background-position%E5%9B%BE%E7%89%87%E4%BD%8D%E7%BD%AE">background-position图片位置</a></li>
+<li><a href="#background%E7%AE%80%E5%86%99%E8%83%8C%E6%99%AF%E5%B1%9E%E6%80%A7%E5%88%B0%E4%B8%80%E4%B8%AA%E5%A3%B0%E6%98%8E%E4%B8%AD">background简写背景属性到一个声明中</a></li>
+<li><a href="#white-space%E5%85%83%E7%B4%A0%E4%B8%AD%E7%A9%BA%E7%99%BD%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F">white-space元素中空白的处理方式</a></li>
+<li><a href="#text-align%E5%AF%B9%E9%BD%90%E5%85%83%E7%B4%A0%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC">text-align对齐元素中的文本</a></li>
+<li><a href="#direction%E6%96%87%E6%9C%AC%E6%96%B9%E5%90%91">direction文本方向</a></li>
+<li><a href="#text-decorations%E5%90%91%E6%96%87%E6%9C%AC%E6%B7%BB%E5%8A%A0%E4%BF%AE%E9%A5%B0">text-decorations向文本添加修饰</a></li>
+<li><a href="#vertical-align%E5%85%83%E7%B4%A0%E7%9A%84%E5%9E%82%E7%9B%B4%E5%AF%B9%E9%BD%90">vertical-align元素的垂直对齐</a></li>
+<li><a href="#%E6%89%80%E6%9C%89css%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">所有CSS字体属性</a></li>
+<li><a href="#%E5%9B%9B%E4%B8%AA%E9%93%BE%E6%8E%A5%E7%8A%B6%E6%80%81">四个链接状态</a></li>
+<li><a href="#list-style-image%E8%AE%BE%E5%AE%9A%E5%88%97%E8%A1%A8%E9%A1%B9%E6%A0%87%E5%BF%97%E7%9A%84%E5%9B%BE%E5%83%8F">list-style-image设定列表项标志的图像</a></li>
+<li><a href="#list-style-position%E5%B1%9E%E6%80%A7">list-style-position属性</a></li>
+<li><a href="#list-style-type%E5%88%97%E8%A1%A8%E9%A1%B9%E6%A0%87%E5%BF%97%E7%B1%BB%E5%9E%8B">list-style-type列表项标志类型</a></li>
+<li><a href="#border-style%E8%BE%B9%E6%A1%86%E6%A0%B7%E5%BC%8F">border-style边框样式</a></li>
+<li><a href="#border-width%E8%BE%B9%E6%A1%86%E5%AE%BD%E5%BA%A6">border-width边框宽度</a></li>
+<li><a href="#border-color%E8%BE%B9%E6%A1%86%E9%A2%9C%E8%89%B2">border-color边框颜色</a></li>
+<li><a href="#border-collapse%E6%8A%98%E5%8F%A0%E8%BE%B9%E6%A1%86">border-collapse折叠边框</a></li>
+<li><a href="#width%E5%92%8Cheight%E8%A1%A8%E6%A0%BC%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6">Width和height表格宽度和高度</a></li>
+<li><a href="#text-align%E8%A1%A8%E6%A0%BC%E6%96%87%E5%AD%97%E5%AF%B9%E9%BD%90">text-align表格文字对齐</a></li>
+<li><a href="#padding%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%85%85">padding表格填充</a></li>
+<li><a href="#%E8%A1%A8%E6%A0%BC%E8%BE%B9%E6%A1%86-%E6%96%87%E6%9C%AC-%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2">表格边框、文本、背景颜色</a></li>
+</ul>
+</p>
 <h1 id="css基础简介"><a class="markdownIt-Anchor" href="#css基础简介"></a> CSS基础简介</h1>
 <h2 id="css与html"><a class="markdownIt-Anchor" href="#css与html"></a> CSS与HTML</h2>
 <p>CSS 指层叠样式表 (Cascading Style Sheets)</p>
@@ -1539,10 +1584,14 @@ border-collapse 属性设置表格的边框是否被折叠成一个单一的边�
           
             
           
+                <!--添加音乐播放-->
+                
           
-
         </div>
       </div>
+
+
+
 
       
       <!--noindex-->
@@ -2277,8 +2326,35 @@ border-collapse 属性设置表格的边框是否被折叠成一个单一的边�
 <!-- 鼠标特效  -->
 <script type="text/javascript" src="/js/src/fuqiangtexiao.js"></script>
 <script>
-  $("body").backstretch("http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg");
+$("body").backstretch([
+    "http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+    "http://pic.bizhi360.com/bbpic/92/6792.jpg",
+    "https://ws4.sinaimg.cn/large/006tNc79gy1g04od3wnk6j31400p076d.jpg",
+    "https://ws1.sinaimg.cn/large/006tNc79gy1g04oe716mvj31hc0u0tmf.jpg",
+    "https://ws1.sinaimg.cn/large/006tNc79gy1g04of03rw8j31hc0u0goq.jpg",
+    "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc1a09154.jpg",
+    "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc169ce59.jpg",
+  ], {duration:10000,fade:4000,animateFirst:!0});
 </script>
+
+
+<!--从上到下依次是：
+m蓝色美女1："http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+m2：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+
+m3：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+
+风景1：http://pic.bizhi360.com/bbpic/92/6792.jpg
+
+v字仇杀队1，
+v2
+v3
+x星空1
+x2
+-->
+
 
 
 
