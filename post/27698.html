@@ -663,12 +663,12 @@
 <p>那我要用简单的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;https://music.163.com/#/song?id=29722582&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>显示如下：</p>
 
-        <div id="aplayer-vfpcujuE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-SNnQnYIW" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-vfpcujuE"),
+            element: document.getElementById("aplayer-SNnQnYIW"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -686,11 +686,11 @@
 <p>呵呵，发现竟然没有显示，那我就换一个代码，用它（When you use MetingJS, your blog can play musics from Tencent, Netease, Xiami, Kugou, Baidu and more.）<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01vZVBsYXllci9oZXhvLXRhZy1hcGxheWVyI21laW5nanMtc3VwcG9ydC1uZXctaW4tMzA=" title="https://github.com/MoePlayer/hexo-tag-aplayer#meingjs-support-new-in-30">^meting<i class="fa fa-external-link"></i></span></p>
 <p>ok,再试一下，代码如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;29722582&quot; &quot;netease&quot; &quot;song&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#000&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-KicFiqDX" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div>
+    <div id="aplayer-BzzeBtAi" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div>
 <p>太棒了，能够显示付费下载的单首歌曲。那么，再试下我的歌单！<br>同样，我们播放网易云歌单，然后看到浏览器上的地址为：<span class="exturl" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvbXkvbS9tdXNpYy9wbGF5bGlzdD9pZD0xMTM2NTU1MDDjgILlkI7pnaLlsLHmmK9pZOOAgg==" title="https://music.163.com/#/my/m/music/playlist?id=113655500。后面就是id。">https://music.163.com/#/my/m/music/playlist?id=113655500。后面就是id。<i class="fa fa-external-link"></i></span><br>比如，我的歌单的id=2639061041；然后在一篇博客md文章中，写下如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;id&quot; &quot;netease&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
 <p>用上我的id后，显示如下：</p>
 
-    <div id="aplayer-MGSgDKiB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2639061041" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+    <div id="aplayer-aGPQtxxQ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2639061041" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The &#123;% meting %&#125; options are shown below:</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -820,7 +820,9 @@
     
       
 
-  <div class="popular-posts-header">欢迎阅读相关文章哦</div>
+ <div class="post-body">
+ <div class="note primary">来评分吧！(๑•̀ㅂ•́)و✧
+  <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
   
     <li class="popular-posts-item">
@@ -838,6 +840,8 @@
     </li>
   
   </ul>
+ </div>
+ </div>
 
 
     
@@ -1711,7 +1715,7 @@ var ap = new APlayer({
       widget: 'Rating',
       id: 16279,
       el: 'wpac-rating',
-      color: 'fc6423'
+      color: 'f79533'
     });
     (function() {
       if ('WIDGETPACK_LOADED' in window) return;
