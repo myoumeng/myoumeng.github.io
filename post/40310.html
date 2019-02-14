@@ -99,8 +99,6 @@
 
 <!--自己加的fontawesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!--#自己加的aplayer-->
-
 
 <link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
@@ -128,7 +126,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.7.0',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -150,16 +148,20 @@
 
 
 
-  <meta name="description" content="胡思乱想与胡言乱语爱闹爱玩爱吃也爱学">
-<meta property="og:type" content="website">
-<meta property="og:title" content="彼岸遇见欧萌">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿^，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事">
+<meta name="keywords" content="atom,snippet,Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用atom的snip来创作自定义代码片段，对Markdown也有效哦！">
+<meta property="og:url" content="http://yoursite.com/post/40310.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
-<meta property="og:description" content="胡思乱想与胡言乱语爱闹爱玩爱吃也爱学">
+<meta property="og:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿^，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1g05ub26znoj30fo06mmxs.jpg">
+<meta property="og:updated_time" content="2019-02-14T06:39:49.942Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="彼岸遇见欧萌">
-<meta name="twitter:description" content="胡思乱想与胡言乱语爱闹爱玩爱吃也爱学">
+<meta name="twitter:title" content="使用atom的snip来创作自定义代码片段，对Markdown也有效哦！">
+<meta name="twitter:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿^，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1g05ub26znoj30fo06mmxs.jpg">
 
 
 
@@ -168,7 +170,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/2/">
+  <link rel="canonical" href="http://yoursite.com/post/40310.html">
 
 
 
@@ -178,7 +180,7 @@
   };
 </script>
 
-  <title>彼岸遇见欧萌</title>
+  <title>使用atom的snip来创作自定义代码片段，对Markdown也有效哦！ | 彼岸遇见欧萌</title>
   
 
 
@@ -217,6 +219,9 @@
   </style>
 </noscript>
 
+<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -226,8 +231,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -316,6 +320,91 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-machine">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/machine/" rel="section"><i class="menu-item-icon fa fa-fw fa-question"></i> <br>Machine</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-game">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/game/" rel="section"><i class="menu-item-icon fa fa-fw fa-game"></i> <br>游戏</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-note">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/note/" rel="section"><i class="menu-item-icon fa fa-fw fa-writing"></i> <br>随笔</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-curiosity">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>好奇心</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-ranking">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>阅读热度</a>
+
+  </li>
 
       
       
@@ -377,9 +466,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -394,7 +483,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/59711.html">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/40310.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="欧萌">
@@ -411,10 +500,8 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/59711.html" class="post-title-link" itemprop="url">学习一种新的语言吧！HTML学习记录笔记（一）</a>
+          <h2 class="post-title" itemprop="name headline">使用atom的snip来创作自定义代码片段，对Markdown也有效哦！
+
               
             
           </h2>
@@ -439,7 +526,7 @@
                 
               
 
-              <time title="创建时间：2019-01-27 10:25:30" itemprop="dateCreated datePublished" datetime="2019-01-27T10:25:30+08:00">2019-01-27</time>
+              <time title="创建时间：2019-02-13 23:32:07" itemprop="dateCreated datePublished" datetime="2019-02-13T23:32:07+08:00">2019-02-13</time>
             
 
             
@@ -456,7 +543,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-08 19:32:19" itemprop="dateModified" datetime="2019-02-08T19:32:19+08:00">2019-02-08</time>
+                <time title="修改时间：2019-02-14 14:39:49" itemprop="dateModified" datetime="2019-02-14T14:39:49+08:00">2019-02-14</time>
               
             
           </span>
@@ -467,20 +554,13 @@
               <span class="post-meta-divider">|</span>
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="fa fa-folder"></i>
               </span>
               
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/语言语法/" itemprop="url" rel="index"><span itemprop="name">语言语法</span></a></span>
-
-                
-                
-                   / 
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/语言语法/HTML/" itemprop="url" rel="index"><span itemprop="name">HTML</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/教程/" itemprop="url" rel="index"><span itemprop="name">教程</span></a></span>
 
                 
                 
@@ -494,17 +574,6 @@
           
 
           
-          
-            <span id="/post/59711.html" class="leancloud_visitors" data-flag-title="学习一种新的语言吧！HTML学习记录笔记（一）">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
           
 
           
@@ -526,220 +595,58 @@
       
 
       
-        
-          <p class="description">我自从接触电脑后，就经常发现HTML这个神奇的东西出现，但是由于自己没有什么编程基础、非程序员💻，所以一直都没有使劲钻研这种语言，即使很多人说这个很简单...<br>而自从我开始对「博客blog」万分感兴趣后，我就改变了想法，我不愿意面对html时又是一头雾水了！知识改变未来，即使我是代码小白，也是有对编程的好奇之心滴！毕竟，我也是大一学过C++的人。我一定可以掌握html语言并且用它进行编写、改善我的博客等。</p>
-
-      
-
-
-
-
-
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/post/59711.html" rel="contents">
-                <i class="fa fa-snowflake fa-spin fa-2x"></i>        阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-      
-
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/35336.html">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="欧萌">
-      <meta itemprop="description" content="胡思乱想与胡言乱语<br>爱闹爱玩爱吃也爱学">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="彼岸遇见欧萌">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/35336.html" class="post-title-link" itemprop="url">Hexo,Next，Markdown...Hello!!!</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-01-26 17:29:55" itemprop="dateCreated datePublished" datetime="2019-01-26T17:29:55+08:00">2019-01-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-02-13 11:52:48" itemprop="dateModified" datetime="2019-02-13T11:52:48+08:00">2019-02-13</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-            <span id="/post/35336.html" class="leancloud_visitors" data-flag-title="Hexo,Next，Markdown...Hello!!!">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote class="blockquote-center"><p>你好呀!我花了近1周的时间孕育的小生命。对，就是你<br>
-「彼岸遇见欧萌」博客</p>
-<p>你</p>
-<p>终于</p>
-<p>诞！</p>
-<p>生！！</p>
-<p>啦！！！</p>
+        <blockquote class="blockquote-center"><p>当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于<span class="label info">思考&amp;打字</span>，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿^，所以我对感觉就像是“好钢没有用在刀刃上”，<del>咳咳我这也不算多好的钢</del> 🤦‍♀️<br>要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！<br>聪明的人类（及程序员👨‍💻‍）早就想到了这一点！</p>
 </blockquote>
+<a id="more"></a>
+<p>让我为你点一首歌吧！陪伴你看完这篇文章，或者静静享受歌曲吧！<br>
+    <div id="aplayer-rBvCnLmt" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="red"></div></p>
+<p>snippet   n. 小片，片段; 不知天高地厚的年轻人;<br>我们可以理解为代码片段[^1]。<br>[^1]:<span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC8yZWUzNGQ4ZGExNDI=" title="https://www.jianshu.com/p/2ee34d8da142">https://www.jianshu.com/p/2ee34d8da142<i class="fa fa-external-link"></i></span></p>
+<h1 id="snippets-cson中自定义snip"><a href="#snippets-cson中自定义snip" class="headerlink" title="snippets.cson中自定义snip"></a>snippets.cson中自定义snip</h1><p>在atom中可以使用：<code>cmd+shift+p</code> ，然后搜索snip,回车打开第一个选项就是的。</p>
+<p>在snippets.cson文件中输入snip，回车，就得到一个 snippet 模板：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&apos;.source.js&apos;:</span><br><span class="line">  &apos;Snippet Name&apos;:</span><br><span class="line">    &apos;prefix&apos;: &apos;Snippet Trigger&apos;</span><br><span class="line">    &apos;body&apos;: &apos;Hello World!&apos;</span><br></pre></td></tr></table></figure>
+<p>其中：</p>
+<blockquote>
+<p>‘.source.js’ 目标文件类型为 .js<br>‘Snippet Name’ 要新建的 snippet 的名称<br>‘prefix’ 触发当前 snippet 的代码<br>‘body’ 要填充的代码</p>
+</blockquote>
+<p>我们想要在相应的文件类型中写入不同的代码片段，那就要先设置好目标文件类型。</p>
+<h1 id="怎么查找目标文件类型？"><a href="#怎么查找目标文件类型？" class="headerlink" title="怎么查找目标文件类型？"></a>怎么查找目标文件类型？</h1><p>在atom中，先打开相应文件类型的文件；然后按cmd+shift+p，输入：<code>editor:log cursor scope</code>,选中它，随后就会在文件的右下角显示对应的文件类型。</p>
+<p>比如我要设置markdown为目标文件类型，那最后显示的是：</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1g05ub26znoj30fo06mmxs.jpg" alt=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Scopes at Cursor</span><br><span class="line"></span><br><span class="line">source.gfm</span><br></pre></td></tr></table></figure></p>
+<p>其中的source.gfm就是我们要替换’.source.js’中的代码。<br><div class="note warning">
+            <p><code>.source.js</code>必须有<code>.</code>作为开头 </p>
+          </div></p>
+<h1 id="光标"><a href="#光标" class="headerlink" title="光标"></a>光标</h1><p>以c语言为例：<br>C 语言的 if 写一个 snippet:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&apos;.source.c&apos;:</span><br><span class="line">  &apos;if&apos;:</span><br><span class="line">    &apos;prefix&apos;: &apos;if&apos;</span><br><span class="line">    &apos;body&apos;: &apos;if($1)&#123;$2&#125;&apos;</span><br></pre></td></tr></table></figure></p>
+<p><code>$1</code> 表示光标的默认位置<br><code>$2</code> 按下 <code>tab</code>键，光标跳到的第二个位置，以此类推</p>
+<h1 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h1><p>使用<code>${1:&#39;replaced&#39;}</code>替换$1即可转换光标到选定状态，选定内容为<code>replaced</code>.</p>
+<h1 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h1><p>在要填充的代码中使用回车并不能使代码填充以后自动换行:<br><span id="inline-toc">1. </span>自动换行要使用<code>\n</code><br><span id="inline-toc">2. </span>或者用”””将要填充的代码包起来:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&apos;.source.c&apos;:</span><br><span class="line">  &apos;if&apos;:</span><br><span class="line">    &apos;prefix&apos;: &apos;if&apos;</span><br><span class="line">    &apos;body&apos;: &quot;&quot;&quot;</span><br><span class="line">      if($1)</span><br><span class="line">      &#123;</span><br><span class="line">          $2\n&#125;</span><br><span class="line">    &quot;&quot;&quot;</span><br></pre></td></tr></table></figure>
+<h1 id="定义多个代码片段"><a href="#定义多个代码片段" class="headerlink" title="定义多个代码片段"></a>定义多个代码片段</h1><p>要给 C 语言文件定义多个 snippet ，只需在.source.c下从添加新的 snippet 名称写起。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&apos;.source.c&apos;:</span><br><span class="line">  &apos;if&apos;:</span><br><span class="line">    &apos;prefix&apos;: &apos;if&apos;</span><br><span class="line">    &apos;body&apos;: &quot;&quot;&quot;</span><br><span class="line">      if($1)</span><br><span class="line">      &#123;</span><br><span class="line">          $2\n&#125;</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">  &apos;while&apos;:</span><br><span class="line">    &apos;prefix&apos;: &apos;while&apos;</span><br><span class="line">    &apos;body&apos;:&quot;&quot;&quot;</span><br><span class="line">      while($1)</span><br><span class="line">      &#123;</span><br><span class="line">          $2</span><br><span class="line">      &#125;</span><br><span class="line">    &quot;&quot;&quot;</span><br></pre></td></tr></table></figure>
 
-      
-
-
-
-
-
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/post/35336.html" rel="contents">
-                <i class="fa fa-snowflake fa-spin fa-2x"></i>        阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
       
     </div>
 
     
       
+
+  <div class="popular-posts-header">欢迎阅读相关文章哦</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/35336.html" rel="bookmark">Hexo,Next，Markdown...Hello!!!</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/63512.html" rel="bookmark">用iPic来配合Markdown完成内容丰富的文档！</a></div>
+      
+    </li>
+  
+  </ul>
 
 
     
@@ -759,14 +666,57 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
+          
+            <a href="/tags/atom/" rel="tag"><i class="fa fa-tag"></i> atom</a>
+          
+            <a href="/tags/snippet/" rel="tag"><i class="fa fa-tag"></i> snippet</a>
+          
+        </div>
       
 
       
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+          <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;来评分吧&lt;)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/63321.html" rel="next" title="hexo基本知识">
+                <i class="fa fa-chevron-left"></i> hexo基本知识
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/3724.html" rel="prev" title="用HEXO打造更个性化的个人博客（四）">
+                用HEXO打造更个性化的个人博客（四） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -776,18 +726,15 @@
   </article>
 
 
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -803,13 +750,24 @@
 
   <aside id="sidebar" class="sidebar" style="display:block;">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -828,7 +786,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -851,7 +809,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -916,7 +876,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -963,13 +927,56 @@
           
                 <!--添加音乐播放-->
                 
-          
+          <div id="aplayer" class="aplayer"></div>
+<script src="/js/src/APlayer.min.js"></script>
+<script type="text/javascript">
+var ap = new APlayer({
+    element: document.getElementById('aplayer'),                       // Optional, player element
+    narrow: false,                                                     // Optional, narrow style
+    autoplay: false,                                                    // Optional, autoplay song(s), not supported by mobile browsers
+    showlrc: 0,                                                        // Optional, show lrc, can be 0, 1, 2, see: ###With lrc
+    mutex: true,                                                       // Optional, pause other players when this player playing
+    theme: '#e6d0b2',                                                  // Optional, theme color, default: #b7daff
+    mode: 'random',                                                    // Optional, play mode, can be `random` `single` `circulation`(loop) `order`(no loop), default: `circulation`
+    preload: 'metadata',                                               // Optional, the way to load music, can be 'none' 'metadata' 'auto', default: 'auto'
+    listmaxheight: '100px',                                             // Optional, max height of play list
+    music: [{
+      title: '双笙 囧菌 - 世末歌者',
+      author: '双笙 囧菌',
+      url: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%8F%8C%E7%AC%99%20%E5%9B%A7%E8%8F%8C%20-%20%E4%B8%96%E6%9C%AB%E6%AD%8C%E8%80%85.mp3',
+      pic: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%8F%8C%E7%AC%99%20%E5%9B%A7%E8%8F%8C%20-%20%E4%B8%96%E6%9C%AB%E6%AD%8C%E8%80%85.webp',
+    }, {
+      title: '幹物女(WeiWei)',
+      author: '封茗囧菌',
+      url: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%B0%81%E8%8C%97%E5%9B%A7%E8%8F%8C%20-%20%E5%B9%B9%E7%89%A9%E5%A5%B3(WeiWei).mp3',
+      pic: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%B0%81%E8%8C%97%E5%9B%A7%E8%8F%8C%20-%20%E5%B9%B9%E7%89%A9%E5%A5%B3(WeiWei).webp',
+    }]
+  });
+</script>
+
         </div>
       </div>
 
 
 
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#snippets-cson中自定义snip"><span class="nav-number">1.</span> <span class="nav-text">snippets.cson中自定义snip</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#怎么查找目标文件类型？"><span class="nav-number">2.</span> <span class="nav-text">怎么查找目标文件类型？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#光标"><span class="nav-number">3.</span> <span class="nav-text">光标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#替换"><span class="nav-number">4.</span> <span class="nav-text">替换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#换行"><span class="nav-number">5.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义多个代码片段"><span class="nav-number">6.</span> <span class="nav-text">定义多个代码片段</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1016,7 +1023,7 @@
 
   
     <span class="post-meta-item-icon">
-      <i class="fa fa-user-circle-o"></i>
+      <i class="fa fa-user-circle"></i>
     </span>
     <span class="site-uv" title="总访客量">
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
@@ -1126,6 +1133,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -1136,6 +1147,8 @@
 
   
 
+
+  
 
 
   
@@ -1465,74 +1478,6 @@
 
 
   
-  
-  <script>
-    
-    function showTime(Counter) {
-      var entries = [];
-      var $visitors = $('.leancloud_visitors');
-
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
-        .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log(`LeanCloud Counter Error: ${responseJSON.code} ${responseJSON.error}`);
-        });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: 'https://' + api_server + '/1.1' + url,
-              headers: {
-                'X-LC-Id': 'Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz',
-                'X-LC-Key': 'GCYOgHw2hfysPvXPwn7f2gJH',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-          
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
-          
-        });
-    });
-  </script>
-
-
 
   
 
@@ -1565,6 +1510,25 @@
 
 
   
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 16279,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
 
   
 
@@ -1705,5 +1669,4 @@ x2
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 
 </body>
-
 </html>

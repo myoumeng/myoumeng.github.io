@@ -99,8 +99,6 @@
 
 <!--自己加的fontawesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!--#自己加的aplayer-->
-
 
 <link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
@@ -128,7 +126,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.7.0',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -320,6 +318,91 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-machine">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/machine/" rel="section"><i class="menu-item-icon fa fa-fw fa-question"></i> <br>Machine</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-game">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/game/" rel="section"><i class="menu-item-icon fa fa-fw fa-game"></i> <br>游戏</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-note">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/note/" rel="section"><i class="menu-item-icon fa fa-fw fa-writing"></i> <br>随笔</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-curiosity">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>好奇心</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-ranking">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>阅读热度</a>
+
+  </li>
 
       
       
@@ -469,7 +552,7 @@
               <span class="post-meta-divider">|</span>
             
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="fa fa-folder"></i>
               </span>
               
                 <span class="post-meta-item-text">分类于</span>
@@ -489,17 +572,6 @@
           
 
           
-          
-            <span id="/post/9369.html" class="leancloud_visitors" data-flag-title="天使爱美丽&La valse d'Amélie (Version origin)">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
           
 
           
@@ -522,12 +594,13 @@
 
       
         <p class="description">我一直记得，大概，是大二的那一节历史课，或是马原课吧，我坐在后几排，在课堂上百无聊赖地拿出了手机刷着</p>
+
 <a id="more"></a>
 <p>刷手机，是许多人的常态了吧。</p>
 <p>也应该是每一个学生必会的。</p>
-<p>那天课上，我就这样明目张胆地拿出了手机，放在座位桌子上，虽然下方压着一本书，很明显地提示我：现在正在上课时间。然而，对历史政治课堂一直感到索然无味的我，觉得自己应该向周围同学&quot;学习&quot;：这课程“不重要”，玩玩手机才是“必修课”。</p>
+<p>那天课上，我就这样明目张胆地拿出了手机，放在座位桌子上，虽然下方压着一本书，很明显地提示我：现在正在上课时间。然而，对历史政治课堂一直感到索然无味的我，觉得自己应该向周围同学”学习”：这课程“不重要”，玩玩手机才是“必修课”。</p>
 
-    <div id="aplayer-CAziUDdG" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="20744075" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
+    <div id="aplayer-lVomoOSj" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="20744075" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
 
       
     </div>
@@ -569,6 +642,7 @@
         <div class="post-widgets">
         
           <div class="wp_rating">
+          <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;来评分吧&lt;)</div>
             <div id="wpac-rating"></div>
           </div>
         
@@ -636,6 +710,8 @@
 
   <aside id="sidebar" class="sidebar" style="display:block;">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -661,7 +737,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -684,7 +760,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -749,7 +827,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -796,7 +878,33 @@
           
                 <!--添加音乐播放-->
                 
-          
+          <div id="aplayer" class="aplayer"></div>
+<script src="/js/src/APlayer.min.js"></script>
+<script type="text/javascript">
+var ap = new APlayer({
+    element: document.getElementById('aplayer'),                       // Optional, player element
+    narrow: false,                                                     // Optional, narrow style
+    autoplay: false,                                                    // Optional, autoplay song(s), not supported by mobile browsers
+    showlrc: 0,                                                        // Optional, show lrc, can be 0, 1, 2, see: ###With lrc
+    mutex: true,                                                       // Optional, pause other players when this player playing
+    theme: '#e6d0b2',                                                  // Optional, theme color, default: #b7daff
+    mode: 'random',                                                    // Optional, play mode, can be `random` `single` `circulation`(loop) `order`(no loop), default: `circulation`
+    preload: 'metadata',                                               // Optional, the way to load music, can be 'none' 'metadata' 'auto', default: 'auto'
+    listmaxheight: '100px',                                             // Optional, max height of play list
+    music: [{
+      title: '双笙 囧菌 - 世末歌者',
+      author: '双笙 囧菌',
+      url: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%8F%8C%E7%AC%99%20%E5%9B%A7%E8%8F%8C%20-%20%E4%B8%96%E6%9C%AB%E6%AD%8C%E8%80%85.mp3',
+      pic: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%8F%8C%E7%AC%99%20%E5%9B%A7%E8%8F%8C%20-%20%E4%B8%96%E6%9C%AB%E6%AD%8C%E8%80%85.webp',
+    }, {
+      title: '幹物女(WeiWei)',
+      author: '封茗囧菌',
+      url: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%B0%81%E8%8C%97%E5%9B%A7%E8%8F%8C%20-%20%E5%B9%B9%E7%89%A9%E5%A5%B3(WeiWei).mp3',
+      pic: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%B0%81%E8%8C%97%E5%9B%A7%E8%8F%8C%20-%20%E5%B9%B9%E7%89%A9%E5%A5%B3(WeiWei).webp',
+    }]
+  });
+</script>
+
         </div>
       </div>
 
@@ -849,7 +957,7 @@
 
   
     <span class="post-meta-item-icon">
-      <i class="fa fa-user-circle-o"></i>
+      <i class="fa fa-user-circle"></i>
     </span>
     <span class="site-uv" title="总访客量">
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
@@ -1304,71 +1412,6 @@
 
 
   
-  
-  <script>
-    
-    function addCount(Counter) {
-      var $visitors = $('.leancloud_visitors');
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
-        .done(function({ results }) {
-          if (results.length > 0) {
-            var counter = results[0];
-            
-            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
-            
-              .done(function() {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.time + 1);
-              })
-            
-              .fail(function ({ responseJSON }) {
-                console.log(`Failed to save Visitor num, with error message: ${responseJSON.error}`);
-              })
-          } else {
-            
-              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
-                .done(function() {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(1);
-                })
-                .fail(function() {
-                  console.log('Failed to create');
-                });
-            
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log(`LeanCloud Counter Error: ${responseJSON.code} ${responseJSON.error}`);
-        });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: 'https://' + api_server + '/1.1' + url,
-              headers: {
-                'X-LC-Id': 'Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz',
-                'X-LC-Key': 'GCYOgHw2hfysPvXPwn7f2gJH',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-          
-            addCount(Counter);
-          
-        });
-    });
-  </script>
-
-
 
   
 
@@ -1560,5 +1603,4 @@ x2
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 
 </body>
-
 </html>

@@ -99,8 +99,6 @@
 
 <!--自己加的fontawesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!--#自己加的aplayer-->
-
 
 <link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
@@ -128,7 +126,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.7.0',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -157,7 +155,7 @@
 <meta property="og:site_name" content="彼岸遇见欧萌">
 <meta property="og:description" content="要做好next主题，这些内容一定要懂😁">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-13T10:28:55.578Z">
+<meta property="og:updated_time" content="2019-02-13T14:05:09.304Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo基本知识">
 <meta name="twitter:description" content="要做好next主题，这些内容一定要懂😁">
@@ -316,6 +314,91 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-machine">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/machine/" rel="section"><i class="menu-item-icon fa fa-fw fa-question"></i> <br>Machine</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-game">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/game/" rel="section"><i class="menu-item-icon fa fa-fw fa-game"></i> <br>游戏</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-note">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/note/" rel="section"><i class="menu-item-icon fa fa-fw fa-writing"></i> <br>随笔</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-curiosity">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>好奇心</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-ranking">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>阅读热度</a>
+
+  </li>
 
       
       
@@ -454,7 +537,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-13 18:28:55" itemprop="dateModified" datetime="2019-02-13T18:28:55+08:00">2019-02-13</time>
+                <time title="修改时间：2019-02-13 22:05:09" itemprop="dateModified" datetime="2019-02-13T22:05:09+08:00">2019-02-13</time>
               
             
           </span>
@@ -467,17 +550,6 @@
           
 
           
-          
-            <span id="/post/63321.html" class="leancloud_visitors" data-flag-title="hexo基本知识">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
           
 
           
@@ -499,15 +571,11 @@
       
 
       
-        <blockquote class="blockquote-center"><p><i class="fa fa-snowflake fa-spin fa-fw fa-2x"></i><br>
-要做好next主题，这些内容一定要懂😁</p>
+        <blockquote class="blockquote-center"><p><i class="fa fa-snowflake fa-spin fa-fw fa-2x"></i><br>要做好next主题，这些内容一定要懂😁</p>
 </blockquote>
 <a id="more"></a>
-<h1 id="next主题"><a class="markdownIt-Anchor" href="#next主题"></a> next主题</h1>
-<p>next主题集成了我们大部分想用的功能哦！也就是有很多插件，在主题配置文件中，将默认的false改为true即可。<br>
-我们需要改的文件其实也就那么几个，大部分是不需要更改，next都已经帮我们配置好了<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
-<p>默认目录结构：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── .deploy</span><br><span class="line">├── public</span><br><span class="line">├── scaffolds</span><br><span class="line">├── scripts</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">├── themes</span><br><span class="line">├── _config.yml</span><br><span class="line">└── package.json</span><br></pre></td></tr></table></figure>
+<h1 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h1><p>next主题集成了我们大部分想用的功能哦！也就是有很多插件，在主题配置文件中，将默认的false改为true即可。<br>我们需要改的文件其实也就那么几个，大部分是不需要更改，next都已经帮我们配置好了<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N1bnNoaW5lOTQwMzI2L2FydGljbGUvZGV0YWlscy82OTkzMzY5Ng==" title="https://blog.csdn.net/sunshine940326/article/details/69933696">^1<i class="fa fa-external-link"></i></span>。</p>
+<p>默认目录结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── .deploy</span><br><span class="line">├── public</span><br><span class="line">├── scaffolds</span><br><span class="line">├── scripts</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">├── themes</span><br><span class="line">├── _config.yml</span><br><span class="line">└── package.json</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>deploy：执行hexo deploy命令部署到GitHub上的内容目录</li>
 <li>public：执行hexo generate命令，输出的静态网页内容目录</li>
@@ -518,19 +586,10 @@
 <li>posts：发布文章</li>
 <li>themes：主题文件目录</li>
 </ul>
-<p><code>_config.yml</code>：全局配置文件，大多数的设置都在这里<br>
-<code>package.json</code>：应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮.</p>
+<p><code>_config.yml</code>：全局配置文件，大多数的设置都在这里<br><code>package.json</code>：应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮.</p>
 <p>我们最先修改的应该是在hexo根目录下的配置文件_config.yml文件，这里是配置整个站点的配置信息。</p>
-<p>其次就是我们的主题配置文件，在对应的主题下的_config.yml 因为我使用的是next主题，所以目录的路径为<code>\Hexo\themes\next\_config.yml</code> 这里配置的是使用主题的配置文件，这个配置文件的东西就有点多了，我们大部分的修改也是在这个文件下完成的。比如说使用集成的第三方插件，默认为false，我们需要将其改为true并且配置相应的app_key就可以使用该插件了~有木有很方便(^ ◕ᴥ◕ ^)<br>
-然后我们需要修改样式的话是需要设置css和甚至是修改模板，</p>
+<p>其次就是我们的主题配置文件，在对应的主题下的_config.yml 因为我使用的是next主题，所以目录的路径为<code>\Hexo\themes\next\_config.yml</code> 这里配置的是使用主题的配置文件，这个配置文件的东西就有点多了，我们大部分的修改也是在这个文件下完成的。比如说使用集成的第三方插件，默认为false，我们需要将其改为true并且配置相应的app_key就可以使用该插件了~有木有很方便(^ ◕ᴥ◕ ^)<br>然后我们需要修改样式的话是需要设置css和甚至是修改模板，</p>
 <figure class="highlight html"><figcaption><span>next主题的全部逻辑</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">├── .github            #git信息</span><br><span class="line">├── languages          #多语言</span><br><span class="line">|   ├── default.yml    #默认语言</span><br><span class="line">|   └── zh-Hans.yml      #简体中文</span><br><span class="line">|   └── zh-tw.yml      #繁体中文</span><br><span class="line">├── layout             #布局，根目录下的*.ejs文件是对主页，分页，存档等的控制</span><br><span class="line">|   ├── _custom        #可以自己修改的模板，覆盖原有模板</span><br><span class="line">|   |   ├── _header.swig    #头部样式</span><br><span class="line">|   |   ├── _sidebar.swig   #侧边栏样式</span><br><span class="line">|   ├── _macro        #可以自己修改的模板，覆盖原有模板</span><br><span class="line">|   |   ├── post.swig    #文章模板</span><br><span class="line">|   |   ├── reward.swig    #打赏模板</span><br><span class="line">|   |   ├── sidebar.swig   #侧边栏模板</span><br><span class="line">|   ├── _partial       #局部的布局</span><br><span class="line">|   |   ├── head       #头部模板</span><br><span class="line">|   |   ├── search     #搜索模板</span><br><span class="line">|   |   ├── share      #分享模板</span><br><span class="line">|   ├── _script        #局部的布局</span><br><span class="line">|   ├── _third-party   #第三方模板</span><br><span class="line">|   ├── _layout.swig   #主页面模板</span><br><span class="line">|   ├── index.swig     #主页面模板</span><br><span class="line">|   ├── page           #页面模板</span><br><span class="line">|   └── tag.swig       #tag模板</span><br><span class="line">├── scripts            #script源码</span><br><span class="line">|   ├── tags           #tags的script源码</span><br><span class="line">|   ├── marge.js       #页面模板</span><br><span class="line">├── source             #源码</span><br><span class="line">|   ├── css            #css源码</span><br><span class="line">|   |   ├── _common    #*.styl基础css</span><br><span class="line">|   |   ├── _custom    #*.styl局部css</span><br><span class="line">|   |   └── _mixins    #mixins的css</span><br><span class="line">|   ├── fonts          #字体</span><br><span class="line">|   ├── images         #图片</span><br><span class="line">|   ├── uploads        #添加的文件</span><br><span class="line">|   └── js             #javascript源代码</span><br><span class="line">├── _config.yml        #主题配置文件</span><br><span class="line">└── README.md          #用GitHub的都知道</span><br></pre></td></tr></table></figure>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N1bnNoaW5lOTQwMzI2L2FydGljbGUvZGV0YWlscy82OTkzMzY5Ng==" title="https://blog.csdn.net/sunshine940326/article/details/69933696">https://blog.csdn.net/sunshine940326/article/details/69933696<i class="fa fa-external-link"></i></span> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
 
       
     </div>
@@ -562,6 +621,7 @@
         <div class="post-widgets">
         
           <div class="wp_rating">
+          <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;来评分吧&lt;)</div>
             <div id="wpac-rating"></div>
           </div>
         
@@ -586,6 +646,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/40310.html" rel="prev" title="使用atom的snip来创作自定义代码片段，对Markdown也有效哦！">
+                使用atom的snip来创作自定义代码片段，对Markdown也有效哦！ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -625,6 +689,8 @@
 
   <aside id="sidebar" class="sidebar" style="display:block;">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -659,7 +725,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -682,7 +748,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -747,7 +815,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -794,7 +866,33 @@
           
                 <!--添加音乐播放-->
                 
-          
+          <div id="aplayer" class="aplayer"></div>
+<script src="/js/src/APlayer.min.js"></script>
+<script type="text/javascript">
+var ap = new APlayer({
+    element: document.getElementById('aplayer'),                       // Optional, player element
+    narrow: false,                                                     // Optional, narrow style
+    autoplay: false,                                                    // Optional, autoplay song(s), not supported by mobile browsers
+    showlrc: 0,                                                        // Optional, show lrc, can be 0, 1, 2, see: ###With lrc
+    mutex: true,                                                       // Optional, pause other players when this player playing
+    theme: '#e6d0b2',                                                  // Optional, theme color, default: #b7daff
+    mode: 'random',                                                    // Optional, play mode, can be `random` `single` `circulation`(loop) `order`(no loop), default: `circulation`
+    preload: 'metadata',                                               // Optional, the way to load music, can be 'none' 'metadata' 'auto', default: 'auto'
+    listmaxheight: '100px',                                             // Optional, max height of play list
+    music: [{
+      title: '双笙 囧菌 - 世末歌者',
+      author: '双笙 囧菌',
+      url: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%8F%8C%E7%AC%99%20%E5%9B%A7%E8%8F%8C%20-%20%E4%B8%96%E6%9C%AB%E6%AD%8C%E8%80%85.mp3',
+      pic: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%8F%8C%E7%AC%99%20%E5%9B%A7%E8%8F%8C%20-%20%E4%B8%96%E6%9C%AB%E6%AD%8C%E8%80%85.webp',
+    }, {
+      title: '幹物女(WeiWei)',
+      author: '封茗囧菌',
+      url: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%B0%81%E8%8C%97%E5%9B%A7%E8%8F%8C%20-%20%E5%B9%B9%E7%89%A9%E5%A5%B3(WeiWei).mp3',
+      pic: 'https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/music/%E5%B0%81%E8%8C%97%E5%9B%A7%E8%8F%8C%20-%20%E5%B9%B9%E7%89%A9%E5%A5%B3(WeiWei).webp',
+    }]
+  });
+</script>
+
         </div>
       </div>
 
@@ -812,7 +910,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#next主题"><span class="nav-number">1.</span> <span class="nav-text"> next主题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#next主题"><span class="nav-number">1.</span> <span class="nav-text">next主题</span></a></li></ol></div>
             
 
           </div>
@@ -864,7 +962,7 @@
 
   
     <span class="post-meta-item-icon">
-      <i class="fa fa-user-circle-o"></i>
+      <i class="fa fa-user-circle"></i>
     </span>
     <span class="site-uv" title="总访客量">
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
@@ -1319,71 +1417,6 @@
 
 
   
-  
-  <script>
-    
-    function addCount(Counter) {
-      var $visitors = $('.leancloud_visitors');
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
-        .done(function({ results }) {
-          if (results.length > 0) {
-            var counter = results[0];
-            
-            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
-            
-              .done(function() {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.time + 1);
-              })
-            
-              .fail(function ({ responseJSON }) {
-                console.log(`Failed to save Visitor num, with error message: ${responseJSON.error}`);
-              })
-          } else {
-            
-              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
-                .done(function() {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(1);
-                })
-                .fail(function() {
-                  console.log('Failed to create');
-                });
-            
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log(`LeanCloud Counter Error: ${responseJSON.code} ${responseJSON.error}`);
-        });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: 'https://' + api_server + '/1.1' + url,
-              headers: {
-                'X-LC-Id': 'Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz',
-                'X-LC-Key': 'GCYOgHw2hfysPvXPwn7f2gJH',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-          
-            addCount(Counter);
-          
-        });
-    });
-  </script>
-
-
 
   
 
@@ -1575,5 +1608,4 @@ x2
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 
 </body>
-
 </html>
