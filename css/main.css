@@ -2107,7 +2107,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b9bf3d;
+  background: #a649ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3203,7 +3203,7 @@ blockquote {
   display: block;
   line-height: 25px;
   font-size: 16px;
-  color: #000;
+  color: #4051b5;
   border-bottom: none;
   letter-spacing: 2px;
 }
@@ -3213,6 +3213,7 @@ blockquote {
   font-weight: 900;
   letter-spacing: 2px;
   font-size: 16px;
+  font-weight: 600;
 }
 .posts-expand .post-tags a {
   display: inline-block;
@@ -3220,7 +3221,7 @@ blockquote {
   font-size: 16px;
   border: 0px;
   letter-spacing: 1px;
-  color: #aa96da;
+  color: #3f51b5;
 }
 .posts-expand .post-tags a:hover {
   color: #f00;
@@ -3617,7 +3618,7 @@ code.description {
   border: 1px solid #673ab7;
   border-radius: 10px;
   position: absolute;
-  top: -550px;
+  top: -350px;
 }
 .need-share-button_dropdown-middle-right {
   bottom: 440px;
@@ -3761,8 +3762,8 @@ span#inline-toc {
   display: block;
   text-align: center;
   margin: -100px 50px 40px 50px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  background-color: #fff;
+/*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);*/
+/*background-color: rgb(255, 255, 255);*/
   padding: 106px 36px 10px 36px;
 }
 @media (max-width: 767px) {
@@ -3779,4 +3780,18 @@ span#inline-toc {
 }
 .post-nav {
   margin-top: 30px;
+}
+.popular-posts-header {
+  margin: 0;
+  border: 0;
+}
+ul.popular-posts .popular-posts-item .popular-posts-title {
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 5px;
+  line-height: 2.4;
+  font-weight: 700;
+}
+ul.popular-posts .popular-posts-item {
+  margin-left: 3em;
 }
