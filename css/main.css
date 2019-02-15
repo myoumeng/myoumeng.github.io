@@ -2107,7 +2107,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a649ff;
+  background: #555bf2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2939,15 +2939,31 @@ embed {
   border-radius: 5px;
   padding: 45px 36px 30px 36px;
 }
+img.img-topic {
+  width: 100%;
+}
 .posts-expand .post-body img {
   border: none;
-  padding: 0px;
 }
 .post-gallery .post-gallery-img img {
   padding: 3px;
 }
-img.img-topic {
-  width: 100%;
+.posts-expand .post-body img {
+  border: none;
+  padding: 25px;
+  margin: 25px auto 25px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+posts-expand .post-body img:hover {
+  -webkit-transform: scale(1.22);
+  -moz-transform: scale(1.22);
+  -ms-transform: scale(1.22);
+  -o-transform: scale(1.22);
+  transform: scale(1.22);
+  transition: all 0.6s;
+  opacity: 1;
+  transition: all 1s;
 }
 .hider_title {
   font-family: "Microsoft Yahei";

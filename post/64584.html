@@ -156,7 +156,7 @@
 <meta property="og:site_name" content="彼岸遇见欧萌">
 <meta property="og:description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-14T13:20:19.717Z">
+<meta property="og:updated_time" content="2019-02-15T01:58:42.943Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用HEXO打造更个性化的个人博客（一）">
 <meta name="twitter:description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。">
@@ -538,7 +538,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-14 21:20:19" itemprop="dateModified" datetime="2019-02-14T21:20:19+08:00">2019-02-14</time>
+                <time title="修改时间：2019-02-15 09:58:42" itemprop="dateModified" datetime="2019-02-15T09:58:42+08:00">2019-02-15</time>
               
             
           </span>
@@ -601,39 +601,69 @@
 <p>这是本文目录</p>
 <p>[TOC]</p>
 <p>当然啦，我的博客页面右下方的汉堡<i class="fa fa-bars"></i>图标，点击后也会有目录大纲出来，陪你看完此文哦！</p>
-<h1 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h1><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RlYTMvaGV4by1yZWxhdGVkLXBvcHVsYXItcG9zdHM=" title="https://github.com/tea3/hexo-related-popular-posts">https://github.com/tea3/hexo-related-popular-posts<i class="fa fa-external-link"></i></span></p>
-<p>npm install hexo-related-popular-posts –save</p>
-<h1 id="分享NeedMoreShare2-for-NexT"><a href="#分享NeedMoreShare2-for-NexT" class="headerlink" title="分享NeedMoreShare2 for NexT"></a>分享NeedMoreShare2 for NexT</h1><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC1uZWVkbW9yZXNoYXJlMg==" title="https://github.com/theme-next/theme-next-needmoreshare2">https://github.com/theme-next/theme-next-needmoreshare2<i class="fa fa-external-link"></i></span></p>
-<p>Step 1 → Go to NexT dir到next主题的根目录（而不是hexo哦）<br>Change dir to NexT directory. There must be layout, source, languages and other directories:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes/next</span><br><span class="line">$ ls</span><br><span class="line">bower.json  _config.yml  docs  gulpfile.coffee  languages  layout  LICENSE.md  package.json  README.md  scripts  source  test</span><br></pre></td></tr></table></figure></p>
-<p>Step 2 → Get module安装模块<br>Install module to source/lib directory:</p>
+<h1 id="相关文章"><a class="markdownIt-Anchor" href="#相关文章"></a> 相关文章</h1>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RlYTMvaGV4by1yZWxhdGVkLXBvcHVsYXItcG9zdHM=" title="https://github.com/tea3/hexo-related-popular-posts">https://github.com/tea3/hexo-related-popular-posts<i class="fa fa-external-link"></i></span></p>
+<p>npm install hexo-related-popular-posts --save</p>
+<h1 id="注脚"><a class="markdownIt-Anchor" href="#注脚"></a> 注脚</h1>
+<p>plugins:</p>
+<ul>
+<li>hexo-footnotes</li>
+</ul>
+<h1 id="分享needmoreshare2-for-next"><a class="markdownIt-Anchor" href="#分享needmoreshare2-for-next"></a> 分享NeedMoreShare2 for NexT</h1>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC1uZWVkbW9yZXNoYXJlMg==" title="https://github.com/theme-next/theme-next-needmoreshare2">https://github.com/theme-next/theme-next-needmoreshare2<i class="fa fa-external-link"></i></span></p>
+<p>Step 1 → Go to NexT dir到next主题的根目录（而不是hexo哦）<br>
+Change dir to NexT directory. There must be layout, source, languages and other directories:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes/next</span><br><span class="line">$ ls</span><br><span class="line">bower.json  _config.yml  docs  gulpfile.coffee  languages  layout  LICENSE.md  package.json  README.md  scripts  source  test</span><br></pre></td></tr></table></figure>
+<p>Step 2 → Get module安装模块<br>
+Install module to source/lib directory:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton</span><br></pre></td></tr></table></figure>
-<p>Step 3 → Set it up<br>Enable module in NexT <code>_config.yml</code> file:到next主题配置文件中设置好以下代码：</p>
+<p>Step 3 → Set it up<br>
+Enable module in NexT <code>_config.yml</code> file:到next主题配置文件中设置好以下代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">needmoreshare2:</span><br><span class="line">  enable: true</span><br><span class="line">  postbottom:</span><br><span class="line">    enable: true</span><br><span class="line">  float:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure>
 <p>Update</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes/next/source/lib/needsharebutton</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
-<h1 id="部署到gutbub上hexo-deployer-git"><a href="#部署到gutbub上hexo-deployer-git" class="headerlink" title="部署到gutbub上hexo-deployer-git"></a>部署到gutbub上hexo-deployer-git</h1><p>需要安装插件后，就可以部署到github上，对于像我一样没有买域名的，也就可以把代码存到github上了。</p>
-<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>在博客根目录，使用命令<code>npm install hexo-deployer-git --save</code>，即可安装插件</p>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>在站点<code>_config.yml</code>配置中，deploy 的type使用git，而不是github</p>
+<h1 id="部署到gutbub上hexo-deployer-git"><a class="markdownIt-Anchor" href="#部署到gutbub上hexo-deployer-git"></a> 部署到gutbub上hexo-deployer-git</h1>
+<p>需要安装插件后，就可以部署到github上，对于像我一样没有买域名的，也就可以把代码存到github上了。</p>
+<h2 id="安装插件"><a class="markdownIt-Anchor" href="#安装插件"></a> 安装插件</h2>
+<p>在博客根目录，使用命令<code>npm install hexo-deployer-git --save</code>，即可安装插件</p>
+<h2 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h2>
+<p>在站点<code>_config.yml</code>配置中，deploy 的type使用git，而不是github</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy</span><br><span class="line">     type: git</span><br><span class="line">     repository: git@github.com:YOUR_ID/YOUR_ID.github.io.git</span><br><span class="line">     branch: master</span><br></pre></td></tr></table></figure>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>当我们用了<code>hexo g</code>生成静态博客、<code>hexo s</code>在当地可浏览网页页面后无误，觉得可以了，那就使用<code>hexo d</code>把生成的文件部署到github上保存，就好咯。</p>
+<h2 id="使用方法"><a class="markdownIt-Anchor" href="#使用方法"></a> 使用方法</h2>
+<p>当我们用了<code>hexo g</code>生成静态博客、<code>hexo s</code>在当地可浏览网页页面后无误，觉得可以了，那就使用<code>hexo d</code>把生成的文件部署到github上保存，就好咯。</p>
 <p>hexo d是hexo deploy的简写</p>
-<h1 id="实现博客订阅功能generator-feed"><a href="#实现博客订阅功能generator-feed" class="headerlink" title="实现博客订阅功能generator-feed"></a>实现博客订阅功能generator-feed</h1><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLWdlbmVyYXRvci1mZWVk" title="https://github.com/hexojs/hexo-generator-feed">https://github.com/hexojs/hexo-generator-feed<i class="fa fa-external-link"></i></span><br>Leave rss as empty to use site’s feed link, and install hexo-generator-feed: <code>npm install hexo-generator-feed --save</code>.</p>
+<h1 id="实现博客订阅功能generator-feed"><a class="markdownIt-Anchor" href="#实现博客订阅功能generator-feed"></a> 实现博客订阅功能generator-feed</h1>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLWdlbmVyYXRvci1mZWVk" title="https://github.com/hexojs/hexo-generator-feed">https://github.com/hexojs/hexo-generator-feed<i class="fa fa-external-link"></i></span><br>
+Leave rss as empty to use site’s feed link, and install hexo-generator-feed: <code>npm install hexo-generator-feed --save</code>.</p>
 <p>即<code>cd blog</code>在blog文件夹内，输入并且回车终端命令<code>npm install hexo-generator-feed --save</code>进行安装。</p>
-<p>然后在配置文件中输入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &apos; &apos;</span><br><span class="line">  order_by: -date</span><br><span class="line">  icon: icon.png</span><br></pre></td></tr></table></figure></p>
-<h1 id="统计字数与阅读时长hexo-symbols-count-time"><a href="#统计字数与阅读时长hexo-symbols-count-time" class="headerlink" title="统计字数与阅读时长hexo-symbols-count-time"></a>统计字数与阅读时长hexo-symbols-count-time</h1><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1zeW1ib2xzLWNvdW50LXRpbWU=" title="https://github.com/theme-next/hexo-symbols-count-time">https://github.com/theme-next/hexo-symbols-count-time<i class="fa fa-external-link"></i></span></p>
-<p>npm install hexo-symbols-count-time –save</p>
-<h1 id="本地搜索searchdb"><a href="#本地搜索searchdb" class="headerlink" title="本地搜索searchdb"></a>本地搜索searchdb</h1><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1nZW5lcmF0b3Itc2VhcmNoZGI=" title="https://github.com/theme-next/hexo-generator-searchdb">https://github.com/theme-next/hexo-generator-searchdb<i class="fa fa-external-link"></i></span></p>
-<p>安装命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure></p>
-<p>修改站点配置文件：在==站点==配置文件中，添加下面的配置信息:</p>
+<p>然后在配置文件中输入代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &apos; &apos;</span><br><span class="line">  order_by: -date</span><br><span class="line">  icon: icon.png</span><br></pre></td></tr></table></figure>
+<h1 id="统计字数与阅读时长hexo-symbols-count-time"><a class="markdownIt-Anchor" href="#统计字数与阅读时长hexo-symbols-count-time"></a> 统计字数与阅读时长hexo-symbols-count-time</h1>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1zeW1ib2xzLWNvdW50LXRpbWU=" title="https://github.com/theme-next/hexo-symbols-count-time">https://github.com/theme-next/hexo-symbols-count-time<i class="fa fa-external-link"></i></span></p>
+<p>npm install hexo-symbols-count-time --save</p>
+<h1 id="本地搜索searchdb"><a class="markdownIt-Anchor" href="#本地搜索searchdb"></a> 本地搜索searchdb</h1>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1nZW5lcmF0b3Itc2VhcmNoZGI=" title="https://github.com/theme-next/hexo-generator-searchdb">https://github.com/theme-next/hexo-generator-searchdb<i class="fa fa-external-link"></i></span></p>
+<p>安装命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+<p>修改站点配置文件：在<mark>站点</mark>配置文件中，添加下面的配置信息:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    limit: 10000</span><br></pre></td></tr></table></figure>
-<p>修改==Next主题==配置文件：找到local_search配置项，把enable改为true即可。</p>
+<p>修改<mark>Next主题</mark>配置文件：找到local_search配置项，把enable改为true即可。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure>
-<h1 id="markdown增强：hexo-renderer-markdown-it-plus"><a href="#markdown增强：hexo-renderer-markdown-it-plus" class="headerlink" title="markdown增强：hexo-renderer-markdown-it-plus"></a>markdown增强：hexo-renderer-markdown-it-plus</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>使用命令<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NIRU5YQ0hFTi9oZXhvLXJlbmRlcmVyLW1hcmtkb3duLWl0LXBsdXM=" title="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus">^markdown<i class="fa fa-external-link"></i></span></p>
-<p>npm un hexo-renderer-marked –save<br>npm i hexo-renderer-markdown-it-plus –save</p>
-<h2 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h2><p>在站点配置中任意空白处加入这些代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">markdown_it_plus:</span><br><span class="line">    highlight: true</span><br><span class="line">    html: true</span><br><span class="line">    xhtmlOut: true</span><br><span class="line">    breaks: true</span><br><span class="line">    langPrefix:</span><br><span class="line">    linkify: true</span><br><span class="line">    typographer:</span><br><span class="line">    quotes: “”‘’</span><br><span class="line">    pre_class: highlight</span><br></pre></td></tr></table></figure></p>
-<h2 id="高级功能：关闭一些不想用的插件"><a href="#高级功能：关闭一些不想用的插件" class="headerlink" title="高级功能：关闭一些不想用的插件"></a>高级功能：关闭一些不想用的插件</h2><p>因为这个插件是默认安装了很多其他的插件<br><figure class="highlight html"><figcaption><span>plugins enabled by default:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">markdown-it-emoji</span><br><span class="line">markdown-it-sub</span><br><span class="line">markdown-it-sup</span><br><span class="line">markdown-it-deflist</span><br><span class="line">markdown-it-abbr</span><br><span class="line">markdown-it-footnote</span><br><span class="line">markdown-it-ins</span><br><span class="line">markdown-it-mark</span><br><span class="line">@iktakahiro/markdown-it-katex</span><br><span class="line">markdown-it-toc-and-anchor</span><br></pre></td></tr></table></figure></p>
+<h1 id="markdown增强hexo-renderer-markdown-it-plus"><a class="markdownIt-Anchor" href="#markdown增强hexo-renderer-markdown-it-plus"></a> markdown增强：hexo-renderer-markdown-it-plus</h1>
+<h2 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h2>
+<p>使用命令<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p>npm un hexo-renderer-marked --save<br>
+npm i hexo-renderer-markdown-it-plus --save</p>
+<h2 id="站点配置"><a class="markdownIt-Anchor" href="#站点配置"></a> 站点配置</h2>
+<p>在站点配置中任意空白处加入这些代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">markdown_it_plus:</span><br><span class="line">    highlight: true</span><br><span class="line">    html: true</span><br><span class="line">    xhtmlOut: true</span><br><span class="line">    breaks: true</span><br><span class="line">    langPrefix:</span><br><span class="line">    linkify: true</span><br><span class="line">    typographer:</span><br><span class="line">    quotes: “”‘’</span><br><span class="line">    pre_class: highlight</span><br></pre></td></tr></table></figure>
+<h2 id="高级功能关闭一些不想用的插件"><a class="markdownIt-Anchor" href="#高级功能关闭一些不想用的插件"></a> 高级功能：关闭一些不想用的插件</h2>
+<p>因为这个插件是默认安装了很多其他的插件</p>
+<figure class="highlight html"><figcaption><span>plugins enabled by default:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">markdown-it-emoji</span><br><span class="line">markdown-it-sub</span><br><span class="line">markdown-it-sup</span><br><span class="line">markdown-it-deflist</span><br><span class="line">markdown-it-abbr</span><br><span class="line">markdown-it-footnote</span><br><span class="line">markdown-it-ins</span><br><span class="line">markdown-it-mark</span><br><span class="line">@iktakahiro/markdown-it-katex</span><br><span class="line">markdown-it-toc-and-anchor</span><br></pre></td></tr></table></figure>
 <p>所以，你可以选择性的关闭</p>
-<h2 id="高级功能：安装其他插件"><a href="#高级功能：安装其他插件" class="headerlink" title="高级功能：安装其他插件"></a>高级功能：安装其他插件</h2><p>Add other markdown-it Plugins<br>If you want to add a plugin named as markdown-it-something:</p>
+<h2 id="高级功能安装其他插件"><a class="markdownIt-Anchor" href="#高级功能安装其他插件"></a> 高级功能：安装其他插件</h2>
+<p>Add other markdown-it Plugins<br>
+If you want to add a plugin named as markdown-it-something:</p>
 <ol>
 <li>Install this plugin；使用以下代码命令安装插件</li>
 </ol>
@@ -642,31 +672,44 @@
 <li>config main hexo <code>_config.yml</code>；在站点配置文件中自定义配置</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">markdown_it_plus:</span><br><span class="line">    # ...</span><br><span class="line">    plugins:</span><br><span class="line">        - plugin:</span><br><span class="line">            name: markdown-it-something</span><br><span class="line">            enable: true</span><br><span class="line">            options:</span><br><span class="line">                # this is plugin option</span><br></pre></td></tr></table></figure>
-<h2 id="主要特性-amp-常用Markdown语言"><a href="#主要特性-amp-常用Markdown语言" class="headerlink" title="主要特性&amp;常用Markdown语言"></a>主要特性&amp;常用Markdown语言</h2><ul>
+<h2 id="主要特性常用markdown语言"><a class="markdownIt-Anchor" href="#主要特性常用markdown语言"></a> 主要特性&amp;常用Markdown语言</h2>
+<ul>
 <li>Support for Markdown</li>
 <li>Extensive configuration</li>
 <li>Faster than the default renderer | hexo-renderer-marked</li>
-<li>sub, 下标：<code>H~2~0</code> H~2~0</li>
+<li>sub, 下标：<code>H~2~0</code> H<sub>2</sub>0</li>
 <li>sup, 上标：<code>x^2^</code> x^2</li>
-<li>ins, 插入下划线：<code>++Inserted++</code> ++Inserted++, <code>~~Del~~</code> <del>Del</del></li>
-<li>Katex, 数学公式<span class="exturl" data-url="aHR0cHM6Ly93d3cubnBtanMuY29tL3BhY2thZ2UvQGlrdGFrYWhpcm8vbWFya2Rvd24taXQta2F0ZXg=" title="https://www.npmjs.com/package/@iktakahiro/markdown-it-katex">^math<i class="fa fa-external-link"></i></span>：<code>$\sqrt{3x-1}+(1+x)^2$</code></li>
+<li>ins, 插入下划线：<code>++Inserted++</code> <ins>Inserted</ins>, <code>~~Del~~</code> <s>Del</s></li>
+<li>Katex, 数学公式<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>：<code>$\sqrt{3x-1}+(1+x)^2$</code></li>
 <li>emoji, 表情：</li>
 <li>toc&amp;anchor 目录：<code>@[toc]</code></li>
 <li>deflist</li>
 <li>abbr 缩写：<code>*[HTML]: Hyper Text Markup Language</code></li>
-<li>footnote 页脚、脚注：<code>[^1]  [^1]:</code></li>
-<li>mark 标记：<code>==marked== =&gt; &lt;mark&gt;inserted&lt;/mark&gt;</code> ==marked== =&gt; <mark>inserted</mark></li>
+<li>footnote 页脚、脚注：`<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></li>
 </ul>
-<h1 id="jquery-backstretch"><a href="#jquery-backstretch" class="headerlink" title="jquery-backstretch"></a>jquery-backstretch</h1><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><p>Installation</p>
+<h1 id="jquery-backstretch"><a class="markdownIt-Anchor" href="#jquery-backstretch"></a> jquery-backstretch</h1>
+<h2 id="安装-2"><a class="markdownIt-Anchor" href="#安装-2"></a> 安装</h2>
+<p>Installation</p>
 <ol>
-<li>Download/save the JS file from GitHub.先在github下载此代码（<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2pxdWVyeS1iYWNrc3RyZXRjaC9qcXVlcnktYmFja3N0cmV0Y2jvvIk=" title="https://github.com/jquery-backstretch/jquery-backstretch）">https://github.com/jquery-backstretch/jquery-backstretch）<i class="fa fa-external-link"></i></span></li>
+<li>Download/save the JS file from GitHub.先在github下载此代码（<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2pxdWVyeS1iYWNrc3RyZXRjaC9qcXVlcnktYmFja3N0cmV0Y2glRUYlQkMlODk=" title="https://github.com/jquery-backstretch/jquery-backstretch%EF%BC%89">https://github.com/jquery-backstretch/jquery-backstretch）<i class="fa fa-external-link"></i></span></li>
 <li>安装bower，因为下面要用bower命令安装jquery-backstretch</li>
-<li>Install via Bower with the following command.用下面的命令安装jquery-backstretch<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bower install jquery-backstretch</span><br></pre></td></tr></table></figure>
+<li>Install via Bower with the following command.用下面的命令安装jquery-backstretch</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bower install jquery-backstretch</span><br></pre></td></tr></table></figure>
+<h2 id="报错1"><a class="markdownIt-Anchor" href="#报错1"></a> 报错1</h2>
+<p>我没有想到，在这里用了一个代码<code>$\sqrt{3x-1}+(1+x)^2$</code>，然后我的页面宽度极具扩大！本来博客页面只有上下滚动的嘛，后来，因为宽度扩大，导致我的页面还可以左右动，非常宽。真是bug</p>
+<p>虽然目前不常用数学公式，但是未必未来不用，毕竟理科生，latex、katex可能未来还是要用到的，如果在博客用这些公式出现了差错，就有迹可循了。因为我把这个代码放到了无序列表中一项内容的后面，然后<code>sqrt</code>这个根的上部分就一直…一直…往右…延长…</p>
+<p>所以，以后要检查、排除一下差错，不要放到无序列表，或者，背景用的代码加上一句width:xxxxxpx<br>
+<code>{ width: 1080, url: &quot;path/to/image1_1080.jpg&quot; }</code></p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><code>- mark 标记：</code>==marked== =&gt; <mark>inserted</mark>` ==marked== =&gt; <mark>inserted</mark></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div><hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NIRU5YQ0hFTi9oZXhvLXJlbmRlcmVyLW1hcmtkb3duLWl0LXBsdXM=" title="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus">https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus<i class="fa fa-external-link"></i></span> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><span class="exturl" data-url="aHR0cHM6Ly93d3cubnBtanMuY29tL3BhY2thZ2UvQGlrdGFrYWhpcm8vbWFya2Rvd24taXQta2F0ZXg=" title="https://www.npmjs.com/package/@iktakahiro/markdown-it-katex">https://www.npmjs.com/package/@iktakahiro/markdown-it-katex<i class="fa fa-external-link"></i></span> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
-<h2 id="报错1"><a href="#报错1" class="headerlink" title="报错1"></a>报错1</h2><p>我没有想到，在这里用了一个代码<code>$\sqrt{3x-1}+(1+x)^2$</code>，然后我的页面宽度极具扩大！本来博客页面只有上下滚动的嘛，后来，因为宽度扩大，导致我的页面还可以左右动，非常宽。真是bug</p>
-<p>虽然目前不常用数学公式，但是未必未来不用，毕竟理科生，latex、katex可能未来还是要用到的，如果在博客用这些公式出现了差错，就有迹可循了。因为我把这个代码放到了无序列表中一项内容的后面，然后<code>sqrt</code>这个根的上部分就一直..一直…..往右..延长……</p>
-<p>所以，以后要检查、排除一下差错，不要放到无序列表，或者，背景用的代码加上一句width:xxxxxpx<br><code>{ width: 1080, url: &quot;path/to/image1_1080.jpg&quot; }</code></p>
+</section>
 
       
     </div>
@@ -1024,7 +1067,7 @@ var ap = new APlayer({
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#相关文章"><span class="nav-number">1.</span> <span class="nav-text">相关文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分享NeedMoreShare2-for-NexT"><span class="nav-number">2.</span> <span class="nav-text">分享NeedMoreShare2 for NexT</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署到gutbub上hexo-deployer-git"><span class="nav-number">3.</span> <span class="nav-text">部署到gutbub上hexo-deployer-git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装插件"><span class="nav-number">3.1.</span> <span class="nav-text">安装插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">3.2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方法"><span class="nav-number">3.3.</span> <span class="nav-text">使用方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现博客订阅功能generator-feed"><span class="nav-number">4.</span> <span class="nav-text">实现博客订阅功能generator-feed</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#统计字数与阅读时长hexo-symbols-count-time"><span class="nav-number">5.</span> <span class="nav-text">统计字数与阅读时长hexo-symbols-count-time</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地搜索searchdb"><span class="nav-number">6.</span> <span class="nav-text">本地搜索searchdb</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#markdown增强：hexo-renderer-markdown-it-plus"><span class="nav-number">7.</span> <span class="nav-text">markdown增强：hexo-renderer-markdown-it-plus</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">7.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站点配置"><span class="nav-number">7.2.</span> <span class="nav-text">站点配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级功能：关闭一些不想用的插件"><span class="nav-number">7.3.</span> <span class="nav-text">高级功能：关闭一些不想用的插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级功能：安装其他插件"><span class="nav-number">7.4.</span> <span class="nav-text">高级功能：安装其他插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主要特性-amp-常用Markdown语言"><span class="nav-number">7.5.</span> <span class="nav-text">主要特性&amp;常用Markdown语言</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-backstretch"><span class="nav-number">8.</span> <span class="nav-text">jquery-backstretch</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-1"><span class="nav-number">8.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#报错1"><span class="nav-number">8.2.</span> <span class="nav-text">报错1</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#相关文章"><span class="nav-number">1.</span> <span class="nav-text"> 相关文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注脚"><span class="nav-number">2.</span> <span class="nav-text"> 注脚</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分享needmoreshare2-for-next"><span class="nav-number">3.</span> <span class="nav-text"> 分享NeedMoreShare2 for NexT</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署到gutbub上hexo-deployer-git"><span class="nav-number">4.</span> <span class="nav-text"> 部署到gutbub上hexo-deployer-git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装插件"><span class="nav-number">4.1.</span> <span class="nav-text"> 安装插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">4.2.</span> <span class="nav-text"> 配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方法"><span class="nav-number">4.3.</span> <span class="nav-text"> 使用方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现博客订阅功能generator-feed"><span class="nav-number">5.</span> <span class="nav-text"> 实现博客订阅功能generator-feed</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#统计字数与阅读时长hexo-symbols-count-time"><span class="nav-number">6.</span> <span class="nav-text"> 统计字数与阅读时长hexo-symbols-count-time</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地搜索searchdb"><span class="nav-number">7.</span> <span class="nav-text"> 本地搜索searchdb</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#markdown增强hexo-renderer-markdown-it-plus"><span class="nav-number">8.</span> <span class="nav-text"> markdown增强：hexo-renderer-markdown-it-plus</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">8.1.</span> <span class="nav-text"> 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站点配置"><span class="nav-number">8.2.</span> <span class="nav-text"> 站点配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级功能关闭一些不想用的插件"><span class="nav-number">8.3.</span> <span class="nav-text"> 高级功能：关闭一些不想用的插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级功能安装其他插件"><span class="nav-number">8.4.</span> <span class="nav-text"> 高级功能：安装其他插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主要特性常用markdown语言"><span class="nav-number">8.5.</span> <span class="nav-text"> 主要特性&amp;常用Markdown语言</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-backstretch"><span class="nav-number">9.</span> <span class="nav-text"> jquery-backstretch</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-2"><span class="nav-number">9.1.</span> <span class="nav-text"> 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#报错1"><span class="nav-number">9.2.</span> <span class="nav-text"> 报错1</span></a></li></ol></li></ol></div>
             
 
           </div>
