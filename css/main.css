@@ -2107,7 +2107,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #555bf2;
+  background: #b9e52d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2945,17 +2945,14 @@ img.img-topic {
 .posts-expand .post-body img {
   border: none;
 }
-.post-gallery .post-gallery-img img {
-  padding: 3px;
-}
 .posts-expand .post-body img {
   border: none;
-  padding: 25px;
+  padding: 0px;
   margin: 25px auto 25px;
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
 }
-posts-expand .post-body img:hover {
+.posts-expand .post-body img:hover {
   -webkit-transform: scale(1.22);
   -moz-transform: scale(1.22);
   -ms-transform: scale(1.22);
@@ -2964,6 +2961,7 @@ posts-expand .post-body img:hover {
   transition: all 0.6s;
   opacity: 1;
   transition: all 1s;
+  box-shadow: 0px 0px 40px #fcbad3;
 }
 .hider_title {
   font-family: "Microsoft Yahei";

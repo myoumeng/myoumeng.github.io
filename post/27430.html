@@ -152,7 +152,7 @@
 <meta name="keywords" content="CSS,学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习CSS自定义样式，让博客焕然一新（一）">
-<meta property="og:url" content="http://yoursite.com/post/27430.html">
+<meta property="og:url" content="http://myoumeng.github.io/post/27430.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
 <meta property="og:description" content="不得不说，HTML和CSS真是一对好兄弟，我有很多想法，还是得靠他们合作才能实现吧！那我就要继续记笔记咯！ 搬起小板凳，开始好奇地学习CSS吧！">
 <meta property="og:locale" content="zh-CN">
@@ -180,7 +180,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/post/27430.html">
+  <link rel="canonical" href="http://myoumeng.github.io/post/27430.html">
 
 
 
@@ -490,7 +490,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/27430.html">
+    <link itemprop="mainEntityOfPage" href="http://myoumeng.github.io/post/27430.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="欧萌">
@@ -589,53 +589,13 @@
 </p>
 <a id="more"></a>
 <p>唔，内容有点多，所以，还是分批次写吧~本文目录如下：<br>
-<ul class="markdownIt-TOC">
-<li><a href="#css%E4%B8%8Ehtml">CSS与HTML</a></li>
-<li><a href="#css%E8%A7%84%E5%88%99%E7%94%B1%E9%80%89%E6%8B%A9%E5%99%A8%E5%A3%B0%E6%98%8E%E7%BB%84%E6%88%90">CSS规则由<code>选择器+声明</code>组成</a></li>
-<li><a href="#id%E9%80%89%E6%8B%A9%E5%99%A8">id选择器</a></li>
-<li><a href="#class%E9%80%89%E6%8B%A9%E5%99%A8">class选择器</a></li>
-<li><a href="#id%E9%80%89%E6%8B%A9%E5%99%A8id-selectoris">ID选择器（ID selector，IS）</a></li>
-<li><a href="#%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8class-selectorcs">类选择器（class selector，CS）</a></li>
-<li><a href="#%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8element-selectores%E5%8F%88%E5%8F%AB%E6%A0%87%E7%AD%BE%E9%80%89%E6%8B%A9%E5%99%A8">元素选择器（element selector，ES）又叫标签选择器</a></li>
-<li><a href="#%E5%8C%85%E5%90%AB%E9%80%89%E6%8B%A9%E5%99%A8package-selectorps">包含选择器（package selector，PS）</a></li>
-<li><a href="#%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8external-style-sheet">外部样式表(External style sheet)</a></li>
-<li><a href="#%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8internal-style-sheet">内部样式表(Internal style sheet)</a></li>
-<li><a href="#%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8Finline-style">内联样式(Inline style)</a></li>
-<li><a href="#%E5%A4%9A%E9%87%8D%E6%A0%B7%E5%BC%8F">多重样式</a></li>
-<li><a href="#%E5%A4%9A%E9%87%8D%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7">多重样式优先级</a></li>
-<li><a href="#background-size%E8%83%8C%E6%99%AF%E5%B0%BA%E5%AF%B8">background-size背景尺寸</a></li>
-<li><a href="#background-color%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2">background-color背景颜色</a></li>
-<li><a href="#background-image%E8%83%8C%E6%99%AF%E5%9B%BE%E5%83%8F">background-image背景图像</a></li>
-<li><a href="#background-repeat%E5%B9%B3%E9%93%BA">background-repeat平铺</a></li>
-<li><a href="#background-attachment%E5%9B%BA%E5%AE%9Aor%E6%BB%9A%E5%8A%A8">background-attachment固定or滚动</a></li>
-<li><a href="#background-position%E5%9B%BE%E7%89%87%E4%BD%8D%E7%BD%AE">background-position图片位置</a></li>
-<li><a href="#background%E7%AE%80%E5%86%99%E8%83%8C%E6%99%AF%E5%B1%9E%E6%80%A7%E5%88%B0%E4%B8%80%E4%B8%AA%E5%A3%B0%E6%98%8E%E4%B8%AD">background简写背景属性到一个声明中</a></li>
-<li><a href="#white-space%E5%85%83%E7%B4%A0%E4%B8%AD%E7%A9%BA%E7%99%BD%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F">white-space元素中空白的处理方式</a></li>
-<li><a href="#text-align%E5%AF%B9%E9%BD%90%E5%85%83%E7%B4%A0%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC">text-align对齐元素中的文本</a></li>
-<li><a href="#direction%E6%96%87%E6%9C%AC%E6%96%B9%E5%90%91">direction文本方向</a></li>
-<li><a href="#text-decorations%E5%90%91%E6%96%87%E6%9C%AC%E6%B7%BB%E5%8A%A0%E4%BF%AE%E9%A5%B0">text-decorations向文本添加修饰</a></li>
-<li><a href="#vertical-align%E5%85%83%E7%B4%A0%E7%9A%84%E5%9E%82%E7%9B%B4%E5%AF%B9%E9%BD%90">vertical-align元素的垂直对齐</a></li>
-<li><a href="#%E6%89%80%E6%9C%89css%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">所有CSS字体属性</a></li>
-<li><a href="#%E5%9B%9B%E4%B8%AA%E9%93%BE%E6%8E%A5%E7%8A%B6%E6%80%81">四个链接状态</a></li>
-<li><a href="#list-style-image%E8%AE%BE%E5%AE%9A%E5%88%97%E8%A1%A8%E9%A1%B9%E6%A0%87%E5%BF%97%E7%9A%84%E5%9B%BE%E5%83%8F">list-style-image设定列表项标志的图像</a></li>
-<li><a href="#list-style-position%E5%B1%9E%E6%80%A7">list-style-position属性</a></li>
-<li><a href="#list-style-type%E5%88%97%E8%A1%A8%E9%A1%B9%E6%A0%87%E5%BF%97%E7%B1%BB%E5%9E%8B">list-style-type列表项标志类型</a></li>
-<li><a href="#border-style%E8%BE%B9%E6%A1%86%E6%A0%B7%E5%BC%8F">border-style边框样式</a></li>
-<li><a href="#border-width%E8%BE%B9%E6%A1%86%E5%AE%BD%E5%BA%A6">border-width边框宽度</a></li>
-<li><a href="#border-color%E8%BE%B9%E6%A1%86%E9%A2%9C%E8%89%B2">border-color边框颜色</a></li>
-<li><a href="#border-collapse%E6%8A%98%E5%8F%A0%E8%BE%B9%E6%A1%86">border-collapse折叠边框</a></li>
-<li><a href="#width%E5%92%8Cheight%E8%A1%A8%E6%A0%BC%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6">Width和height表格宽度和高度</a></li>
-<li><a href="#text-align%E8%A1%A8%E6%A0%BC%E6%96%87%E5%AD%97%E5%AF%B9%E9%BD%90">text-align表格文字对齐</a></li>
-<li><a href="#padding%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%85%85">padding表格填充</a></li>
-<li><a href="#%E8%A1%A8%E6%A0%BC%E8%BE%B9%E6%A1%86-%E6%96%87%E6%9C%AC-%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2">表格边框、文本、背景颜色</a></li>
-</ul>
-</p>
-<h1 id="css基础简介"><a class="markdownIt-Anchor" href="#css基础简介"></a> CSS基础简介</h1>
-<h2 id="css与html"><a class="markdownIt-Anchor" href="#css与html"></a> CSS与HTML</h2>
+@[TOC]</p>
+<h1>CSS基础简介</h1>
+<h2 id="css与html"><a class="header-anchor" href="#css与html">¶</a>CSS与HTML</h2>
 <p>CSS 指层叠样式表 (Cascading Style Sheets)</p>
 <p>HTML 元素可以通过<code>样式定义</code>来显示，样式存储在样式表中，外部样式表就存储在CSS文件中。<br>
 所以可以编辑保存在外部的.css文件，就能改变站点中所有的页面的布局和外观。</p>
-<h2 id="css规则由选择器声明组成"><a class="markdownIt-Anchor" href="#css规则由选择器声明组成"></a> CSS规则由<code>选择器+声明</code>组成</h2>
+<h2 id="css规则由选择器-声明组成"><a class="header-anchor" href="#css规则由选择器-声明组成">¶</a>CSS规则由<code>选择器+声明</code>组成</h2>
 <p><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzon8gtkcuj30fu03cjrn.jpg" alt=""></p>
 <ul>
 <li>选择器：我需要改变样式的HTML元素</li>
@@ -644,19 +604,19 @@
 <li>声明以分号结束<code>;</code>,声明组以大括号包围<code>{}</code></li>
 </ul>
 <p>每行只描述一个属性，能让CSS可读性更强</p>
-<h1 id="注释"><a class="markdownIt-Anchor" href="#注释"></a> 注释</h1>
+<h1>注释</h1>
 <p>css注释是用来解释我写的代码，第一，我看代码的时候能够提醒自己，第二，浏览器也会忽略它，不会显示的。<br>
 以<code>/*</code>开始，以<code>*/</code>结束</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/*这是个注释*/</span><br><span class="line">p</span><br><span class="line">&#123;</span><br><span class="line">text-align:center;</span><br><span class="line">/*这是另一个注释*/</span><br><span class="line">color:black;</span><br><span class="line">font-family:arial;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="id与class类"><a class="markdownIt-Anchor" href="#id与class类"></a> id与class类</h1>
-<h2 id="id选择器"><a class="markdownIt-Anchor" href="#id选择器"></a> id选择器</h2>
+<h1>id与class类</h1>
+<h2 id="id选择器"><a class="header-anchor" href="#id选择器">¶</a>id选择器</h2>
 <blockquote>
 <p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。<br>
 HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 “#” 来定义。</p>
 </blockquote>
 <p>以下的样式规则应用于元素属性 id=“para1”:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">#para1</span><br><span class="line">&#123;</span><br><span class="line">	text-align:center;</span><br><span class="line">	color:red;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p id=&quot;para1&quot;&gt;Hello World!&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;这个段落不受该样式的影响。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="class选择器"><a class="markdownIt-Anchor" href="#class选择器"></a> class选择器</h2>
+<h2 id="class选择器"><a class="header-anchor" href="#class选择器">¶</a>class选择器</h2>
 <blockquote>
 <p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。<br>
 class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&quot;.&quot;号显示：</p>
@@ -667,31 +627,31 @@ class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一�
 <img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzonq4vz59j30wt0alac4.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">p.center</span><br><span class="line">&#123;</span><br><span class="line">	text-align:center;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1 class=&quot;center&quot;&gt;这个标题不受影响&lt;/h1&gt;</span><br><span class="line">&lt;p class=&quot;center&quot;&gt;这个段落受影响，会居中对齐。&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <p>类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
-<h1 id="html中设置css样式的多种选择器"><a class="markdownIt-Anchor" href="#html中设置css样式的多种选择器"></a> HTML中设置CSS样式的多种选择器</h1>
+<h1>HTML中设置CSS样式的多种选择器</h1>
 <p>如果你要在 html 标签中设置 CSS 样式，那么你有四种方法，即 css 选择器有四种。</p>
 <p>除了提到的 id 和 class 选择器外，第三种选择器为标签选择器，即以 html 标签作为 css 修饰所用的选择器；第四种是直接在html标签内部写css代码。（好像还有好几种，我就不多写了，总之，id、class、element package都很常见~</p>
-<h2 id="id选择器id-selectoris"><a class="markdownIt-Anchor" href="#id选择器id-selectoris"></a> ID选择器（ID selector，IS）</h2>
+<h2 id="id选择器-id-selector-is"><a class="header-anchor" href="#id选择器-id-selector-is">¶</a>ID选择器（ID selector，IS）</h2>
 <p>使用<code>#</code>标识selector。<br>
 语法格式：<code>#S{...}</code>（S为选择器名）。</p>
 <p>例：id为name的标签会匹配下面的样式</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">#name&#123;</span><br><span class="line">  color:red;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;!--下面文字是红色的--&gt;</span><br><span class="line">&lt;p id=&quot;name&quot;&gt;red text&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="类选择器class-selectorcs"><a class="markdownIt-Anchor" href="#类选择器class-selectorcs"></a> 类选择器（class selector，CS）</h2>
+<h2 id="类选择器-class-selector-cs"><a class="header-anchor" href="#类选择器-class-selector-cs">¶</a>类选择器（class selector，CS）</h2>
 <p>使用<code>.</code>标识selector，<br>
 语法格式：<code>.S{...}</code>（S为选择器名）。<br>
 例：class属性值为value的标签会匹配下面的样式</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.value&#123;</span><br><span class="line">  text-align:center;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;!--下面的文字是居中对齐的--&gt;</span><br><span class="line">&lt;p class=&quot;value&quot;&gt;center text&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="元素选择器element-selectores又叫标签选择器"><a class="markdownIt-Anchor" href="#元素选择器element-selectores又叫标签选择器"></a> 元素选择器（element selector，ES）又叫标签选择器</h2>
+<h2 id="元素选择器-element-selector-es-又叫标签选择器"><a class="header-anchor" href="#元素选择器-element-selector-es-又叫标签选择器">¶</a>元素选择器（element selector，ES）又叫标签选择器</h2>
 <p>使用HTML的<code>标签名</code>作为selector名。<br>
 语法格式：<code>S{...}</code>（S为选择器名）。<br>
 例：所有的p标签都会匹配以下的样式</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">p&#123;</span><br><span class="line">  font-style:italic;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;!--下面的文字是斜体的--&gt;</span><br><span class="line">&lt;p&gt;italic text&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="包含选择器package-selectorps"><a class="markdownIt-Anchor" href="#包含选择器package-selectorps"></a> 包含选择器（package selector，PS）</h2>
+<h2 id="包含选择器-package-selector-ps"><a class="header-anchor" href="#包含选择器-package-selector-ps">¶</a>包含选择器（package selector，PS）</h2>
 <p>指定目标选择器必须处在某个选择器对应的元素内部。<br>
 语法格式：<code>A B{...}</code>（A、B为HTML元素/标签，表示对处于A中的B标签有效）。(经常用div)</p>
 <p>例：以下div内的p标签和div外的p标签分别匹配不同的样式</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">p&#123;</span><br><span class="line">  color:red;</span><br><span class="line">&#125;</span><br><span class="line">div p&#123;</span><br><span class="line">  color:yellow;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;p&gt;red text&lt;/p&gt;&lt;!--文字是红色的--&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;p&gt;yellow text&lt;/p&gt;&lt;!--文字是黄色的--&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="css创建插入样式表的三种方法"><a class="markdownIt-Anchor" href="#css创建插入样式表的三种方法"></a> CSS创建：插入样式表的三种方法</h1>
-<h2 id="外部样式表external-style-sheet"><a class="markdownIt-Anchor" href="#外部样式表external-style-sheet"></a> 外部样式表(External style sheet)</h2>
+<h1>CSS创建：插入样式表的三种方法</h1>
+<h2 id="外部样式表-external-style-sheet"><a class="header-anchor" href="#外部样式表-external-style-sheet">¶</a>外部样式表(External style sheet)</h2>
 <blockquote>
 <p>当样式需要应用于很多页面时，外部样式表将是理想的选择。<br>
 在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。<br>
@@ -700,24 +660,24 @@ class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一�
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
 <p>浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。</p>
 <p>外部样式表可以在任何文本编辑器中进行编辑。<br>
-文件<mark>不能包含任何的 html 标签</mark>。<br>
+文件==不能包含任何的 html 标签==。<br>
 样式表应该以 .css 扩展名进行保存。下面是一个样式表文件的例子：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hr &#123;color:sienna;&#125;</span><br><span class="line">p &#123;margin-left:20px;&#125;</span><br><span class="line">body &#123;background-image:url(&quot;/images/back40.gif&quot;);&#125;</span><br></pre></td></tr></table></figure>
-<p>不要在<mark>属性值与单位之间</mark>留有空格（如：“margin-left: 20 px” ），正确的写法是 “margin-left: 20px” 。</p>
-<h2 id="内部样式表internal-style-sheet"><a class="markdownIt-Anchor" href="#内部样式表internal-style-sheet"></a> 内部样式表(Internal style sheet)</h2>
+<p>不要在==属性值与单位之间==留有空格（如：“margin-left: 20 px” ），正确的写法是 “margin-left: 20px” 。</p>
+<h2 id="内部样式表-internal-style-sheet"><a class="header-anchor" href="#内部样式表-internal-style-sheet">¶</a>内部样式表(Internal style sheet)</h2>
 <blockquote>
 <p>当单个文档需要特殊的样式时，就应该使用内部样式表。<br>
 你可以使用<code>&lt;style&gt;</code>标签在文档头部定义内部样式表，就像这样:</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">hr &#123;color:sienna;&#125;</span><br><span class="line">p &#123;margin-left:20px;&#125;</span><br><span class="line">body &#123;background-image:url(&quot;images/back40.gif&quot;);&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="内联样式inline-style"><a class="markdownIt-Anchor" href="#内联样式inline-style"></a> 内联样式(Inline style)</h2>
+<h2 id="内联样式-inline-style"><a class="header-anchor" href="#内联样式-inline-style">¶</a>内联样式(Inline style)</h2>
 <blockquote>
 <p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。<br>
 请慎用这种方法，例如当样式仅需要在一个元素上应用一次时。<br>
 要使用内联样式，你需要在相关的标签内使用样式（style）属性。Style 属性可以包含任何 CSS 属性。本例展示如何改变段落的颜色和左外边距：</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&quot;color:sienna;margin-left:20px&quot;&gt;这是一个段落。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="多重样式"><a class="markdownIt-Anchor" href="#多重样式"></a> 多重样式</h2>
+<h2 id="多重样式"><a class="header-anchor" href="#多重样式">¶</a>多重样式</h2>
 <p>如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。</p>
 <p>例如，外部样式表拥有针对 h3 选择器的三个属性：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">h3</span><br><span class="line">&#123;</span><br><span class="line">    color:red;</span><br><span class="line">    text-align:left;</span><br><span class="line">    font-size:8pt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -726,14 +686,14 @@ class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一�
 <p>假如拥有内部样式表的这个页面同时与外部样式表链接，那么 h3 得到的样式是：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">color:red;</span><br><span class="line">text-align:right;</span><br><span class="line">font-size:20pt;</span><br></pre></td></tr></table></figure>
 <p>即颜色属性将被继承于外部样式表，而<code>文字排列（text-alignment）</code>和<code>字体尺寸（font-size）</code>会被内部样式表中的规则取代。</p>
-<h2 id="多重样式优先级"><a class="markdownIt-Anchor" href="#多重样式优先级"></a> 多重样式优先级</h2>
+<h2 id="多重样式优先级"><a class="header-anchor" href="#多重样式优先级">¶</a>多重样式优先级</h2>
 <p>样式表允许以多种方式规定样式信息。<br>
 样式可以规定在单个的 HTML 元素中，在 HTML 页的头元素中，或在一个外部的 CSS 文件中。甚至可以在同一个 HTML 文档内部引用多个外部样式表。</p>
 <p>一般情况下，优先级如下：</p>
-<p><mark>(内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style sheet &gt; 浏览器默认样式</mark><br>
+<p>==(内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style sheet &gt; 浏览器默认样式==<br>
 如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;!-- 外部样式 style.css --&gt;</span><br><span class="line">    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;/&gt;</span><br><span class="line">    &lt;!-- 设置：h3&#123;color:blue;&#125; --&gt;</span><br><span class="line">    &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">      /* 内部样式 */</span><br><span class="line">      h3&#123;color:green;&#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h3&gt;测试！会出现内部样式的绿色字！&lt;/h3&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h1>
+<h1>背景</h1>
 <p>CSS 背景属性用于定义HTML元素的背景。</p>
 <p>background-color<br>
 background-image<br>
@@ -741,7 +701,7 @@ background-repeat<br>
 background-attachment<br>
 background-position<br>
 background-size</p>
-<h2 id="background-size背景尺寸"><a class="markdownIt-Anchor" href="#background-size背景尺寸"></a> background-size背景尺寸</h2>
+<h2 id="background-size背景尺寸"><a class="header-anchor" href="#background-size背景尺寸">¶</a>background-size背景尺寸</h2>
 <p>语法：<br>
 <code>background-size: length|percentage|cover|contain;</code></p>
 <p>属性值</p>
@@ -755,37 +715,37 @@ background-size</p>
 <tbody>
 <tr>
 <td style="text-align:center">length</td>
-<td style="text-align:center">设置背景图片高度和宽度。第一个值设置<mark>宽度</mark>，第二个值设置的高度。如果只给出一个值，第二个是设置为 auto(自动)</td>
+<td style="text-align:center">设置背景图片高度和宽度。第一个值设置==宽度==，第二个值设置的高度。如果只给出一个值，第二个是设置为 auto(自动)</td>
 </tr>
 <tr>
 <td style="text-align:center">percentage</td>
-<td style="text-align:center">将计算相对于背景定位区域的百分比。第一个值设置<mark>宽度</mark>，第二个值设置的高度。如果只给出一个值，第二个是设置为&quot;auto(自动)&quot;</td>
+<td style="text-align:center">将计算相对于背景定位区域的百分比。第一个值设置==宽度==，第二个值设置的高度。如果只给出一个值，第二个是设置为&quot;auto(自动)&quot;</td>
 </tr>
 <tr>
 <td style="text-align:center">cover</td>
-<td style="text-align:center">此时会<mark>保持图像的纵横比</mark>并将图像缩放成将<mark>完全覆盖背景定位区域的最小大小</mark>。</td>
+<td style="text-align:center">此时会==保持图像的纵横比==并将图像缩放成将==完全覆盖背景定位区域的最小大小==。</td>
 </tr>
 <tr>
 <td style="text-align:center">contain</td>
-<td style="text-align:center">此时会保持图像的纵横比并将图像缩放成将<mark>适合背景定位区域的最大大小</mark>。</td>
+<td style="text-align:center">此时会保持图像的纵横比并将图像缩放成将==适合背景定位区域的最大大小==。</td>
 </tr>
 </tbody>
 </table>
-<h2 id="background-color背景颜色"><a class="markdownIt-Anchor" href="#background-color背景颜色"></a> background-color背景颜色</h2>
+<h2 id="background-color背景颜色"><a class="header-anchor" href="#background-color背景颜色">¶</a>background-color背景颜色</h2>
 <p>CSS中，颜色值通常以以下方式定义:</p>
 <ul>
 <li>十六进制 - 如：&quot;#ff0000&quot;</li>
 <li>RGB - 如：“rgb(255,0,0)”</li>
 <li>颜色名称 - 如：“red”</li>
 </ul>
-<h2 id="background-image背景图像"><a class="markdownIt-Anchor" href="#background-image背景图像"></a> background-image背景图像</h2>
+<h2 id="background-image背景图像"><a class="header-anchor" href="#background-image背景图像">¶</a>background-image背景图像</h2>
 <p>默认情况下，背景图像进行平铺重复显示，以覆盖整个元素实体<br>
 文档中多个背景图像:<br>
 <code>body {background-image:url('paper.gif');}</code><br>
 要么：<code>=&quot;&quot;</code>要么<code>url()</code><br>
 <img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzopgu45xqj311i0dxam8.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">#example1 &#123;</span><br><span class="line">    background-image: url(img_flwr.gif), url(paper.gif);</span><br><span class="line">    background-position: right bottom, left top;</span><br><span class="line">    background-repeat: no-repeat, repeat;</span><br><span class="line">    padding: 15px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;example1&quot;&gt;</span><br><span class="line">&lt;h1&gt;Lorem Ipsum Dolor&lt;/h1&gt;</span><br><span class="line">&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.&lt;/p&gt;</span><br><span class="line">&lt;p&gt;Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="background-repeat平铺"><a class="markdownIt-Anchor" href="#background-repeat平铺"></a> background-repeat平铺</h2>
+<h2 id="background-repeat平铺"><a class="header-anchor" href="#background-repeat平铺">¶</a>background-repeat平铺</h2>
 <p>属性值</p>
 <table>
 <thead>
@@ -801,7 +761,7 @@ background-size</p>
 </tr>
 <tr>
 <td style="text-align:center">repeat-x</td>
-<td style="text-align:center"><mark>只有水平位置</mark>会重复背景图像</td>
+<td style="text-align:center">==只有水平位置==会重复背景图像</td>
 </tr>
 <tr>
 <td style="text-align:center">repeat-y</td>
@@ -817,7 +777,7 @@ background-size</p>
 </tr>
 </tbody>
 </table>
-<h2 id="background-attachment固定or滚动"><a class="markdownIt-Anchor" href="#background-attachment固定or滚动"></a> background-attachment固定or滚动</h2>
+<h2 id="background-attachment固定or滚动"><a class="header-anchor" href="#background-attachment固定or滚动">¶</a>background-attachment固定or滚动</h2>
 <p>属性值</p>
 <table>
 <thead>
@@ -843,7 +803,7 @@ background-size</p>
 </table>
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzopb196f7j30t70fcgs4.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">body</span><br><span class="line">&#123;</span><br><span class="line">background-image:url(&apos;smiley.gif&apos;);</span><br><span class="line">background-repeat:no-repeat;</span><br><span class="line">background-attachment:fixed;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;背景图片是固定的。尝试向下滚动页面。&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="background-position图片位置"><a class="markdownIt-Anchor" href="#background-position图片位置"></a> background-position图片位置</h2>
+<h2 id="background-position图片位置"><a class="header-anchor" href="#background-position图片位置">¶</a>background-position图片位置</h2>
 <p>属性值</p>
 <table>
 <thead>
@@ -871,9 +831,9 @@ background-size</p>
 </tr>
 </tbody>
 </table>
-<h2 id="background简写背景属性到一个声明中"><a class="markdownIt-Anchor" href="#background简写背景属性到一个声明中"></a> background简写背景属性到一个声明中</h2>
+<h2 id="background简写背景属性到一个声明中"><a class="header-anchor" href="#background简写背景属性到一个声明中">¶</a>background简写背景属性到一个声明中</h2>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">body</span><br><span class="line">&#123;</span><br><span class="line">background: #00ff00 url(&apos;smiley.gif&apos;) no-repeat fixed center;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="文本"><a class="markdownIt-Anchor" href="#文本"></a> 文本</h1>
+<h1>文本</h1>
 <p>所有CSS文本属性。</p>
 <table>
 <thead>
@@ -937,7 +897,7 @@ background-size</p>
 </tr>
 </tbody>
 </table>
-<h2 id="white-space元素中空白的处理方式"><a class="markdownIt-Anchor" href="#white-space元素中空白的处理方式"></a> white-space元素中空白的处理方式</h2>
+<h2 id="white-space元素中空白的处理方式"><a class="header-anchor" href="#white-space元素中空白的处理方式">¶</a>white-space元素中空白的处理方式</h2>
 <table>
 <thead>
 <tr>
@@ -974,7 +934,7 @@ background-size</p>
 </table>
 <p>规定段落中的文本不进行换行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p</span><br><span class="line">&#123;</span><br><span class="line">    white-space:nowrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="text-align对齐元素中的文本"><a class="markdownIt-Anchor" href="#text-align对齐元素中的文本"></a> text-align对齐元素中的文本</h2>
+<h2 id="text-align对齐元素中的文本"><a class="header-anchor" href="#text-align对齐元素中的文本">¶</a>text-align对齐元素中的文本</h2>
 <p>属性值</p>
 <table>
 <thead>
@@ -1006,13 +966,13 @@ background-size</p>
 </tr>
 </tbody>
 </table>
-<h2 id="direction文本方向"><a class="markdownIt-Anchor" href="#direction文本方向"></a> direction文本方向</h2>
+<h2 id="direction文本方向"><a class="header-anchor" href="#direction文本方向">¶</a>direction文本方向</h2>
 <ul>
 <li>ltr	默认。文本方向从左到右。</li>
 <li>rtl	文本方向从右到左。</li>
 <li>inherit	规定应该从父元素继承 direction 属性的值。</li>
 </ul>
-<h2 id="text-decorations向文本添加修饰"><a class="markdownIt-Anchor" href="#text-decorations向文本添加修饰"></a> text-decorations向文本添加修饰</h2>
+<h2 id="text-decorations向文本添加修饰"><a class="header-anchor" href="#text-decorations向文本添加修饰">¶</a>text-decorations向文本添加修饰</h2>
 <p>属性值</p>
 <table>
 <thead>
@@ -1048,7 +1008,7 @@ background-size</p>
 </tr>
 </tbody>
 </table>
-<h2 id="vertical-align元素的垂直对齐"><a class="markdownIt-Anchor" href="#vertical-align元素的垂直对齐"></a> vertical-align元素的垂直对齐</h2>
+<h2 id="vertical-align元素的垂直对齐"><a class="header-anchor" href="#vertical-align元素的垂直对齐">¶</a>vertical-align元素的垂直对齐</h2>
 <p>属性值</p>
 <table>
 <thead>
@@ -1101,9 +1061,9 @@ background-size</p>
 </tbody>
 </table>
 <p>inherit	规定应该从父元素继承 vertical-align 属性的值。</p>
-<h1 id="字体"><a class="markdownIt-Anchor" href="#字体"></a> 字体</h1>
+<h1>字体</h1>
 <p>字体属性定义字体，加粗，大小，文字样式。</p>
-<h2 id="所有css字体属性"><a class="markdownIt-Anchor" href="#所有css字体属性"></a> 所有CSS字体属性</h2>
+<h2 id="所有css字体属性"><a class="header-anchor" href="#所有css字体属性">¶</a>所有CSS字体属性</h2>
 <table>
 <thead>
 <tr>
@@ -1148,10 +1108,10 @@ background-size</p>
 <p>使用某种特定的字体系列（Geneva）完全取决于用户机器上该字体系列是否可用；这个属性没有指示任何字体下载。因此，强烈推荐使用一个通用字体系列名作为后路。</p>
 <p>注意：每个值用逗号分开。</p>
 <p>注意: 如果字体名称包含空格，它必须加上引号。在HTML中使用&quot;style&quot;属性时，必须使用单引号。</p>
-<h1 id="链接样式"><a class="markdownIt-Anchor" href="#链接样式"></a> 链接样式</h1>
+<h1>链接样式</h1>
 <p>链接的样式，可以用任何CSS属性（如颜色，字体，背景等）。</p>
 <p>特别的链接，可以有不同的样式，这取决于他们是什么状态。</p>
-<h2 id="四个链接状态"><a class="markdownIt-Anchor" href="#四个链接状态"></a> 四个链接状态</h2>
+<h2 id="四个链接状态"><a class="header-anchor" href="#四个链接状态">¶</a>四个链接状态</h2>
 <ul>
 <li>a:link - 正常，未访问过的链接</li>
 <li>a:visited - 用户已访问过的链接</li>
@@ -1170,7 +1130,7 @@ L(link)OV(visited)E  and  H(hover)A(active)TE</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">a:link &#123;text-decoration:none;&#125;    /* unvisited link */</span><br><span class="line">a:visited &#123;text-decoration:none;&#125; /* visited link */</span><br><span class="line">a:hover &#123;text-decoration:underline;&#125;   /* mouse over link */</span><br><span class="line">a:active &#123;text-decoration:underline;&#125;  /* selected link */</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 <p><img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzote6iljcj30nq0fbdhx.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">a:link,a:visited</span><br><span class="line">&#123;</span><br><span class="line">	display:block;</span><br><span class="line">	font-weight:bold;</span><br><span class="line">	color:#FFFFFF;</span><br><span class="line">	background-color:#98bf21;</span><br><span class="line">	width:120px;</span><br><span class="line">	text-align:center;</span><br><span class="line">	padding:4px;</span><br><span class="line">	text-decoration:none;</span><br><span class="line">&#125;</span><br><span class="line">a:hover,a:active</span><br><span class="line">&#123;</span><br><span class="line">	background-color:#7A991A;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;a href=&quot;/css/&quot; target=&quot;_blank&quot;&gt;这是一个链接&lt;/a&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="列表项所有的css列表属性"><a class="markdownIt-Anchor" href="#列表项所有的css列表属性"></a> 列表项:所有的CSS列表属性</h1>
+<h1>列表项:所有的CSS列表属性</h1>
 <p>所有的CSS列表属性</p>
 <table>
 <thead>
@@ -1198,19 +1158,19 @@ L(link)OV(visited)E  and  H(hover)A(active)TE</p>
 </tr>
 </tbody>
 </table>
-<h2 id="list-style-image设定列表项标志的图像"><a class="markdownIt-Anchor" href="#list-style-image设定列表项标志的图像"></a> list-style-image设定列表项标志的图像</h2>
+<h2 id="list-style-image设定列表项标志的图像"><a class="header-anchor" href="#list-style-image设定列表项标志的图像">¶</a>list-style-image设定列表项标志的图像</h2>
 <p>属性值是url<br>
 <img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzotmxl8kfj30ok0cbq48.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">ul</span><br><span class="line">&#123;</span><br><span class="line">	list-style-image:url(&apos;sqpurple.gif&apos;);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="list-style-position属性"><a class="markdownIt-Anchor" href="#list-style-position属性"></a> list-style-position属性</h2>
+<h2 id="list-style-position属性"><a class="header-anchor" href="#list-style-position属性">¶</a>list-style-position属性</h2>
 <p>inside	列表项目标记放置在文本以内，且环绕文本根据标记对齐。<br>
 outside	默认值。保持标记位于文本的左侧。列表项目标记放置在文本以外，且环绕文本不根据标记对齐。<br>
 <img src="http://www.runoob.com/wp-content/uploads/2013/08/E3EA5DE4-B898-450C-BE58-D2EBC1C70D8E.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2&gt;Outside:&lt;/h2&gt;</span><br><span class="line">&lt;ul style=&quot;list-style-position:outside;width:25%;&quot;&gt;</span><br><span class="line">&lt;li style=&quot;border:1px solid #000000&quot;&gt;Coffee&lt;/li&gt;</span><br><span class="line">&lt;li style=&quot;border:1px solid #000000;border-top:0&quot;&gt;Tea&lt;/li&gt;</span><br><span class="line">&lt;li style=&quot;border:1px solid #000000;border-top:0&quot;&gt;Coca-cola&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;h2&gt;Inside:&lt;/h2&gt;</span><br><span class="line">&lt;ul style=&quot;list-style-position:inside;width:25%;&quot;&gt;</span><br><span class="line">&lt;li style=&quot;border:1px solid #000000;&quot;&gt;Coffee&lt;/li&gt;</span><br><span class="line">&lt;li style=&quot;border:1px solid #000000;border-top:0;&quot;&gt;Tea&lt;/li&gt;</span><br><span class="line">&lt;li style=&quot;border:1px solid #000000;border-top:0;&quot;&gt;Coca-cola&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="list-style-type列表项标志类型"><a class="markdownIt-Anchor" href="#list-style-type列表项标志类型"></a> list-style-type列表项标志类型</h2>
+<h2 id="list-style-type列表项标志类型"><a class="header-anchor" href="#list-style-type列表项标志类型">¶</a>list-style-type列表项标志类型</h2>
 <p><img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzotsv4mwqj304m0cw0t8.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">ul.a &#123;list-style-type:circle;&#125;</span><br><span class="line">ul.b &#123;list-style-type:square;&#125;</span><br><span class="line">ol.c &#123;list-style-type:upper-roman;&#125;</span><br><span class="line">ol.d &#123;list-style-type:lower-alpha;&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p&gt;无序列表实例:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;ul class=&quot;a&quot;&gt;</span><br><span class="line">  &lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Tea&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Coca Cola&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;ul class=&quot;b&quot;&gt;</span><br><span class="line">  &lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Tea&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Coca Cola&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;有序列表实例:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;ol class=&quot;c&quot;&gt;</span><br><span class="line">  &lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Tea&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Coca Cola&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br><span class="line"></span><br><span class="line">&lt;ol class=&quot;d&quot;&gt;</span><br><span class="line">  &lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Tea&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;Coca Cola&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="边框"><a class="markdownIt-Anchor" href="#边框"></a> 边框</h1>
+<h1>边框</h1>
 <p>CSS边框属性允许你指定一个元素边框的样式和颜色。</p>
 <p>CSS 边框属性</p>
 <table>
@@ -1303,7 +1263,7 @@ outside	默认值。保持标记位于文本的左侧。列表项目标记放置
 </tr>
 </tbody>
 </table>
-<h2 id="border-style边框样式"><a class="markdownIt-Anchor" href="#border-style边框样式"></a> border-style边框样式</h2>
+<h2 id="border-style边框样式"><a class="header-anchor" href="#border-style边框样式">¶</a>border-style边框样式</h2>
 <p>border-style值:<br>
 none: 默认无边框<br>
 dotted: 定义一个点线边框<br>
@@ -1315,44 +1275,44 @@ ridge: 定义3D脊边框。效果取决于边框的颜色值<br>
 inset:定义一个3D的嵌入边框。效果取决于边框的颜色值<br>
 outset: 定义一个3D突出边框。 效果取决于边框的颜色值<br>
 <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzoulbtbcxj30nk0f775q.jpg" alt=""></p>
-<h2 id="border-width边框宽度"><a class="markdownIt-Anchor" href="#border-width边框宽度"></a> border-width边框宽度</h2>
+<h2 id="border-width边框宽度"><a class="header-anchor" href="#border-width边框宽度">¶</a>border-width边框宽度</h2>
 <p>您可以通过 border-width 属性为边框指定宽度。</p>
 <p>为边框指定宽度有两种方法：可以指定长度值，比如 2px 或 0.1em(单位为 px, pt, cm, em 等)，或者使用 3 个关键字之一，它们分别是 thick 、medium（默认值） 和 thin。</p>
 <p>注意：CSS 没有定义 3 个关键字的具体宽度，所以一个用户可能把 thick 、medium 和 thin 分别设置为等于 5px、3px 和 2px，而另一个用户则分别设置为 3px、2px 和 1px。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">p.one</span><br><span class="line">&#123;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-width:5px;</span><br><span class="line">&#125;</span><br><span class="line">p.two</span><br><span class="line">&#123;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-width:medium;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="border-color边框颜色"><a class="markdownIt-Anchor" href="#border-color边框颜色"></a> border-color边框颜色</h2>
+<h2 id="border-color边框颜色"><a class="header-anchor" href="#border-color边框颜色">¶</a>border-color边框颜色</h2>
 <p>border-color属性用于设置边框的颜色。可以设置的颜色：</p>
-<p>name - 指定颜色的名称，如 “red”<br>
-RGB - 指定 RGB 值, 如 “rgb(255,0,0)”<br>
-Hex - 指定16进制值, 如 “#ff0000”<br>
-您还可以设置边框的颜色为&quot;transparent&quot;。</p>
+<p>name - 指定颜色的名称，如 &quot;red&quot;<br>
+RGB - 指定 RGB 值, 如 &quot;rgb(255,0,0)&quot;<br>
+Hex - 指定16进制值, 如 “#ff0000&quot;<br>
+您还可以设置边框的颜色为&quot;transparent”。</p>
 <p>注意： border-color单独使用是不起作用的，必须得先使用border-style来设置边框样式。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">p.one</span><br><span class="line">&#123;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-color:red;</span><br><span class="line">&#125;</span><br><span class="line">p.two</span><br><span class="line">&#123;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-color:#98bf21;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="表格边框border属性"><a class="markdownIt-Anchor" href="#表格边框border属性"></a> 表格边框border属性</h1>
-<h2 id="border-collapse折叠边框"><a class="markdownIt-Anchor" href="#border-collapse折叠边框"></a> border-collapse折叠边框</h2>
+<h1>表格边框border属性</h1>
+<h2 id="border-collapse折叠边框"><a class="header-anchor" href="#border-collapse折叠边框">¶</a>border-collapse折叠边框</h2>
 <p>下面的例子指定了一个表格的Th和TD元素的黑色边框：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">table, th, td</span><br><span class="line">&#123;</span><br><span class="line">    border: 1px solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>请注意，在上面的例子中的表格有双边框。这是因为表和th/ td元素有独立的边界。</p>
 <p>为了显示一个表的单个边框，使用 border-collapse属性。<br>
 border-collapse 属性设置表格的边框是否被折叠成一个单一的边框或隔开：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">table</span><br><span class="line">&#123;</span><br><span class="line">    border-collapse:collapse;</span><br><span class="line">&#125;</span><br><span class="line">table,th, td</span><br><span class="line">&#123;</span><br><span class="line">    border: 1px solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="width和height表格宽度和高度"><a class="markdownIt-Anchor" href="#width和height表格宽度和高度"></a> Width和height表格宽度和高度</h2>
+<h2 id="width和height表格宽度和高度"><a class="header-anchor" href="#width和height表格宽度和高度">¶</a>Width和height表格宽度和高度</h2>
 <p>Width和height属性定义表格的宽度和高度。</p>
 <p>下面的例子是设置100％的宽度，50像素的th元素的高度的表格：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">table</span><br><span class="line">&#123;</span><br><span class="line">    width:100%;</span><br><span class="line">&#125;</span><br><span class="line">th</span><br><span class="line">&#123;</span><br><span class="line">    height:50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="text-align表格文字对齐"><a class="markdownIt-Anchor" href="#text-align表格文字对齐"></a> text-align表格文字对齐</h2>
+<h2 id="text-align表格文字对齐"><a class="header-anchor" href="#text-align表格文字对齐">¶</a>text-align表格文字对齐</h2>
 <p>表格中的文本对齐和垂直对齐属性。</p>
 <p>text-align属性设置水平对齐方式，向左，右，或中心：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">td</span><br><span class="line">&#123;</span><br><span class="line">    text-align:right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>垂直对齐属性设置垂直对齐，比如顶部，底部或中间：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">td</span><br><span class="line">&#123;</span><br><span class="line">    height:50px;</span><br><span class="line">    vertical-align:bottom;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="padding表格填充"><a class="markdownIt-Anchor" href="#padding表格填充"></a> padding表格填充</h2>
+<h2 id="padding表格填充"><a class="header-anchor" href="#padding表格填充">¶</a>padding表格填充</h2>
 <p>如果在表的内容中控制空格之间的边框，应使用td和th元素的填充属性：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">td</span><br><span class="line">&#123;</span><br><span class="line">    padding:15px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="表格边框-文本-背景颜色"><a class="markdownIt-Anchor" href="#表格边框-文本-背景颜色"></a> 表格边框、文本、背景颜色</h2>
+<h2 id="表格边框-文本-背景颜色"><a class="header-anchor" href="#表格边框-文本-背景颜色">¶</a>表格边框、文本、背景颜色</h2>
 <p>下面的例子指定边框的颜色，和th元素的文本和背景颜色：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">table, td, th</span><br><span class="line">&#123;</span><br><span class="line">    border:1px solid green;</span><br><span class="line">&#125;</span><br><span class="line">th</span><br><span class="line">&#123;</span><br><span class="line">    background-color:green;</span><br><span class="line">    color:white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="box-model盒子模型"><a class="markdownIt-Anchor" href="#box-model盒子模型"></a> Box Model盒子模型</h1>
+<h1>Box Model盒子模型</h1>
 <p>所有HTML元素可以看作盒子，在CSS中，&quot;box model&quot;这一术语是用来设计和布局时使用。</p>
 <p>CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。</p>
 <p>盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。</p>
@@ -1364,7 +1324,7 @@ border-collapse 属性设置表格的边框是否被折叠成一个单一的边�
 <li>Border(边框) - 围绕在内边距和内容外的边框。</li>
 <li>Padding(内边距) - 清除内容周围的区域，内边距是透明的。</li>
 <li>Content(内容) - 盒子的内容，显示文本和图像。<br>
-当您指定一个<mark>CSS元素的宽度和高度属性</mark>时，你只是设置<mark>内容区域的宽度和高度</mark>。<br>
+当您指定一个==CSS元素的宽度和高度属性==时，你只是设置==内容区域的宽度和高度==。<br>
 要知道，完全大小的元素，你还必须添加填充，边框和边距。</li>
 </ul>
 <p>下面的例子中的元素的总宽度为300px：</p>
@@ -1695,7 +1655,7 @@ border-collapse 属性设置表格的边框是否被折叠成一个单一的边�
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <span class="exturl" data-url="aHR0cHM6Ly9teW91bWVuZy5naXRodWIuaW8vYWJvdXQv" title="https://myoumeng.github.io/about/">about me</span>
+                    <a href="https://myoumeng.github.io/about/" title="https://myoumeng.github.io/about/">about me</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
@@ -1755,7 +1715,7 @@ var ap = new APlayer({
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css基础简介"><span class="nav-number">1.</span> <span class="nav-text"> CSS基础简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#css与html"><span class="nav-number">1.1.</span> <span class="nav-text"> CSS与HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css规则由选择器声明组成"><span class="nav-number">1.2.</span> <span class="nav-text"> CSS规则由选择器+声明组成</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注释"><span class="nav-number">2.</span> <span class="nav-text"> 注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#id与class类"><span class="nav-number">3.</span> <span class="nav-text"> id与class类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#id选择器"><span class="nav-number">3.1.</span> <span class="nav-text"> id选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#class选择器"><span class="nav-number">3.2.</span> <span class="nav-text"> class选择器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#html中设置css样式的多种选择器"><span class="nav-number">4.</span> <span class="nav-text"> HTML中设置CSS样式的多种选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#id选择器id-selectoris"><span class="nav-number">4.1.</span> <span class="nav-text"> ID选择器（ID selector，IS）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类选择器class-selectorcs"><span class="nav-number">4.2.</span> <span class="nav-text"> 类选择器（class selector，CS）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元素选择器element-selectores又叫标签选择器"><span class="nav-number">4.3.</span> <span class="nav-text"> 元素选择器（element selector，ES）又叫标签选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包含选择器package-selectorps"><span class="nav-number">4.4.</span> <span class="nav-text"> 包含选择器（package selector，PS）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css创建插入样式表的三种方法"><span class="nav-number">5.</span> <span class="nav-text"> CSS创建：插入样式表的三种方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#外部样式表external-style-sheet"><span class="nav-number">5.1.</span> <span class="nav-text"> 外部样式表(External style sheet)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内部样式表internal-style-sheet"><span class="nav-number">5.2.</span> <span class="nav-text"> 内部样式表(Internal style sheet)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联样式inline-style"><span class="nav-number">5.3.</span> <span class="nav-text"> 内联样式(Inline style)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重样式"><span class="nav-number">5.4.</span> <span class="nav-text"> 多重样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重样式优先级"><span class="nav-number">5.5.</span> <span class="nav-text"> 多重样式优先级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">6.</span> <span class="nav-text"> 背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#background-size背景尺寸"><span class="nav-number">6.1.</span> <span class="nav-text"> background-size背景尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-color背景颜色"><span class="nav-number">6.2.</span> <span class="nav-text"> background-color背景颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-image背景图像"><span class="nav-number">6.3.</span> <span class="nav-text"> background-image背景图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-repeat平铺"><span class="nav-number">6.4.</span> <span class="nav-text"> background-repeat平铺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-attachment固定or滚动"><span class="nav-number">6.5.</span> <span class="nav-text"> background-attachment固定or滚动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-position图片位置"><span class="nav-number">6.6.</span> <span class="nav-text"> background-position图片位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background简写背景属性到一个声明中"><span class="nav-number">6.7.</span> <span class="nav-text"> background简写背景属性到一个声明中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本"><span class="nav-number">7.</span> <span class="nav-text"> 文本</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#white-space元素中空白的处理方式"><span class="nav-number">7.1.</span> <span class="nav-text"> white-space元素中空白的处理方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-align对齐元素中的文本"><span class="nav-number">7.2.</span> <span class="nav-text"> text-align对齐元素中的文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#direction文本方向"><span class="nav-number">7.3.</span> <span class="nav-text"> direction文本方向</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-decorations向文本添加修饰"><span class="nav-number">7.4.</span> <span class="nav-text"> text-decorations向文本添加修饰</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vertical-align元素的垂直对齐"><span class="nav-number">7.5.</span> <span class="nav-text"> vertical-align元素的垂直对齐</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字体"><span class="nav-number">8.</span> <span class="nav-text"> 字体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#所有css字体属性"><span class="nav-number">8.1.</span> <span class="nav-text"> 所有CSS字体属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#链接样式"><span class="nav-number">9.</span> <span class="nav-text"> 链接样式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#四个链接状态"><span class="nav-number">9.1.</span> <span class="nav-text"> 四个链接状态</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表项所有的css列表属性"><span class="nav-number">10.</span> <span class="nav-text"> 列表项:所有的CSS列表属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#list-style-image设定列表项标志的图像"><span class="nav-number">10.1.</span> <span class="nav-text"> list-style-image设定列表项标志的图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#list-style-position属性"><span class="nav-number">10.2.</span> <span class="nav-text"> list-style-position属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#list-style-type列表项标志类型"><span class="nav-number">10.3.</span> <span class="nav-text"> list-style-type列表项标志类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#边框"><span class="nav-number">11.</span> <span class="nav-text"> 边框</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#border-style边框样式"><span class="nav-number">11.1.</span> <span class="nav-text"> border-style边框样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#border-width边框宽度"><span class="nav-number">11.2.</span> <span class="nav-text"> border-width边框宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#border-color边框颜色"><span class="nav-number">11.3.</span> <span class="nav-text"> border-color边框颜色</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表格边框border属性"><span class="nav-number">12.</span> <span class="nav-text"> 表格边框border属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#border-collapse折叠边框"><span class="nav-number">12.1.</span> <span class="nav-text"> border-collapse折叠边框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#width和height表格宽度和高度"><span class="nav-number">12.2.</span> <span class="nav-text"> Width和height表格宽度和高度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-align表格文字对齐"><span class="nav-number">12.3.</span> <span class="nav-text"> text-align表格文字对齐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#padding表格填充"><span class="nav-number">12.4.</span> <span class="nav-text"> padding表格填充</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格边框-文本-背景颜色"><span class="nav-number">12.5.</span> <span class="nav-text"> 表格边框、文本、背景颜色</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#box-model盒子模型"><span class="nav-number">13.</span> <span class="nav-text"> Box Model盒子模型</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">CSS基础简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#css与html"><span class="nav-number">1.1.</span> <span class="nav-text">¶CSS与HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css规则由选择器-声明组成"><span class="nav-number">1.2.</span> <span class="nav-text">¶CSS规则由选择器+声明组成</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">id与class类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#id选择器"><span class="nav-number">3.1.</span> <span class="nav-text">¶id选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#class选择器"><span class="nav-number">3.2.</span> <span class="nav-text">¶class选择器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">HTML中设置CSS样式的多种选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#id选择器-id-selector-is"><span class="nav-number">4.1.</span> <span class="nav-text">¶ID选择器（ID selector，IS）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类选择器-class-selector-cs"><span class="nav-number">4.2.</span> <span class="nav-text">¶类选择器（class selector，CS）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元素选择器-element-selector-es-又叫标签选择器"><span class="nav-number">4.3.</span> <span class="nav-text">¶元素选择器（element selector，ES）又叫标签选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包含选择器-package-selector-ps"><span class="nav-number">4.4.</span> <span class="nav-text">¶包含选择器（package selector，PS）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">CSS创建：插入样式表的三种方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#外部样式表-external-style-sheet"><span class="nav-number">5.1.</span> <span class="nav-text">¶外部样式表(External style sheet)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内部样式表-internal-style-sheet"><span class="nav-number">5.2.</span> <span class="nav-text">¶内部样式表(Internal style sheet)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联样式-inline-style"><span class="nav-number">5.3.</span> <span class="nav-text">¶内联样式(Inline style)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重样式"><span class="nav-number">5.4.</span> <span class="nav-text">¶多重样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重样式优先级"><span class="nav-number">5.5.</span> <span class="nav-text">¶多重样式优先级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#background-size背景尺寸"><span class="nav-number">6.1.</span> <span class="nav-text">¶background-size背景尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-color背景颜色"><span class="nav-number">6.2.</span> <span class="nav-text">¶background-color背景颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-image背景图像"><span class="nav-number">6.3.</span> <span class="nav-text">¶background-image背景图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-repeat平铺"><span class="nav-number">6.4.</span> <span class="nav-text">¶background-repeat平铺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-attachment固定or滚动"><span class="nav-number">6.5.</span> <span class="nav-text">¶background-attachment固定or滚动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-position图片位置"><span class="nav-number">6.6.</span> <span class="nav-text">¶background-position图片位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background简写背景属性到一个声明中"><span class="nav-number">6.7.</span> <span class="nav-text">¶background简写背景属性到一个声明中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">文本</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#white-space元素中空白的处理方式"><span class="nav-number">7.1.</span> <span class="nav-text">¶white-space元素中空白的处理方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-align对齐元素中的文本"><span class="nav-number">7.2.</span> <span class="nav-text">¶text-align对齐元素中的文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#direction文本方向"><span class="nav-number">7.3.</span> <span class="nav-text">¶direction文本方向</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-decorations向文本添加修饰"><span class="nav-number">7.4.</span> <span class="nav-text">¶text-decorations向文本添加修饰</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vertical-align元素的垂直对齐"><span class="nav-number">7.5.</span> <span class="nav-text">¶vertical-align元素的垂直对齐</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">8.</span> <span class="nav-text">字体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#所有css字体属性"><span class="nav-number">8.1.</span> <span class="nav-text">¶所有CSS字体属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">9.</span> <span class="nav-text">链接样式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#四个链接状态"><span class="nav-number">9.1.</span> <span class="nav-text">¶四个链接状态</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">10.</span> <span class="nav-text">列表项:所有的CSS列表属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#list-style-image设定列表项标志的图像"><span class="nav-number">10.1.</span> <span class="nav-text">¶list-style-image设定列表项标志的图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#list-style-position属性"><span class="nav-number">10.2.</span> <span class="nav-text">¶list-style-position属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#list-style-type列表项标志类型"><span class="nav-number">10.3.</span> <span class="nav-text">¶list-style-type列表项标志类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">11.</span> <span class="nav-text">边框</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#border-style边框样式"><span class="nav-number">11.1.</span> <span class="nav-text">¶border-style边框样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#border-width边框宽度"><span class="nav-number">11.2.</span> <span class="nav-text">¶border-width边框宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#border-color边框颜色"><span class="nav-number">11.3.</span> <span class="nav-text">¶border-color边框颜色</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">12.</span> <span class="nav-text">表格边框border属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#border-collapse折叠边框"><span class="nav-number">12.1.</span> <span class="nav-text">¶border-collapse折叠边框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#width和height表格宽度和高度"><span class="nav-number">12.2.</span> <span class="nav-text">¶Width和height表格宽度和高度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-align表格文字对齐"><span class="nav-number">12.3.</span> <span class="nav-text">¶text-align表格文字对齐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#padding表格填充"><span class="nav-number">12.4.</span> <span class="nav-text">¶padding表格填充</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格边框-文本-背景颜色"><span class="nav-number">12.5.</span> <span class="nav-text">¶表格边框、文本、背景颜色</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">13.</span> <span class="nav-text">Box Model盒子模型</span></a></li></ol></div>
             
 
           </div>
@@ -2147,7 +2107,7 @@ var ap = new APlayer({
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('1');
+                  var upperBound = parseInt('-1');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }

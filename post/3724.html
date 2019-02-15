@@ -152,7 +152,7 @@
 <meta name="keywords" content="keyword1,keyword2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用HEXO打造更个性化的个人博客（四）">
-<meta property="og:url" content="http://yoursite.com/post/3724.html">
+<meta property="og:url" content="http://myoumeng.github.io/post/3724.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
 <meta property="og:description" content="description">
 <meta property="og:locale" content="zh-CN">
@@ -171,7 +171,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/post/3724.html">
+  <link rel="canonical" href="http://myoumeng.github.io/post/3724.html">
 
 
 
@@ -481,7 +481,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/3724.html">
+    <link itemprop="mainEntityOfPage" href="http://myoumeng.github.io/post/3724.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="欧萌">
@@ -601,7 +601,7 @@
 <li>[ ] 文章阅读后评分</li>
 </ul>
 <p><i class="fa fa-check fa-1x  fa-fw"></i> 侧栏加音乐</p>
-<h1 id="折叠功能"><a class="markdownIt-Anchor" href="#折叠功能"></a> 折叠功能</h1>
+<h1>折叠功能</h1>
 <p>有大段的东西想要放上去，但又不想占据大量的位置。折叠是最好的选择。<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
 <p>(其实也可以用tabs功能，请看：)<br>
 下面在Hexo的主题上定制添加折叠功能。<br>
@@ -615,8 +615,8 @@ next主题的主要js位于<code>themes/next/source/js/src/post-details.js</code
 <figure class="highlight html"><figcaption><span>位置themes/next/source/css/_custom/custom.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">.hider_title&#123;</span><br><span class="line">    font-family: "Microsoft Yahei";</span><br><span class="line">    cursor: pointer;</span><br><span class="line">&#125;</span><br><span class="line">.close:after&#123;</span><br><span class="line">    content: "▼";</span><br><span class="line">&#125;</span><br><span class="line">.open:after&#123;</span><br><span class="line">    content: "▲";</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用方法：在我们需要折叠的地方前后添加便签，示例用法：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% fold 点击显/隐内容 %&#125;</span><br><span class="line">something you want to fold, include code block.</span><br><span class="line">&#123;% endfold %&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="分类和标签界面显示年份"><a class="markdownIt-Anchor" href="#分类和标签界面显示年份"></a> 分类和标签界面显示年份</h1>
-<h2 id="修改分类年份"><a class="markdownIt-Anchor" href="#修改分类年份"></a> 修改分类年份</h2>
+<h1>分类和标签界面显示年份</h1>
+<h2 id="修改分类年份"><a class="header-anchor" href="#修改分类年份">¶</a>修改分类年份</h2>
 <p>打开　<code>\themes\next\layout\category.swig</code></p>
 <p>查找</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for post in page.posts %&#125;</span><br><span class="line">  &#123;&#123; post_template.render(post) &#125;&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
@@ -624,7 +624,7 @@ next主题的主要js位于<code>themes/next/source/js/src/post-details.js</code
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for post in page.posts %&#125;</span><br><span class="line">  &#123;# Show year #&#125;</span><br><span class="line">  &#123;% set year %&#125;</span><br><span class="line">  &#123;% set post.year = date(post.date, &apos;YYYY&apos;) %&#125;</span><br><span class="line">  &#123;% if post.year !== year %&#125;</span><br><span class="line">    &#123;% set year = post.year %&#125;</span><br><span class="line">    &lt;div class=&quot;collection-title&quot;&gt;</span><br><span class="line">      &lt;h2 class=&quot;archive-year motion-element&quot; id=&quot;archive-year-&#123;&#123; year &#125;&#125;&quot;&gt;&#123;&#123; year &#125;&#125;&lt;/h2&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">  &#123;# endshow #&#125;</span><br><span class="line">  &#123;&#123; post_template.render(post) &#125;&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
 <p>添加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block script_extra %&#125;</span><br><span class="line">  &#123;% if theme.use_motion %&#125;</span><br><span class="line">    &lt;script type=&quot;text/javascript&quot; id=&quot;motion.page.archive&quot;&gt;</span><br><span class="line">      $(&apos;.archive-year&apos;).velocity(&apos;transition.slideLeftIn&apos;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="修改标签年份"><a class="markdownIt-Anchor" href="#修改标签年份"></a> 修改标签年份</h2>
+<h2 id="修改标签年份"><a class="header-anchor" href="#修改标签年份">¶</a>修改标签年份</h2>
 <p>打开<code>\themes\next\layout\tag.swig</code><br>
 查找:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for post in page.posts %&#125;</span><br><span class="line">  &#123;&#123; post_template.render(post) &#125;&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
@@ -632,19 +632,19 @@ next主题的主要js位于<code>themes/next/source/js/src/post-details.js</code
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for post in page.posts %&#125;</span><br><span class="line">  &#123;# Show year #&#125;</span><br><span class="line">  &#123;% set year %&#125;</span><br><span class="line">  &#123;% set post.year = date(post.date, &apos;YYYY&apos;) %&#125;</span><br><span class="line">  &#123;% if post.year !== year %&#125;</span><br><span class="line">    &#123;% set year = post.year %&#125;</span><br><span class="line">    &lt;div class=&quot;collection-title&quot;&gt;</span><br><span class="line">      &lt;h2 class=&quot;archive-year motion-element&quot; id=&quot;archive-year-&#123;&#123; year &#125;&#125;&quot;&gt;&#123;&#123; year &#125;&#125;&lt;/h2&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">  &#123;# endshow #&#125;</span><br><span class="line">  &#123;&#123; post_template.render(post) &#125;&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
 <p>添加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block script_extra %&#125;</span><br><span class="line">  &#123;% if theme.use_motion %&#125;</span><br><span class="line">    &lt;script type=&quot;text/javascript&quot; id=&quot;motion.page.archive&quot;&gt;</span><br><span class="line">      $(&apos;.archive-year&apos;).velocity(&apos;transition.slideLeftIn&apos;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="修改分类标签层级显示"><a class="markdownIt-Anchor" href="#修改分类标签层级显示"></a> 修改分类&amp;标签层级显示</h1>
-<h2 id="分类层级"><a class="markdownIt-Anchor" href="#分类层级"></a> 分类层级</h2>
+<h1>修改分类&amp;标签层级显示</h1>
+<h2 id="分类层级"><a class="header-anchor" href="#分类层级">¶</a>分类层级</h2>
 <p>在<code>\themes\next\layout\_macro\post.swig</code>查找<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>：</p>
 <p>将其改为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; __(&apos;&gt;&apos;) &#125;&#125;</span><br></pre></td></tr></table></figure>
 <p>则显示如下：</p>
-<p><img src="https://i.loli.net/2017/07/30/597d6dbc4eea8.png" alt="分类于：xx&gt;&gt;xx"></p>
-<h2 id="标签层级"><a class="markdownIt-Anchor" href="#标签层级"></a> 标签层级</h2>
+<p><img src="https://i.loli.net/2017/07/30/597d6dbc4eea8.png" alt="分类于：xx&amp;gt;&amp;gt;xx"></p>
+<h2 id="标签层级"><a class="header-anchor" href="#标签层级">¶</a>标签层级</h2>
 <p>在<code>\themes\next\source\css\_custom\custom.styl</code>中添加:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.category-list ul</span><br><span class="line">    list-style none</span><br><span class="line">    li:before</span><br><span class="line">      content &apos;&gt;&gt; &apos;</span><br></pre></td></tr></table></figure>
 <p>则显示如下：<br>
 <img src="https://i.loli.net/2017/07/30/597d6dbc2d9ed.png" alt=""></p>
-<h2 id="侧栏加音乐aplayer"><a class="markdownIt-Anchor" href="#侧栏加音乐aplayer"></a> 侧栏加音乐「aplayer」</h2>
+<h2 id="侧栏加音乐-aplayer"><a class="header-anchor" href="#侧栏加音乐-aplayer">¶</a>侧栏加音乐「aplayer」</h2>
 <p><span class="exturl" data-url="aHR0cHM6Ly9xaWFubGluZy5wdy9oZXhvLW9wdGltaXphdGlvbi8jMjMtJUU0JUJFJUE3JUU4JUJFJUI5JUU2JUEwJThGJUU2JUI3JUJCJUU1JThBJUEwLUFQbGF5ZXI=" title="https://qianling.pw/hexo-optimization/#23-%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%B7%BB%E5%8A%A0-APlayer">https://qianling.pw/hexo-optimization/#23-侧边栏添加-APlayer<i class="fa fa-external-link"></i></span></p>
 <p>打开　<code>\themes\next\source\js\src\custom\</code></p>
 <p>放置　<code>APlayer.min.js</code><br>
@@ -933,7 +933,7 @@ next主题的主要js位于<code>themes/next/source/js/src/post-details.js</code
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <span class="exturl" data-url="aHR0cHM6Ly9teW91bWVuZy5naXRodWIuaW8vYWJvdXQv" title="https://myoumeng.github.io/about/">about me</span>
+                    <a href="https://myoumeng.github.io/about/" title="https://myoumeng.github.io/about/">about me</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
@@ -993,7 +993,7 @@ var ap = new APlayer({
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#折叠功能"><span class="nav-number">1.</span> <span class="nav-text"> 折叠功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分类和标签界面显示年份"><span class="nav-number">2.</span> <span class="nav-text"> 分类和标签界面显示年份</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改分类年份"><span class="nav-number">2.1.</span> <span class="nav-text"> 修改分类年份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改标签年份"><span class="nav-number">2.2.</span> <span class="nav-text"> 修改标签年份</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改分类标签层级显示"><span class="nav-number">3.</span> <span class="nav-text"> 修改分类&amp;标签层级显示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类层级"><span class="nav-number">3.1.</span> <span class="nav-text"> 分类层级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签层级"><span class="nav-number">3.2.</span> <span class="nav-text"> 标签层级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧栏加音乐aplayer"><span class="nav-number">3.3.</span> <span class="nav-text"> 侧栏加音乐「aplayer」</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">折叠功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">分类和标签界面显示年份</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改分类年份"><span class="nav-number">2.1.</span> <span class="nav-text">¶修改分类年份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改标签年份"><span class="nav-number">2.2.</span> <span class="nav-text">¶修改标签年份</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">修改分类&amp;标签层级显示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类层级"><span class="nav-number">3.1.</span> <span class="nav-text">¶分类层级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签层级"><span class="nav-number">3.2.</span> <span class="nav-text">¶标签层级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧栏加音乐-aplayer"><span class="nav-number">3.3.</span> <span class="nav-text">¶侧栏加音乐「aplayer」</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1385,7 +1385,7 @@ var ap = new APlayer({
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('1');
+                  var upperBound = parseInt('-1');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }
