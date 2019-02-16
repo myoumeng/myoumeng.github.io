@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<!--自己加的fontawesome--> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/oumeng10.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/oumeng10.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/oumeng10.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/oumeng10.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.0.0',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起~所以，学习css，就这样持续到了第四章~ 第三章里面，我们主要学了伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。接下来要讲属性选择器、边框、背景、渐变、文本效果、过渡。">
+<meta name="keywords" content="学习笔记,CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习CSS自定义样式，让博客焕然一新（四）">
+<meta property="og:url" content="http://myoumeng.github.io/post/39396.html">
+<meta property="og:site_name" content="彼岸遇见欧萌">
+<meta property="og:description" content="咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起~所以，学习css，就这样持续到了第四章~ 第三章里面，我们主要学了伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。接下来要讲属性选择器、边框、背景、渐变、文本效果、过渡。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://www.runoob.com/wp-content/uploads/2014/07/7B0CC41A-86DC-4E1B-8A69-A410E6764B91.jpg">
+<meta property="og:updated_time" content="2019-02-15T11:58:02.313Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习CSS自定义样式，让博客焕然一新（四）">
+<meta name="twitter:description" content="咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起~所以，学习css，就这样持续到了第四章~ 第三章里面，我们主要学了伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。接下来要讲属性选择器、边框、背景、渐变、文本效果、过渡。">
+<meta name="twitter:image" content="http://www.runoob.com/wp-content/uploads/2014/07/7B0CC41A-86DC-4E1B-8A69-A410E6764B91.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="彼岸遇见欧萌" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://myoumeng.github.io/post/39396.html">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>学习CSS自定义样式，让博客焕然一新（四） | 彼岸遇见欧萌</title>
+  
+
+
+
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2bb2f1c6f463de49c618e36ade1bc2c4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">彼岸遇见欧萌</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">有感性很理性，谈理想有信念，会思考也胡闹，忆过去看未来，在宇宙化尘埃</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-machine">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/machine/" rel="section"><i class="menu-item-icon fa fa-fw fa-question"></i> <br>Machine</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-game">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/game/" rel="section"><i class="menu-item-icon fa fa-fw fa-game"></i> <br>游戏</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-note">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/note/" rel="section"><i class="menu-item-icon fa fa-fw fa-writing"></i> <br>随笔</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-curiosity">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>好奇心</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-ranking">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>阅读热度</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://myoumeng.github.io/post/39396.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="欧萌">
+      <meta itemprop="description" content="胡思乱想与胡言乱语<br>爱闹爱玩爱吃也爱学">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="彼岸遇见欧萌">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">学习CSS自定义样式，让博客焕然一新（四）
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-01 12:49:11" itemprop="dateCreated datePublished" datetime="2019-02-01T12:49:11+08:00">2019-02-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-15 19:58:02" itemprop="dateModified" datetime="2019-02-15T19:58:02+08:00">2019-02-15</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/语言语法/" itemprop="url" rel="index"><span itemprop="name">语言语法</span></a></span>
+
+                
+                
+                  >
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/语言语法/css/" itemprop="url" rel="index"><span itemprop="name">css</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center"><p>咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起~所以，学习css，就这样持续到了第四章~</p>
+<p>第三章里面，我们主要学了伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。<br>接下来要讲属性选择器、边框、背景、渐变、文本效果、过渡。</p>
+</blockquote>
+<a id="more"></a>
+<div class="note info">
+            <p>友情提示：我的博客页面右下方的汉堡<i class="fa fa-bars"></i>图标，点击后会有目录大纲出来哦！让你看文更高效！😋</p>
+          </div>
+<h1 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h1><p>具有特定属性的HTML元素样式<br>具有特定属性的HTML元素样式不仅仅是class和id。</p>
+<p>注意：IE7和IE8需声明!DOCTYPE才支持属性选择器！IE6和更低的版本不支持属性选择器。</p>
+<h2 id="属性选择器-1"><a href="#属性选择器-1" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>下面的例子是把包含标题（title）的所有元素变为蓝色：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[title]</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="属性和值选择器"><a href="#属性和值选择器" class="headerlink" title="属性和值选择器"></a>属性和值选择器</h2><p>下面的实例改变了标题title=’runoob’元素的边框样式:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[title=runoob]</span><br><span class="line">&#123;</span><br><span class="line">    border:5px solid green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="属性和值的选择器-多值"><a href="#属性和值的选择器-多值" class="headerlink" title="属性和值的选择器:多值"></a>属性和值的选择器:多值</h2><p>下面是包含指定值的title属性的元素样式的例子，使用（~）分隔属性和值:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[title~=hello] &#123; color:blue; &#125;</span><br></pre></td></tr></table></figure></p>
+<p>下面是包含指定值的lang属性的元素样式的例子，使用（|）分隔属性和值:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[lang|=en] &#123; color:blue; &#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="表单样式"><a href="#表单样式" class="headerlink" title="表单样式"></a>表单样式</h2><p>属性选择器样式无需使用class或id的形式:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">input[type=&quot;text&quot;]</span><br><span class="line">&#123;</span><br><span class="line">    width:150px;</span><br><span class="line">    display:block;</span><br><span class="line">    margin-bottom:10px;</span><br><span class="line">    background-color:yellow;</span><br><span class="line">&#125;</span><br><span class="line">input[type=&quot;button&quot;]</span><br><span class="line">&#123;</span><br><span class="line">    width:120px;</span><br><span class="line">    margin-left:35px;</span><br><span class="line">    display:block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h1><p>用 CSS3，你可以创建圆角边框，添加阴影框，并作为边界的形象而不使用设计程序，如 Photoshop。</p>
+<p>在本章中，您将了解以下的边框属性：</p>
+<p>border-radius<br>box-shadow<br>border-image</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">border-image</td>
+<td style="text-align:center">设置所有边框图像的速记属性。</td>
+</tr>
+<tr>
+<td style="text-align:center">border-radius</td>
+<td style="text-align:center">一个用于设置所有四个边框- -半径属性的速记属性</td>
+</tr>
+<tr>
+<td style="text-align:center">box-shadow</td>
+<td style="text-align:center">附加一个或多个下拉框的阴影</td>
+</tr>
+</tbody>
+</table>
+<h2 id="border-radius圆角"><a href="#border-radius圆角" class="headerlink" title="border-radius圆角"></a>border-radius圆角</h2><p>在 CSS2 中添加圆角棘手。我们不得不在每个角落使用不同的图像。<br>在 CSS3 中，很容易创建圆角。<br>在 CSS3 中 border-radius 属性被用于创建圆角：</p>
+<p>这是圆角边框！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">在div中添加圆角元素：</span><br><span class="line"></span><br><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">border:2px solid;</span><br><span class="line">border-radius:25px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="box-shadow盒阴影"><a href="#box-shadow盒阴影" class="headerlink" title="box-shadow盒阴影"></a>box-shadow盒阴影</h2><p>CSS3 中的 box-shadow 属性被用来添加阴影:<br>在div中添加box-shadow属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">box-shadow: 10px 10px 5px #888888;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="border-image边界图片"><a href="#border-image边界图片" class="headerlink" title="border-image边界图片"></a>border-image边界图片</h2><p>有了 CSS3 的 border-image 属性，你可以使用图像创建一个边框：</p>
+<p>border-image 属性允许你指定一个图片作为边框！ 用于创建上文边框的原始图像：<br>在 div 中使用图片创建边框:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">border-image:url(border.png) 30 30 round;</span><br><span class="line">-webkit-border-image:url(border.png) 30 30 round; /* Safari 5 and older */</span><br><span class="line">-o-border-image:url(border.png) 30 30 round; /* Opera */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="border-image属性"><a href="#border-image属性" class="headerlink" title="border-image属性"></a>border-image属性</h1><p>默认值:    none 100% 1 0 stretch</p>
+<p>语法<br><code>border-image: source slice width outset repeat|initial|inherit;</code><br>值    |描述<br>:-:|:-:<br>border-image-source    |用于指定要用于绘制边框的图像的位置<br><code>border-image-source: none(没有图像被使用)|image(边框使用图像的路径);</code><br>border-image-slice    |图像边界向内偏移<br>border-image-width    |图像边界的宽度<br>border-image-outset    |用于指定在边框外部绘制 border-image-area 的量<br>border-image-repeat    |用于设置图像边界是否应重复（repeat）、拉伸（stretch）或铺满（round）。</p>
+<h2 id="border-image-slice指定图像的边界向内偏移"><a href="#border-image-slice指定图像的边界向内偏移" class="headerlink" title="border-image-slice指定图像的边界向内偏移"></a>border-image-slice指定图像的边界向内偏移</h2><p>语法<br><code>border-image-slice: number|%|fill;</code></p>
+<p>指定图像的边界向内偏移：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">border-image-source: url(border.png);</span><br><span class="line">border-image-slice: 50% 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>注意: 此属性指定==顶部，右，底部，左边缘==的图像向内偏移，分为九个区域：四个角，四边和中间。<br>图像中间部分将被丢弃（完全透明的处理），除非填写关键字。<br>如果省略第四个数字/百分比，它和第二个相同的。<br>如果也省略了第三个，它和第一个是相同的。<br>如果也省略了第二个，它和第一个是相同的。</p>
+<h2 id="border-image-outset在边框外部绘制"><a href="#border-image-outset在边框外部绘制" class="headerlink" title="border-image-outset在边框外部绘制"></a>border-image-outset在边框外部绘制</h2><p>语法<br><code>border-image-outset: length(设置边框图像与边框（border-image）的距离，默认为0。)|number(代表相应的 border-width 的倍数);</code><br>border-image-outset用于指定在边框外部绘制 <code>border-image-area</code> 的量,包括上下部和左右部分。<br>如果第四个值被省略，它和第二个是相同的。<br>如果也省略了第三个，它和第一个是相同的。<br>如果也省略了第二个，它和第一个是相同的。<br>不允许border-im-outset拥有负值。<br>设置border-img-outset属性：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    border-image-source: url(border.png);</span><br><span class="line">    border-image-outset: 30 30;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="border-image-repeat重复图像的方式"><a href="#border-image-repeat重复图像的方式" class="headerlink" title="border-image-repeat重复图像的方式"></a>border-image-repeat重复图像的方式</h2><p>设置重复图像的方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">    border-image-source: url(border.png);</span><br><span class="line">    border-image-repeat: repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>border-image-repeat 属性用于图像边界是否应重复（repeated）、拉伸（stretched）或铺满（rounded）。</p>
+<p>语法：<br><code>border-image-repeat: stretch（默认值。拉伸图像来填充区域）|repeat（平铺（repeated）图像来填充区域。）|round（类似 repeat 值。如果无法完整平铺所有图像，则对图像进行缩放以适应区域。）|space（类似 repeat 值。如果无法完整平铺所有图像，扩展空间会分布在图像周围）|initial|inherit;</code></p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>CSS3中包含几个新的背景属性，提供更大背景元素控制。</p>
+<p>在本章您将了解以下背景属性：</p>
+<p>background-image<br>background-size<br>background-origin<br>background-clip</p>
+<h2 id="background-image添加背景图片"><a href="#background-image添加背景图片" class="headerlink" title="background-image添加背景图片"></a>background-image添加背景图片</h2><p>CSS3中可以通过background-image属性添加背景图片。</p>
+<p>不同的背景图像和图像用逗号隔开，所有的图片中显示在最顶端的为第一张。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#example1 &#123;</span><br><span class="line">    background-image: url(img_flwr.gif), url(paper.gif);</span><br><span class="line">    background-position: right bottom, left top;</span><br><span class="line">    background-repeat: no-repeat, repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>可以给不同的图片设置多个不同的属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#example1 &#123;</span><br><span class="line">    background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="background-size背景图像的大小"><a href="#background-size背景图像的大小" class="headerlink" title="background-size背景图像的大小"></a>background-size背景图像的大小</h2><p>background-size指定背景图像的大小。CSS3以前，背景图像大小由图像的实际大小决定。</p>
+<p>CSS3中可以指定背景图片，让我们重新在不同的环境中指定背景图片的大小。您可以指定像素或百分比大小。</p>
+<p>你指定的大小是相对于父元素的宽度和高度的百分比的大小。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    background:url(img_flwr.gif);</span><br><span class="line">    background-size:80px 60px;</span><br><span class="line">    background-repeat:no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>伸展背景图像完全填充内容区域：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    background:url(img_flwr.gif);</span><br><span class="line">    background-size:100% 100%;</span><br><span class="line">    background-repeat:no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="background-Origin背景图像的位置区域"><a href="#background-Origin背景图像的位置区域" class="headerlink" title="background-Origin背景图像的位置区域"></a>background-Origin背景图像的位置区域</h2><p>background-Origin属性指定了背景图像的位置区域。</p>
+<p>content-box, padding-box,和 border-box区域内可以放置背景图像。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">在 content-box 中定位背景图片：</span><br><span class="line"></span><br><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    background:url(img_flwr.gif);</span><br><span class="line">    background-repeat:no-repeat;</span><br><span class="line">    background-size:100% 100%;</span><br><span class="line">    background-origin:content-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="多个背景图像"><a href="#多个背景图像" class="headerlink" title="多个背景图像"></a>多个背景图像</h2><p>CSS3 允许你在元素上添加多个背景图像。</p>
+<p>在 body 元素中设置两个背景图像：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">body</span><br><span class="line">&#123;</span><br><span class="line">    background-image:url(img_flwr.gif),url(img_tree.gif);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="background-clip背景剪裁"><a href="#background-clip背景剪裁" class="headerlink" title="background-clip背景剪裁"></a>background-clip背景剪裁</h2><p>CSS3中background-clip背景剪裁属性是从指定位置开始绘制<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#example1 &#123;</span><br><span class="line">    border: 10px dotted black;</span><br><span class="line">    padding: 35px;</span><br><span class="line">    background: yellow;</span><br><span class="line">    background-clip: content-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>语法<br><code>background-clip: border-box(默认值。背景绘制在边框方框内（剪切成边框方框）。)|padding-box(背景绘制在衬距方框内（剪切成衬距方框）。)|content-box(背景绘制在内容方框内（剪切成内容方框）。);</code></p>
+<h1 id="渐变（Gradients）"><a href="#渐变（Gradients）" class="headerlink" title="渐变（Gradients）"></a>渐变（Gradients）</h1><p>CSS3 渐变（gradients）可以让你在两个或多个指定的颜色之间显示平稳的过渡。<br>以前，你必须使用图像来实现这些效果。但是，通过使用 CSS3 渐变（gradients），你可以减少下载的时间和宽带的使用。此外，渐变效果的元素在放大时看起来效果更好，因为渐变（gradient）是由浏览器生成的。<br>CSS3 定义了两种类型的渐变（gradients）：</p>
+<ul>
+<li>线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向</li>
+<li>径向渐变（Radial Gradients）- 由它们的中心定义</li>
+</ul>
+<h2 id="linear-gradient线性渐变"><a href="#linear-gradient线性渐变" class="headerlink" title="linear-gradient线性渐变"></a>linear-gradient线性渐变</h2><p>为了创建一个线性渐变，你必须至少定义两种颜色结点。颜色结点即你想要呈现平稳过渡的颜色。同时，你也可以设置一个起点和一个方向（或一个角度）。<br>语法<br><code>background: linear-gradient(direction, color-stop1, color-stop2, ...);</code></p>
+<h2 id="线性渐变-从上到下（默认情况下）"><a href="#线性渐变-从上到下（默认情况下）" class="headerlink" title="线性渐变-从上到下（默认情况下）"></a>线性渐变-从上到下（默认情况下）</h2><p>从顶部开始的线性渐变。起点是红色，慢慢过渡到蓝色：<br>从上到下的线性渐变：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#grad &#123;</span><br><span class="line">  background: linear-gradient(red, blue); /* 标准的语法 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="线性渐变-从左到右to-right"><a href="#线性渐变-从左到右to-right" class="headerlink" title="线性渐变-从左到右to right"></a>线性渐变-从左到右<code>to right</code></h2><p>下面的实例演示了从左边开始的线性渐变。起点是红色，慢慢过渡到蓝色：从左到右的线性渐变：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#grad &#123;</span><br><span class="line">  background: linear-gradient(to right, red , blue); /* 标准的语法 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="线性渐变-对角to-bottom-right"><a href="#线性渐变-对角to-bottom-right" class="headerlink" title="线性渐变-对角to bottom right"></a>线性渐变-对角<code>to bottom right</code></h2><p>你可以通过指定水平和垂直的起始位置来制作一个对角渐变。<br>从左上角开始（到右下角）的线性渐变。起点是红色，慢慢过渡到蓝色：从左上角到右下角的线性渐变：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#grad &#123;</span><br><span class="line">  background: linear-gradient(to bottom right, red , blue); /* 标准的语法 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="xxdeg使用角度"><a href="#xxdeg使用角度" class="headerlink" title="xxdeg使用角度"></a><code>xxdeg</code>使用角度</h2><p>如果你想要在渐变的方向上做更多的控制，你可以定义一个角度，而不用预定义方向（to bottom、to top、to right、to left、to bottom right，等等）。</p>
+<p>语法<br><code>background: linear-gradient(angle, color-stop1, color-stop2);</code><br>角度是指水平线和渐变线之间的角度，逆时针方向计算。<br>换句话说，<code>0deg</code> 将创建一个<code>从下到上</code>的渐变，<code>90deg</code> 将创建一个<code>从左到右</code>的渐变。</p>
+<p><img src="http://www.runoob.com/wp-content/uploads/2014/07/7B0CC41A-86DC-4E1B-8A69-A410E6764B91.jpg" alt></p>
+<h2 id="xx-使用多个颜色结点"><a href="#xx-使用多个颜色结点" class="headerlink" title="xx%使用多个颜色结点"></a><code>xx%</code>使用多个颜色结点</h2><p>下面的实例演示了如何设置多个颜色结点：<br>带有多个颜色结点的从上到下的线性渐变：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#grad &#123;</span><br><span class="line">  background: linear-gradient(red, green, blue); /* 标准的语法 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>创建一个带有彩虹颜色和文本的线性渐变：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">#grad1 &#123;</span><br><span class="line">    height: 55px;</span><br><span class="line">    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* 标准的语法（必须放在最后） */</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;grad1&quot; style=&quot;text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold&quot;&gt;</span><br><span class="line">渐变背景</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; Internet Explorer 9 及之前的版本不支持渐变。&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="rgba-使用透明度（transparent）"><a href="#rgba-使用透明度（transparent）" class="headerlink" title="rgba()使用透明度（transparent）"></a>rgba()使用透明度（transparent）</h2><p>CSS3 渐变也支持透明度（transparent），可用于创建减弱变淡的效果。</p>
+<p>为了添加透明度，我们使用<code>rgba()</code> 函数来定义颜色结点。<br>rgba() 函数中的最后一个参数可以是从 0 到 1 的值，它定义了颜色的透明度：0 表示完全透明，1 表示完全不透明。</p>
+<p>下面的实例演示了从左边开始的线性渐变。起点是完全透明，慢慢过渡到完全不透明的红色：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">#grad1 &#123;</span><br><span class="line">    height: 200px;</span><br><span class="line">    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* 标准的语法（必须放在最后） */</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h3&gt;线性渐变 - 透明度&lt;/h3&gt;</span><br><span class="line">&lt;p&gt;为了添加透明度，我们使用 rgba() 函数来定义颜色结点。rgba() 函数中的最后一个参数可以是从 0 到 1 的值，它定义了颜色的透明度：0 表示完全透明，1 表示完全不透明。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;grad1&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; Internet Explorer 9 及之前的版本不支持渐变。&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="repeating-linear-gradient-重复的线性渐变"><a href="#repeating-linear-gradient-重复的线性渐变" class="headerlink" title="repeating-linear-gradient()重复的线性渐变"></a>repeating-linear-gradient()重复的线性渐变</h2><p>repeating-linear-gradient() 函数用于重复线性渐变：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#grad &#123;</span><br><span class="line">  background: repeating-linear-gradient(red, yellow 10%, green 20%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="radial-gradient径向渐变"><a href="#radial-gradient径向渐变" class="headerlink" title="radial-gradient径向渐变"></a>radial-gradient径向渐变</h2><p>径向渐变由它的中心定义。</p>
+<p>为了创建一个径向渐变，你也必须至少定义两种颜色结点。颜色结点即你想要呈现平稳过渡的颜色。同时，你也可以指定渐变的中心、形状（圆形或椭圆形）、大小。<br>默认情况下:</p>
+<ul>
+<li>渐变的中心是 center（表示在中心点），</li>
+<li>渐变的形状是 ellipse（表示椭圆形），</li>
+<li>渐变的大小是 farthest-corner（表示到最远的角落）。<br>语法<br><code>background: radial-gradient(center, shape size, start-color, ..., last-color);</code></li>
+</ul>
+<p>径向渐变 - 颜色结点均匀分布（默认情况下）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#grad &#123;</span><br><span class="line">    background: radial-gradient(red, green, blue); /* 标准的语法 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>颜色结点不均匀分布的径向渐变：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#grad &#123;</span><br><span class="line">    background: radial-gradient(red 5%, green 15%, blue 60%); /* 标准的语法 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="shape设置形状"><a href="#shape设置形状" class="headerlink" title="shape设置形状"></a>shape设置形状</h2><p>shape 参数定义了形状。它可以是值 circle 或 ellipse。其中，circle 表示圆形，ellipse 表示椭圆形。默认值是 ellipse。</p>
+<h2 id="size不同尺寸大小关键字的使用"><a href="#size不同尺寸大小关键字的使用" class="headerlink" title="size不同尺寸大小关键字的使用"></a>size不同尺寸大小关键字的使用</h2><p>size 参数定义了渐变的大小。它可以是以下四个值：</p>
+<p>closest-side<br>farthest-side<br>closest-corner<br>farthest-corner</p>
+<h2 id="repeating-radial-gradient-重复的径向渐变"><a href="#repeating-radial-gradient-重复的径向渐变" class="headerlink" title="repeating-radial-gradient()重复的径向渐变"></a>repeating-radial-gradient()重复的径向渐变</h2><p>repeating-radial-gradient() 函数用于重复径向渐变</p>
+<h1 id="文本效果"><a href="#文本效果" class="headerlink" title="文本效果"></a>文本效果</h1><p>CSS3中包含几个新的文本特征。</p>
+<p>在本章中您将了解以下文本属性：</p>
+<p>text-shadow<br>box-shadow<br>text-overflow<br>word-wrap<br>word-break</p>
+<h1 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h1><p>CSS3中，我们为了添加某种效果可以从一种样式转变到另一个的时候，无需使用Flash动画或JavaScript。<br>CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。</p>
+<p>要实现这一点，必须规定两项内容：</p>
+<p>指定要添加效果的CSS属性<br>指定效果的持续时间。<br>应用于宽度属性的过渡效果，时长为 2 秒：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    transition: width 2s;</span><br><span class="line">    -webkit-transition: width 2s; /* Safari */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果未指定的期限，transition将没有任何效果，因为默认值是0。</p>
+<p>指定的CSS属性的值更改时效果会发生变化。一个典型CSS属性的变化是用户鼠标放在一个元素上时：<br>规定当鼠标指针悬浮(:hover)于 <code>&lt;div&gt;</code>元素上时：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">	width:100px;</span><br><span class="line">	height:100px;</span><br><span class="line">	background:red;</span><br><span class="line">	transition:width 2s;</span><br><span class="line">	-webkit-transition:width 2s; /* Safari */</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">div:hover</span><br><span class="line">&#123;</span><br><span class="line">	width:300px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;b&gt;注意：&lt;/b&gt;该实例无法在 Internet Explorer 9 及更早 IE 版本上工作。&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>注意： 当鼠标光标移动到该元素时，它逐渐改变它原有样式</p>
+<h2 id="多项改变"><a href="#多项改变" class="headerlink" title="多项改变"></a>多项改变</h2><p>要添加多个样式的变换效果，添加的属性由逗号分隔：<br>添加了宽度，高度和转换效果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    transition: width 2s, height 2s, transform 2s;</span><br><span class="line">    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="过渡属性"><a href="#过渡属性" class="headerlink" title="过渡属性"></a>过渡属性</h2><p>下表列出了所有的过渡属性:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">transition</td>
+<td style="text-align:center">简写属性，用于在一个属性中设置四个过渡属性。</td>
+</tr>
+<tr>
+<td style="text-align:center">transition-property</td>
+<td style="text-align:center">规定应用过渡的 CSS 属性的名称。</td>
+</tr>
+<tr>
+<td style="text-align:center">transition-duration</td>
+<td style="text-align:center">定义过渡效果花费的时间。默认是 0。</td>
+</tr>
+<tr>
+<td style="text-align:center">transition-timing-function</td>
+<td style="text-align:center">规定过渡效果的时间曲线。默认是 “ease”。</td>
+</tr>
+<tr>
+<td style="text-align:center">transition-delay</td>
+<td style="text-align:center">规定过渡效果何时开始。默认是 0。</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">	width:100px;</span><br><span class="line">	height:100px;</span><br><span class="line">	background:red;</span><br><span class="line">	transition-property:width;</span><br><span class="line">	transition-duration:1s;</span><br><span class="line">	transition-timing-function:linear;</span><br><span class="line">	transition-delay:2s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">div:hover</span><br><span class="line">&#123;</span><br><span class="line">	width:200px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;b&gt;注意：&lt;/b&gt;该实例无法在 Internet Explorer 9 及更早 IE 版本上工作。&lt;/p&gt;</span><br><span class="line">&lt;div&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;鼠标移动到 div 元素上，查看过渡效果。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&lt;b&gt;注意：&lt;/b&gt; 过渡效果需要等待两秒后才开始。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>与上面的例子相同的过渡效果，但是使用了简写的 transition 属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    transition: width 1s linear 2s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+
+        <div>
+          
+          <div style="text-align:center;color: rgba(252,186,211,0.8);font-size:14px;margin:10px 0px">
+          本  文  结  束  咯 <i class="fa fa-star"></i>感  谢  您  的  阅  读
+          </div>
+          
+        </div>
+
+    
+      
+
+
+ <div class="post-body">
+ <div class="note primary">
+  <div class="popular-posts-header">欢迎阅读相关文章哦</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/64348.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（二）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/63269.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（三）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/27430.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（一）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/31045.html" rel="bookmark">学习一种新的语言吧！HTML学习记录笔记（二）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/59711.html" rel="bookmark">学习一种新的语言吧！HTML学习记录笔记（一）</a></div>
+      
+    </li>
+  
+  </ul>
+ </div>
+ </div>
+
+
+    
+
+    
+    
+    
+
+
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习笔记/" rel="tag"><i class="fa fa-tag"></i> 学习笔记</a>
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/9369.html" rel="next" title="天使爱美丽&La valse d'Amélie (Version origin)">
+                <i class="fa fa-chevron-left"></i> 天使爱美丽&La valse d'Amélie (Version origin)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/31045.html" rel="prev" title="学习一种新的语言吧！HTML学习记录笔记（二）">
+                学习一种新的语言吧！HTML学习记录笔记（二） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+
+           <a href="/">
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="欧萌">
+          </a>
+          
+            
+              <p class="site-author-name" itemprop="name">欧萌</p>
+              <p class="site-description motion-element" itemprop="description">胡思乱想与胡言乱语<br>爱闹爱玩爱吃也爱学</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://myoumeng.github.io/about/" title="https://myoumeng.github.io/about/">about me</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/">网易云音乐</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性选择器"><span class="nav-number">1.</span> <span class="nav-text">属性选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#属性选择器-1"><span class="nav-number">1.1.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性和值选择器"><span class="nav-number">1.2.</span> <span class="nav-text">属性和值选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性和值的选择器-多值"><span class="nav-number">1.3.</span> <span class="nav-text">属性和值的选择器:多值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单样式"><span class="nav-number">1.4.</span> <span class="nav-text">表单样式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#边框"><span class="nav-number">2.</span> <span class="nav-text">边框</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#border-radius圆角"><span class="nav-number">2.1.</span> <span class="nav-text">border-radius圆角</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#box-shadow盒阴影"><span class="nav-number">2.2.</span> <span class="nav-text">box-shadow盒阴影</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#border-image边界图片"><span class="nav-number">2.3.</span> <span class="nav-text">border-image边界图片</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#border-image属性"><span class="nav-number">3.</span> <span class="nav-text">border-image属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#border-image-slice指定图像的边界向内偏移"><span class="nav-number">3.1.</span> <span class="nav-text">border-image-slice指定图像的边界向内偏移</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#border-image-outset在边框外部绘制"><span class="nav-number">3.2.</span> <span class="nav-text">border-image-outset在边框外部绘制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#border-image-repeat重复图像的方式"><span class="nav-number">3.3.</span> <span class="nav-text">border-image-repeat重复图像的方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">4.</span> <span class="nav-text">背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#background-image添加背景图片"><span class="nav-number">4.1.</span> <span class="nav-text">background-image添加背景图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-size背景图像的大小"><span class="nav-number">4.2.</span> <span class="nav-text">background-size背景图像的大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-Origin背景图像的位置区域"><span class="nav-number">4.3.</span> <span class="nav-text">background-Origin背景图像的位置区域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多个背景图像"><span class="nav-number">4.4.</span> <span class="nav-text">多个背景图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#background-clip背景剪裁"><span class="nav-number">4.5.</span> <span class="nav-text">background-clip背景剪裁</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#渐变（Gradients）"><span class="nav-number">5.</span> <span class="nav-text">渐变（Gradients）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-gradient线性渐变"><span class="nav-number">5.1.</span> <span class="nav-text">linear-gradient线性渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性渐变-从上到下（默认情况下）"><span class="nav-number">5.2.</span> <span class="nav-text">线性渐变-从上到下（默认情况下）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性渐变-从左到右to-right"><span class="nav-number">5.3.</span> <span class="nav-text">线性渐变-从左到右to right</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性渐变-对角to-bottom-right"><span class="nav-number">5.4.</span> <span class="nav-text">线性渐变-对角to bottom right</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xxdeg使用角度"><span class="nav-number">5.5.</span> <span class="nav-text">xxdeg使用角度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xx-使用多个颜色结点"><span class="nav-number">5.6.</span> <span class="nav-text">xx%使用多个颜色结点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rgba-使用透明度（transparent）"><span class="nav-number">5.7.</span> <span class="nav-text">rgba()使用透明度（transparent）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#repeating-linear-gradient-重复的线性渐变"><span class="nav-number">5.8.</span> <span class="nav-text">repeating-linear-gradient()重复的线性渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#radial-gradient径向渐变"><span class="nav-number">5.9.</span> <span class="nav-text">radial-gradient径向渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shape设置形状"><span class="nav-number">5.10.</span> <span class="nav-text">shape设置形状</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#size不同尺寸大小关键字的使用"><span class="nav-number">5.11.</span> <span class="nav-text">size不同尺寸大小关键字的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#repeating-radial-gradient-重复的径向渐变"><span class="nav-number">5.12.</span> <span class="nav-text">repeating-radial-gradient()重复的径向渐变</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本效果"><span class="nav-number">6.</span> <span class="nav-text">文本效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过渡"><span class="nav-number">7.</span> <span class="nav-text">过渡</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#多项改变"><span class="nav-number">7.1.</span> <span class="nav-text">多项改变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过渡属性"><span class="nav-number">7.2.</span> <span class="nav-text">过渡属性</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019.02.16 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">欧萌</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user-circle"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=7.0.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; 
+      }
+      else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+    
+      flOptions = {};
+      
+        flOptions.iconStyle = "box";
+      
+        flOptions.boxForm = "horizontal";
+      
+        flOptions.position = "middleRight";
+      
+        flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+
+  
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 16279,
+      el: 'wpac-rating',
+      color: 'f79533'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="/js/src/exturl.js?v=7.0.0"></script>
+
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+
+  <!-- 背景  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+  <!-- 鼠标特效  -->
+  <script type="text/javascript" src="/js/src/fuqiangtexiao.js"></script>
+  <script>
+  $("body").backstretch([
+      "http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+      "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+      "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+      "http://pic.bizhi360.com/bbpic/92/6792.jpg",
+      "https://ws4.sinaimg.cn/large/006tNc79gy1g04od3wnk6j31400p076d.jpg",
+      "https://ws1.sinaimg.cn/large/006tNc79gy1g04oe716mvj31hc0u0tmf.jpg",
+      "https://ws1.sinaimg.cn/large/006tNc79gy1g04of03rw8j31hc0u0goq.jpg",
+      "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc1a09154.jpg",
+      "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc169ce59.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g085eqfdoxj31hc0u0hdt.jpg",
+    ], {duration:10000,fade:4000,animateFirst:!0});
+  </script>
+  <!--从上到下依次是：
+  m蓝色美女1："http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+  m2：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+  m3：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+  风景1：http://pic.bizhi360.com/bbpic/92/6792.jpg
+  v字仇杀队1，
+  v2
+  v3
+  x星空1
+  x2
+  x3
+  -->
+  <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
+  <script data-no-instant>InstantClick.init();
+  </script>
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+
+</body>
+</html>
