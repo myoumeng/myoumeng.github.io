@@ -346,8 +346,8 @@
 
         <div>
           {% if not is_index %}
-          <div style="text-align:center;color: rgba(252,186,211,0.8);font-size:14px;margin:10px 0px">
-          本  文  结  束  咯 <i class="fa fa-star"></i>感  谢  您  的  阅  读
+          <div style="text-align:center;color: #ff2e63;font-size:16px;margin:20px 0px;letter-spacing: 4px;">
+          😋本文结束咯 <i class="fa fa-star"></i> 感谢您的阅读🤗
           </div>
           {% endif %}
         </div>

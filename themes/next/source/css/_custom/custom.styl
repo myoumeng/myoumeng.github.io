@@ -151,13 +151,13 @@ a:hover, span.exturl:hover {
     letter-spacing: 10px;
 }
 
-span.exturl:hover {
-    border-bottom: 0px;
-}
+/*span.exturl:hover {
+/*    border-bottom: 0px;
+/*}
 
 /*
 .custom-logo-site-title {
-    background: linear-gradient(to right,#ff2e63,#AA96DA,#facad3);
+    background: linear-gradient(to right,#ef4e7b,#AA96DA,#facad3);
 }
 */
 
@@ -174,11 +174,11 @@ background: transparent;
 // 页面最顶部的横线
 .headband {
     height: 1.5px;
-    background-image: linear-gradient(to right,#ff2e63,#AA96DA,#facad3);
+    background-image: linear-gradient(to right,#ef4e7b,#AA96DA,#facad3);
 }
 // 渐变彩带
 .site-meta {
-    background-image: linear-gradient(to right,#ff2e63,#AA96DA,#facad3);
+    background-image: linear-gradient(to right,#ef4e7b,#AA96DA,#facad3);
     margin: 0px;
     border-bottom: 0px #3901c1 solid;
     padding: 20px 0px 10px 0px;
@@ -197,7 +197,7 @@ background: transparent;
 //首页页眉；博客副标题
 /*
 h1.site-subtitle {
-    background: linear-gradient(to right,#ff2e63,#AA96DA,#facad3);
+    background: linear-gradient(to right,#ef4e7b,#AA96DA,#facad3);
     margin: 0px;
     border-bottom: 0px #3901c1 solid;
     padding: 0px 0px 10px 0px;
@@ -241,7 +241,7 @@ h1.site-subtitle {
 }
 //首页页眉；目录各项，鼠标在上时hover
 .menu-item-active a, .menu .menu-item a:hover, .menu .menu-item span.exturl:hover {
-    color: #FF2E63;
+    color: #ef4e7b;
     font-weight: 900;
 }
 
@@ -407,7 +407,7 @@ font-weight: 600;
 }
 //文章底部，左右↔️文章链接；鼠标待激活
 .post-nav-item a:hover {
-    color: #ff2e63;
+    color: #ef4e7b;
     border-bottom: none;
     font-weight: 900;
     letter-spacing: 2px;
@@ -485,7 +485,7 @@ main-inner #sidebar{
     right: 40px;
     border-radius: 10px;
     padding: 2px 10px;
-    color: #ff2e63;
+    color: #ef4e7b;
     font-weight: 900;
     letter-spacing: 2px;
     background: rgb(255, 255, 255);
@@ -501,14 +501,14 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
 
 //右部文章目录
 .post-toc .nav .active-current > a {
-    color: #ff2e63;
+    color: #ef4e7b;
     font-weight: 900;
 }
 .post-toc .nav .active > a {
-    color: #ff2e63;
-    border-bottom-color: #ff2e63;
+    color: #ef4e7b;
+    border-bottom-color: #ef4e7b;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 16px!important;
     letter-spacing: 2px;
 }
 
@@ -519,30 +519,30 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
     transition-property: all;
     color: #aa96da;
     border-bottom-color: #555;
-    font-size: 16px;
+    font-size: 16px!important;
 }
 .post-toc ol a:hover {
-    color: #ff2e63;
-    border-bottom-color: #ff2e63;
+    color: #ef4e7b;
+    border-bottom-color: #ef4e7b;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 16px!important;
     letter-spacing: 2px;
 }
 
 .post-toc .nav .active-current > a:hover {
-    color: #ff2e63;
+    color: #ef4e7b;
 }
 
 //右边文章、站点概览菜单
 .sidebar-nav .sidebar-nav-active {
-    color: #ff2e63;
-    border-bottom-color: #ff2e63;
+    color: #ef4e7b;
+    border-bottom-color: #ef4e7b;
     font-weight: 900;
     letter-spacing: 3px;
     font-size: 18px;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-    color: #ff2e63;
+    color: #ef4e7b;
 }
 .sidebar-nav li:hover {
     color: #aa96da;
@@ -551,21 +551,68 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
     display: inline-block;
     cursor: pointer;
     border-bottom: 1px solid transparent;
-    font-size: 16px;
+    font-size: 16px!important;
     color: #aa96da;
 }
-.sidebar-nav .sidebar-nav-active {
-    color: #ff2e63;
-    border-bottom-color: #ff2e63;
-    font-weight: 900;
-    letter-spacing: 3px;
-    font-size: 22px;
-}
+
 .sidebar-nav li:hover {
-    color: #ff2e63;
-    font-size: 22px;
+    color: #ef4e7b;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 3px;
+}
+
+//站点概览一大块
+.sidebar-inner {
+    position: relative;
+    padding: 20px 10px;
+    color: #673ab7;
+    text-align: center;
+}
+
+.fa-rss:before {
+    content: "\f09e";
+    color: #ef4e7b;
+}
+.feed-link a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #ef4e7b;
+    border: 2px solid #ef4e7b;
+    border-radius: 5px;
+}
+
+.feed-link a:hover {
+    color: #fff !important;
+    background-image: linear-gradient(90deg,#9796f0 0,#fbc7d4 100%);
+}
+
+.links-of-blogroll-item a, .links-of-blogroll-item span.exturl {
+    max-width: 280px;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #673ab7;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+.sidebar a:hover, .sidebar .exturl:hover {
+    color: #ef4e7b;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.sidebar a{
+    color: #673ab7;
+}
+
+.links-of-blogroll-title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 //右边站点描述
@@ -573,7 +620,7 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
     margin: 5px;
     text-align: center;
     font-size: 16px;
-    color: rgb(255,255,255);
+    color: white;
     letter-spacing: 2px;
 }
 .site-author-image {
@@ -631,9 +678,9 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
 }
 
 .pagination .page-number.current {
-    color: #ff2e63;
+    color: #ef4e7b;
     background: #eaeaea;
-    border-top-color: #ff2e63;
+    border-top-color: #ef4e7b;
 }
 .pagination .prev, .pagination .next, .pagination .page-number {
     border-bottom: 0;
@@ -654,8 +701,8 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
 }
 
 .pagination .prev:hover, .pagination .next:hover, .pagination .page-number:hover {
-    border-top-color: #ff2e63;
-    color: #ff2e63;
+    border-top-color: #ef4e7b;
+    color: #ef4e7b;
 }
 
 //归档页面；时间
@@ -713,7 +760,7 @@ a.post-title-link {
 }
 
 #posts article header h3 a.post-title-link:hover {
-    color: #ff2e63;
+    color: #ef4e7b;
     letter-spacing: 1px;
     font-weight: 900;
 }
@@ -775,7 +822,7 @@ a.post-title-link {
 }
 
 h3.post-title:hover {
-    border-bottom: 3px #ff2e63 solid;
+    border-bottom: 3px #ef4e7b solid;
 }
 
 //归档页面；页面宽度

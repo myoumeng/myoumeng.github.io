@@ -6,14 +6,19 @@ tags:
 categories:
   - 无法阻挡的好奇之心
 keywords: 'Lorem ipsum, 好奇'
-image: 'https://ws4.sinaimg.cn/large/006tNc79gy1fzq093e78jj30wo0lxnpd.jpg'
 abbrlink: 32375
 date: 2019-01-31 19:30:08
+image: 'https://ws4.sinaimg.cn/large/006tNc79gy1fzq093e78jj30wo0lxnpd.jpg'
 ---
 {% cq %}
 "Lorem ipsum"以及后面跟着的一长串英文字母，想必大家都不陌生吧。那你有木有想过，它为何经常会在你面前刷好感度呢？
 {% endcq %}
+
 <!--more-->
+让我为你点一首歌吧！
+φ(≧ω≦\*)♪一直陪着你
+开始静静享受歌曲吧！
+{% meting "454035505" "netease" "song" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#000"%}
 
 什么？你不知道、没见过"Lorem ipsum"?好吧，那下面这几幅图和文字，你总该有些印象了吧？
 
