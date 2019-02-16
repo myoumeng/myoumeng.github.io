@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>彼岸遇见欧萌</title>
+  
+  <subtitle>有感性很理性，谈理想有信念，会思考也胡闹，忆过去看未来，在宇宙化尘埃</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://myoumeng.github.io/"/>
+  <updated>2019-02-16T12:22:52.765Z</updated>
+  <id>http://myoumeng.github.io/</id>
+  
+  <author>
+    <name>欧萌</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://myoumeng.github.io/post/16107.html"/>
+    <id>http://myoumeng.github.io/post/16107.html</id>
+    <published>2019-02-16T02:47:22.829Z</published>
+    <updated>2019-02-16T12:22:52.765Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用HEXO打造更个性化的个人博客4：文章内容折叠功能，鼠标放置后图片放大，分类和标签界面显示年份，十二生肖，分类层级显示，阅读后评分，侧栏加音乐</title>
+    <link href="http://myoumeng.github.io/post/3724.html"/>
+    <id>http://myoumeng.github.io/post/3724.html</id>
+    <published>2019-02-14T02:18:24.000Z</published>
+    <updated>2019-02-16T13:29:25.811Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;第四波攻势来临啦~&lt;br&gt;还是对hexo-next做优化、美化♣️&lt;br&gt;这次我想加入折叠功能、鼠标放置后图片放大、分类和标签界面显示年份、可爱的十二生肖、分类层级显示、文章阅读后评分、侧栏加音乐&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/categories/HEXO/"/>
+    
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/tags/HEXO/"/>
+    
+      <category term="博客" scheme="http://myoumeng.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="个性化" scheme="http://myoumeng.github.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    
+      <category term="插件" scheme="http://myoumeng.github.io/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="NEXT" scheme="http://myoumeng.github.io/tags/NEXT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用atom的snip来创作自定义代码片段，对Markdown也有效哦！</title>
+    <link href="http://myoumeng.github.io/post/40310.html"/>
+    <id>http://myoumeng.github.io/post/40310.html</id>
+    <published>2019-02-13T15:32:07.000Z</published>
+    <updated>2019-02-16T13:08:35.336Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于&lt;span class=&quot;label info&quot;&gt;思考&amp;amp;打字&lt;/span&gt;，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，&lt;del&gt;咳咳我这也不算多好的钢&lt;/del&gt; 🤦‍♀️&lt;br&gt;要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！&lt;br&gt;聪明的人类（及程序员👨‍💻‍）早就想到了这一点！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://myoumeng.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Markdown" scheme="http://myoumeng.github.io/tags/Markdown/"/>
+    
+      <category term="atom" scheme="http://myoumeng.github.io/tags/atom/"/>
+    
+      <category term="snippet" scheme="http://myoumeng.github.io/tags/snippet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo基本知识</title>
+    <link href="http://myoumeng.github.io/post/63321.html"/>
+    <id>http://myoumeng.github.io/post/63321.html</id>
+    <published>2019-02-09T06:33:44.000Z</published>
+    <updated>2019-02-16T13:25:29.346Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;&lt;i class=&quot;fa fa-snowflake fa-spin fa-fw fa-2x&quot;&gt;&lt;/i&gt;&lt;br&gt;要做好next主题，这些内容一定要懂😁&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用HEXO打造更个性化的个人博客3：链接持久化，标签云样式，主题自带样式之文本居中引用、note、lable、tabs、按钮、数字块，网页奔溃搞怪特效，顶部加载条，鼠标点击特效</title>
+    <link href="http://myoumeng.github.io/post/24651.html"/>
+    <id>http://myoumeng.github.io/post/24651.html</id>
+    <published>2019-02-06T08:49:37.000Z</published>
+    <updated>2019-02-16T13:41:34.695Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;总有些意想不到的好看的样式&lt;br&gt;嘻嘻，我就借鉴过来了吖&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/categories/HEXO/"/>
+    
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/tags/HEXO/"/>
+    
+      <category term="博客" scheme="http://myoumeng.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="个性化" scheme="http://myoumeng.github.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    
+      <category term="插件" scheme="http://myoumeng.github.io/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="NEXT" scheme="http://myoumeng.github.io/tags/NEXT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用HEXO打造更个性化的个人博客2：文章结束标记，摘要图片，博客背景图，修改字体，侧栏头像回到首页，添加音乐，添加视频</title>
+    <link href="http://myoumeng.github.io/post/27698.html"/>
+    <id>http://myoumeng.github.io/post/27698.html</id>
+    <published>2019-02-06T08:09:00.000Z</published>
+    <updated>2019-02-16T13:47:15.049Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;我的确花了不少时间在整理自己的博客上，hexo站点的各项配置，更是折腾了我许久，谁让我本身对代码不是很懂呢？全程只能靠自己琢磨、学习，参考了许许多多的教程，有老有新。可是都是混在一起，我也没有太分开，导致自己多次配置出了差错，并且很难修整，天知道，我重新安装hexo以及next主题是否有超过10次了。真是痛苦的经历。&lt;br&gt;还好，最终我获胜了😎&lt;br&gt;这次要介绍与图片、音乐、视频、动效相关的内容哦！&lt;br&gt;期待地搓手手~&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/categories/HEXO/"/>
+    
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/tags/HEXO/"/>
+    
+      <category term="博客" scheme="http://myoumeng.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="个性化" scheme="http://myoumeng.github.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    
+      <category term="插件" scheme="http://myoumeng.github.io/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="NEXT" scheme="http://myoumeng.github.io/tags/NEXT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年最后一天的最后一晚</title>
+    <link href="http://myoumeng.github.io/post/55132.html"/>
+    <id>http://myoumeng.github.io/post/55132.html</id>
+    <published>2019-02-04T14:24:32.000Z</published>
+    <updated>2019-02-16T11:59:22.249Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;新年快乐呀~&lt;br&gt;马上就要跨年了，2018年即将离开，一去不返，希望我们的2019年，会更加幸福、快乐！大家都努力地学习、挣钱、追求多姿多彩的生活！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用HEXO打造更个性化的个人博客1：主要插件</title>
+    <link href="http://myoumeng.github.io/post/64584.html"/>
+    <id>http://myoumeng.github.io/post/64584.html</id>
+    <published>2019-02-01T07:49:29.000Z</published>
+    <updated>2019-02-16T13:11:53.596Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/categories/HEXO/"/>
+    
+    
+      <category term="HEXO" scheme="http://myoumeng.github.io/tags/HEXO/"/>
+    
+      <category term="博客" scheme="http://myoumeng.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="个性化" scheme="http://myoumeng.github.io/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/"/>
+    
+      <category term="插件" scheme="http://myoumeng.github.io/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="NEXT" scheme="http://myoumeng.github.io/tags/NEXT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习一种新的语言吧！HTML学习记录笔记（二）</title>
+    <link href="http://myoumeng.github.io/post/31045.html"/>
+    <id>http://myoumeng.github.io/post/31045.html</id>
+    <published>2019-02-01T07:18:52.000Z</published>
+    <updated>2019-02-16T13:52:12.444Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;主要讲了html标签&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://myoumeng.github.io/categories/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://myoumeng.github.io/tags/HTML/"/>
+    
+      <category term="学习笔记" scheme="http://myoumeng.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习CSS自定义样式，让博客焕然一新（四）</title>
+    <link href="http://myoumeng.github.io/post/39396.html"/>
+    <id>http://myoumeng.github.io/post/39396.html</id>
+    <published>2019-02-01T04:49:11.000Z</published>
+    <updated>2019-02-16T13:52:12.443Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起~所以，学习css，就这样持续到了第四章~&lt;/p&gt;
+&lt;p&gt;第三章里面，我们主要学了伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。&lt;br&gt;接下来要讲属性选择器、边框、背景、渐变、文本效果、过渡。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://myoumeng.github.io/categories/css/"/>
+    
+    
+      <category term="学习笔记" scheme="http://myoumeng.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="CSS" scheme="http://myoumeng.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>天使爱美丽&amp;La valse d&#39;Amélie (Version origin)</title>
+    <link href="http://myoumeng.github.io/post/9369.html"/>
+    <id>http://myoumeng.github.io/post/9369.html</id>
+    <published>2019-02-01T04:31:03.000Z</published>
+    <updated>2019-02-16T14:38:22.503Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNc79gy1fzws8fbnhjj30u00u00zs.jpg&quot; alt=&quot;good&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;&lt;/p&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;我一直记得，大概，是大二的那一节历史课，或是马原课吧，我坐在后几排，在课堂上百无聊赖地拿出了手机刷着&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="uncategorized" scheme="http://myoumeng.github.io/categories/uncategorized/"/>
+    
+    
+      <category term="《天使爱美丽》" scheme="http://myoumeng.github.io/tags/%E3%80%8A%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%E3%80%8B/"/>
+    
+      <category term="电影" scheme="http://myoumeng.github.io/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+      <category term="音乐" scheme="http://myoumeng.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“Lorem ipsum”之谜</title>
+    <link href="http://myoumeng.github.io/post/32375.html"/>
+    <id>http://myoumeng.github.io/post/32375.html</id>
+    <published>2019-01-31T11:30:08.000Z</published>
+    <updated>2019-02-16T12:33:27.790Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;“Lorem ipsum”以及后面跟着的一长串英文字母，想必大家都不陌生吧。那你有木有想过，它为何经常会在你面前刷好感度呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-star fa-1x  fa-fw&quot;&gt;&lt;/i&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="无法阻挡的好奇之心" scheme="http://myoumeng.github.io/categories/%E6%97%A0%E6%B3%95%E9%98%BB%E6%8C%A1%E7%9A%84%E5%A5%BD%E5%A5%87%E4%B9%8B%E5%BF%83/"/>
+    
+    
+      <category term="好奇心爆棚" scheme="http://myoumeng.github.io/tags/%E5%A5%BD%E5%A5%87%E5%BF%83%E7%88%86%E6%A3%9A/"/>
+    
+      <category term="Lorem ipsum" scheme="http://myoumeng.github.io/tags/Lorem-ipsum/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习CSS自定义样式，让博客焕然一新（三）</title>
+    <link href="http://myoumeng.github.io/post/63269.html"/>
+    <id>http://myoumeng.github.io/post/63269.html</id>
+    <published>2019-01-31T04:19:00.000Z</published>
+    <updated>2019-02-15T11:57:50.118Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;没想到啊，CSS内容还是很多~不过，坚持！👊应该这章就可以写完了~基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~&lt;br&gt;继续勤奋学习css吧~&lt;br&gt;在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://myoumeng.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="CSS" scheme="http://myoumeng.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习CSS自定义样式，让博客焕然一新（二）</title>
+    <link href="http://myoumeng.github.io/post/64348.html"/>
+    <id>http://myoumeng.github.io/post/64348.html</id>
+    <published>2019-01-30T12:44:07.000Z</published>
+    <updated>2019-02-13T15:03:24.868Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;前面我们已经学习了CSS的语法、id和class选择器、如何创建及使用、css的背景、文本、字体、链接、列表样式、表格、盒子模型、边框，这些内容实在是丰富。&lt;br&gt;我们要牢记，css就是一个层叠样式表，我们可以利用它来装饰我们的html。所以，使用css的三种方法要熟练。如果不用内联样式或内联样式表，那就要用外联，此时我们就得写一个外部的css文件，还有id、类、元素/标签、包含这4个常见的选择器。&lt;br&gt;想要做出好看的样式？那就继续学习css吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://myoumeng.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="CSS" scheme="http://myoumeng.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习CSS自定义样式，让博客焕然一新（一）</title>
+    <link href="http://myoumeng.github.io/post/27430.html"/>
+    <id>http://myoumeng.github.io/post/27430.html</id>
+    <published>2019-01-28T07:44:07.000Z</published>
+    <updated>2019-02-16T13:52:12.444Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;不得不说，HTML和CSS真是一对好兄弟，我有很多想法，还是得靠他们合作才能实现吧！那我就要继续记笔记咯！&lt;br&gt;搬起小板凳，开始好奇地学习CSS吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://myoumeng.github.io/categories/css/"/>
+    
+    
+      <category term="学习笔记" scheme="http://myoumeng.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="CSS" scheme="http://myoumeng.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>终于...确定了，不想再多折腾页面了，还是好好的写Markdown吧</title>
+    <link href="http://myoumeng.github.io/post/55367.html"/>
+    <id>http://myoumeng.github.io/post/55367.html</id>
+    <published>2019-01-27T14:09:29.000Z</published>
+    <updated>2019-02-06T11:58:02.230Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://www.runoob.com/wp-content/themes/runoob/assets/img/404.jpg&quot; alt=&quot;传说中的404&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="http://myoumeng.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://myoumeng.github.io/tags/hexo/"/>
+    
+      <category term="杂记" scheme="http://myoumeng.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用iPic来配合Markdown完成内容丰富的文档！</title>
+    <link href="http://myoumeng.github.io/post/63512.html"/>
+    <id>http://myoumeng.github.io/post/63512.html</id>
+    <published>2019-01-27T03:19:59.000Z</published>
+    <updated>2019-02-16T13:41:23.594Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;前不久也在折腾Markdown，我发现「图片」这一项对我来说还是比较麻烦的一件事情，于是不停的搜寻着解决方案，果不其然，原来网上有这么多「图床」服务，例如七牛等。&lt;br&gt;可是，却还没有解决我的问题。怎样找到一个免费、方便的工具，让我优雅地玩转Markdown和图片呢？&lt;br&gt;现在我的问题基本上解决啦！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="markdown" scheme="http://myoumeng.github.io/categories/markdown/"/>
+    
+    
+      <category term="Markdown" scheme="http://myoumeng.github.io/tags/Markdown/"/>
+    
+      <category term="iPic" scheme="http://myoumeng.github.io/tags/iPic/"/>
+    
+      <category term="图片" scheme="http://myoumeng.github.io/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="mac软件" scheme="http://myoumeng.github.io/tags/mac%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="图床" scheme="http://myoumeng.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+      <category term="推荐" scheme="http://myoumeng.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习一种新的语言吧！HTML学习记录笔记（一）</title>
+    <link href="http://myoumeng.github.io/post/59711.html"/>
+    <id>http://myoumeng.github.io/post/59711.html</id>
+    <published>2019-01-27T02:25:30.000Z</published>
+    <updated>2019-02-16T13:52:12.446Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;我自从接触电脑后，就经常发现HTML这个神奇的东西出现，但是由于自己没有什么编程基础、非程序员💻，所以一直都没有使劲钻研这种语言，即使很多人说这个很简单…&lt;br&gt;而自从我开始对「博客blog」万分感兴趣后，我就改变了想法，我不愿意面对html时又是一头雾水了！&lt;br&gt;知识改变未来，即使我是代码小白，也是有对编程的好奇之心滴！&lt;br&gt;毕竟，我也是大一学过C++的人。我一定可以掌握html语言并且用它进行编写、改善我的博客等。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://myoumeng.github.io/categories/HTML/"/>
+    
+    
+      <category term="HTML" scheme="http://myoumeng.github.io/tags/HTML/"/>
+    
+      <category term="学习笔记" scheme="http://myoumeng.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo,Next,Markdown...Hello!!!</title>
+    <link href="http://myoumeng.github.io/post/35336.html"/>
+    <id>http://myoumeng.github.io/post/35336.html</id>
+    <published>2019-01-26T09:29:55.000Z</published>
+    <updated>2019-02-16T12:31:11.848Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;你好呀!&lt;br&gt;我花了近1周的时间孕育的小生命。&lt;br&gt;对，就是你&lt;br&gt;&lt;span class=&quot;label default&quot;&gt;彼岸遇见欧萌&lt;/span&gt;博客&lt;br&gt;你终于&lt;br&gt;诞！生！！啦！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://myoumeng.github.io/tags/Hexo/"/>
+    
+      <category term="Next" scheme="http://myoumeng.github.io/tags/Next/"/>
+    
+      <category term="Markdown" scheme="http://myoumeng.github.io/tags/Markdown/"/>
+    
+      <category term="Atom" scheme="http://myoumeng.github.io/tags/Atom/"/>
+    
+  </entry>
+  
+</feed>
