@@ -14,6 +14,7 @@ image: 'https://ws4.sinaimg.cn/large/006tNc79gy1fzq093e78jj30wo0lxnpd.jpg'
 "Lorem ipsum"以及后面跟着的一长串英文字母，想必大家都不陌生吧。那你有木有想过，它为何经常会在你面前刷好感度呢？
 {% endcq %}
 
+<i class="fa fa-star fa-1x  fa-fw"></i>
 <!--more-->
 让我为你点一首歌吧！
 φ(≧ω≦\*)♪一直陪着你
@@ -27,6 +28,7 @@ image: 'https://ws4.sinaimg.cn/large/006tNc79gy1fzq093e78jj30wo0lxnpd.jpg'
 这是ibooks author上模板的前几页：
 ![](https://ws4.sinaimg.cn/large/006tNc79gy1fzq093e78jj30wo0lxnpd.jpg)
 ![](https://ws3.sinaimg.cn/large/006tNc79gy1fzq096nwsfj30wg0lb7fv.jpg)
+
 - Lorem ipsum dolor sit amet
 - Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -22,9 +22,10 @@ date: 2019-02-13 23:32:07
 让我为你点一首歌吧！陪伴你看完这篇文章，或者静静享受歌曲吧！
 
 {% meting "29722582" "netease" "song" "mutex:false" "listmaxheight:340px" "preload:none" "theme:red"%}
-{}
+
 snippet   n. 小片，片段; 不知天高地厚的年轻人;
 我们可以理解为代码片段[^1]。
+
 [^1]: https://www.jianshu.com/p/2ee34d8da142
 
 # snippets.cson中自定义snip

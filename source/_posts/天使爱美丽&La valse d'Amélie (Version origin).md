@@ -6,11 +6,11 @@ tags:
   - 音乐
 categories:
   - uncategorized
-keywords: '天使爱美丽,La valse d, Amélie (Version origin)'
-img: 'https://ws1.sinaimg.cn/large/006tNc79gy1fzws8fbnhjj30u00u00zs.jpg'
+keywords: '天使爱美丽,La valse d,Amélie (Version origin)'
 abbrlink: 9369
 date: 2019-02-01 12:31:03
 ---
+<img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzws8fbnhjj30u00u00zs.jpg" alt="good" width="200" height="200" >
 
 {% cq %}
 我一直记得，大概，是大二的那一节历史课，或是马原课吧，我坐在后几排，在课堂上百无聊赖地拿出了手机刷着

@@ -6,13 +6,19 @@ tags:
   - Markdown
   - mac软件
   - 图床
-img: 'https://ps.toolinbox.net/trluz.png'
+  - 推荐
+categories:
+  - markdown
+image: 'https://ws4.sinaimg.cn/large/006tKfTcgy1g085eqfdoxj31hc0u0hdt.jpg'
 abbrlink: 63512
 date: 2019-01-27 11:19:59
 ---
 
-<p class="description">前不久也在折腾Markdown，我发现「图片」这一项对我来说还是比较麻烦的一件事情，于是不停的搜寻着解决方案，果不其然，原来网上有这么多「图床」服务，例如七牛等。可是，却还没有解决我的问题。怎样找到一个免费、方便的工具，让我优雅地玩转Markdown和图片呢？
-现在我的问题基本上解决啦！</p>
+{% cq %}
+前不久也在折腾Markdown，我发现「图片」这一项对我来说还是比较麻烦的一件事情，于是不停的搜寻着解决方案，果不其然，原来网上有这么多「图床」服务，例如七牛等。
+可是，却还没有解决我的问题。怎样找到一个免费、方便的工具，让我优雅地玩转Markdown和图片呢？
+现在我的问题基本上解决啦！
+{% endcq %}
 <!--more-->
 
 中国的确有很多不错的图床，[参考知乎:国内有什么方便的图床？](https://www.zhihu.com/question/21667151)只是，我的博客还是用的GitHub的静态页面，没有备案，所以，七牛仅有1个月的非备案域名试用，对我来说就相当于一个定时炸弹。
@@ -21,18 +27,18 @@ date: 2019-01-27 11:19:59
 2. 上传图片通常要拖拽
 3. 复制外链
 4. 粘贴到 Markdown
-<div align=center>
+
 啊，这四步，对于我这个懒癌患者，还是不能忍！
 
 接着我就发现了它，
 
 铛铛铛铛，看下方👇
-<div align=center>
+
 <img src="https://ps.toolinbox.net/ro6or.png" alt="good" width="100" height="100" >
-</div>
+
 
 它的详细介绍在此：👉 [iPic - Markdown 图床、文件上传工具](https://toolinbox.net/iPic/)
-</div>
+
 <i class="fa fa-quote-left fa-4x fa-pull-left"></i>有了图床神器 iPic，不论屏幕截图、还是复制图片，都可以自动上传、保存 Markdown 格式的链接，直接粘贴插入，够懒人吧？使用 Hexo | Heroku 或 WordPress 写博客、在公众号发文章、在知乎讨论、在豆瓣灌水、在论坛发帖、跨境做外贸电商 …iPic 带给你从未有过的插图体验。当然，除了图片，你可以上传普通文件，上传方式与图片完全相同。
 
 我目前主要用MacBook Air。iPic的免费版还是够用的，直接上传到免费的图床上，它在Mac上运行的不错呢！

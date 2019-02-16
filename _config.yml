@@ -71,7 +71,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 21
+per_page: 36
 pagination_dir: page
 
 # Extensions
@@ -105,12 +105,17 @@ feed:
   order_by: -date
   icon: /images/oumeng10.png
 
-
 aplayer:
   meting: true
 
 search:
-    path: search.xml
-    field: post
-    format: html
-    limit: 0
+  path: search.xml
+  field: post
+  format: html
+  limit: 0
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
