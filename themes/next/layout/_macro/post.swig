@@ -347,7 +347,7 @@
         <div>
           {% if not is_index %}
           <div style="text-align:center;color: #999;font-size:16px;margin:20px 0px;letter-spacing: 4px;">
-          (oﾟ▽ﾟ)o本文结束咯 <i class="fa fa-star"></i> 感谢您的阅读(/≧▽≦)/
+          本文结束咯(oﾟ▽ﾟ)o感谢您的阅读
           </div>
           {% endif %}
         </div>
@@ -399,6 +399,8 @@
         <div class="post-widgets">
         {% if theme.rating.enable %}
           <div class="wp_rating">
+            <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;看完后(/≧▽≦)/记得五星好评哦&lt;)</div>
+
             <div id="wpac-rating"></div>
           </div>
         {% endif %}

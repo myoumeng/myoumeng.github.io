@@ -4,7 +4,7 @@ tags:
   - 好奇心爆棚
   - Lorem ipsum
 categories:
-  - 无法阻挡的好奇之心
+  - curiosity
 keywords: 'Lorem ipsum, 好奇'
 abbrlink: 32375
 date: 2019-01-31 19:30:08

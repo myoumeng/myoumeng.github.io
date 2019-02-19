@@ -151,21 +151,28 @@ exturl: true
 # External url should start with http:// or https://
 menu:
   home: / || home
-  about: /about/ || user
+  #about: /about/ || user
   #tags: /tags/ || tags
   #categories: /categories/ || th
-  archives: /archives/ || archive
+  #archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
-  machine: /machine/ || question
-  #game: /game/ ||
-  note: /note/ || edit
-  #buy: /buy/ || star
-  #fun: /fun/ || smile
-  #curiosity: /curiosity/ || heart
+  #machine: /machine/ || question
+  #game: /game/ || smile-wink
   ranking: /ranking/ || fire
+  tao: /tags/tao/ || star-half-o
+  note: /tags/note/ || pencil
 
+  #buy: /buy/ || star smile pagelines book-reader grin-squint-tears gem fish
+  study: /tags/study/ || signing
+  curiosity: /tags/curiosity/ || heart
+  travel: /tags/travel/ || globe
+  life: /tags/life/ || rocket
+  novel: /tags/novel/ || female
+  collection: /tags/collection/ || tint
+  fun: /tags/fun/ || smile-o
+  award: /award/ || gift
 # Enable/Disable menu icons / item badges.
 menu_settings:
   icons: true
@@ -186,7 +193,7 @@ scheme: Muse
 # Sidebar Settings
 # ---------------------------------------------------------------
 
-# Posts / Categories / Tags in sidebar.
+# Posts / Categories / categories in sidebar.
 site_state: true
 
 # Social Links
@@ -269,9 +276,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  #display: post
+  display: post
   #display: always
-  display: hide
+  #display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
@@ -588,16 +595,17 @@ valine:
 # Gitment
 # Introduction: https://github.com/imsun/gitment
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github Username
-  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: myoumeng # MUST HAVE, Your Github Username
+  github_repo: comments # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: d7e898c8635f87381a68 # MUST HAVE, Github client id for the Gitment
+  client_secret: 4b67647e16869584daf26389a09984b61e4ba443
+  # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
@@ -795,7 +803,7 @@ local_search:
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
   # show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
+  top_n_per_article: -1
   # unescape html strings to the readable one
   unescape: false
 
@@ -856,19 +864,24 @@ reading_progress:
 # Use velocity to animate everything.
 motion:
   enable: true
-  async: false
+  async: flase
   transition:
     # Transition variants:
     # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
+    #
     # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
+    #
     # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
+    #
     # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
+    #
     # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
+    #
     # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
-    post_block: fadeIn
-    post_header: slideDownIn
-    post_body: slideDownIn
-    coll_header: slideLeftIn
+    post_block: perspectiveLeftIn
+    post_header: fadeIn
+    post_body: fadeIn
+    coll_header: perspectiveLeftIn
     # Only for Pisces | Gemini.
     sidebar: slideUpIn
 

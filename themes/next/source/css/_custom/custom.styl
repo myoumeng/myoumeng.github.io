@@ -83,7 +83,7 @@ img.img-topic {
 //全局；字体颜色,字体大小
 body {
     color: #000;
-    font-size: 16px;
+    font-size: 18px;
 }
 //小黄人：https://ws1.sinaimg.cn/large/006tNc79gy1fzrbkd6w76j30u00u07kv.jpg
 //美女：https://ws2.sinaimg.cn/large/006tNc79gy1fzrbow28q8j30u00u00yz.jpg
@@ -243,8 +243,10 @@ h1.site-subtitle {
     color: #ef4e7b;
     font-weight: 900;
 }
-
-
+//首页页眉目录各项图标对齐
+.menu .menu-item .fa {
+    margin-right: -5px;
+}
 //首页文章卡片；时间、图标、评论等说明
 .posts-expand .post-meta time {
 border-bottom: 0px dashed rgb(0, 0, 0);
@@ -706,12 +708,19 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
 
 //归档页面；时间
 #posts article header div time.post-time{
-    position: fixed;
+    position: absolute;
     font-size: 12px;
-    right: 20px;
-    top: 20px;
+    top: 0px;
     color: #aa96da;
-    margin: 0px 0 0 30px;
+    right: 15px;
+}
+
+.posts-collapse .post-meta{
+position: absolute;
+font-size: 12px;
+right: 20px;
+top: 20px;
+
 }
 
 //归档页面；文章题目
@@ -722,21 +731,6 @@ a.post-title-link {
 #posts article
 {
     margin: 0;
-}
-.posts-collapse .post-header::before {
-    content: " ";
-    position: fixed;
-    left: 0;
-    top: 30px;
-    width: 10px;
-    height: 10px;
-    margin-left: 40px;
-    border-radius: 50%;
-    border: 0px solid #fff;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-    transition-property: background;
 }
 
 .posts-collapse .post-title {
@@ -798,7 +792,7 @@ a.post-title-link {
 
 .posts-collapse .post-header::before {
     content: " ";
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 30px;
     width: 8px;
@@ -1153,4 +1147,17 @@ ul.popular-posts .popular-posts-item {
     font-weight: 900;
     letter-spacing: 2px;
     margin: 0 5px;
+}
+
+//折叠功能
+.hider_title {
+    font-family: inherit;
+    cursor: pointer;
+    background: rgba(252, 186, 211, 0.2);
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-weight: 900;
+    color: #673ab7;
+    text-align: center;
 }

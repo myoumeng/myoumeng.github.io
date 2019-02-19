@@ -1,6 +1,6 @@
 ---
-title: ranking
-comments: false
+title: 蹭一波“热”度
+comments: true
 keywords: top,文章阅读量排行榜
 description: 博客文章阅读量排行榜
 ---
