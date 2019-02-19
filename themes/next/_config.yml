@@ -209,7 +209,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: true
+  icons_only: false
   transition: false
 
 # Follow me on GitHub banner in right-top corner.
@@ -573,7 +573,7 @@ valine:
   app_id: Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz
   app_key: GCYOgHw2hfysPvXPwn7f2gJH
   notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
+  verify: true # Verification code
   placeholder: 目前支持留言了哟！还可以留下你的联系方式呢，要是有回复就可以及时通知你啦 # comment box placeholder
   avatar: wavatar # gravatar style
   guest_info: nick,mail,link # custom comment header

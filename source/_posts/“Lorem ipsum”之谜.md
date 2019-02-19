@@ -8,7 +8,7 @@ categories:
 keywords: 'Lorem ipsum, 好奇'
 abbrlink: 32375
 date: 2019-01-31 19:30:08
-image: 'https://ws4.sinaimg.cn/large/006tNc79gy1fzq093e78jj30wo0lxnpd.jpg'
+image: 'https://ws1.sinaimg.cn/large/006tKfTcgy1g097xrjy7uj30vj0gp4qp.jpg'
 ---
 {% cq %}
 "Lorem ipsum"以及后面跟着的一长串英文字母，想必大家都不陌生吧。那你有木有想过，它为何经常会在你面前刷好感度呢？

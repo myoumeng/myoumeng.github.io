@@ -96,7 +96,7 @@
 
               {% if display_updated or !theme.post_meta.created_at %}
                 {% if theme.post_meta.created_at and theme.post_meta.updated_at.enabled %}
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">·</span>
                 {% endif %}
 
                 <span class="post-meta-item-icon">
@@ -115,7 +115,7 @@
           {% if post.categories and post.categories.length and theme.post_meta.categories %}
             <span class="post-category">
             {% if theme.post_meta.created_at or theme.post_meta.updated_at %}
-              <span class="post-meta-divider">|</span>
+              <span class="post-meta-divider">·</span>
             {% endif %}
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder"></i>
@@ -141,7 +141,7 @@
           {% if post.comments %}
             {% macro comments() %}
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">·</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -193,7 +193,7 @@
           {# LeanCloud PageView #}
           {% if theme.leancloud_visitors.enable or (theme.valine.enable and theme.valine.appid and theme.valine.appkey and theme.valine.visitor) %}
             <span id="{{ url_for(post.path) }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
-              <span class="post-meta-divider">|</span>
+              <span class="post-meta-divider">·</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -205,7 +205,7 @@
           {% endif %}
 
           {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.post_views %}
-            <span class="post-meta-divider">|</span>
+            <span class="post-meta-divider">·</span>
             <span class="post-meta-item-icon"
             {% if not theme.post_meta.item_text %} title="{{ __('post.views') }}" {% endif %}>
             <i class="fa fa-{{ theme.busuanzi_count.post_views_icon }}"></i>
@@ -217,7 +217,7 @@
           {% if config.symbols_count_time.symbols or config.symbols_count_time.time %}
             <div class="post-symbolscount">
               {% if not theme.symbols_count_time.separated_meta %}
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">·</span>
               {% endif %}
 
               {% if config.symbols_count_time.symbols %}
@@ -233,7 +233,7 @@
               {% endif %}
 
               {% if config.symbols_count_time.symbols and config.symbols_count_time.time %}
-                <span class="post-meta-divider">|</span>
+                <span class="post-meta-divider">·</span>
               {% endif %}
 
               {% if config.symbols_count_time.time %}
@@ -346,8 +346,8 @@
 
         <div>
           {% if not is_index %}
-          <div style="text-align:center;color: #ff2e63;font-size:16px;margin:20px 0px;letter-spacing: 4px;">
-          😋本文结束咯 <i class="fa fa-star"></i> 感谢您的阅读🤗
+          <div style="text-align:center;color: #999;font-size:16px;margin:20px 0px;letter-spacing: 4px;">
+          (oﾟ▽ﾟ)o本文结束咯 <i class="fa fa-star"></i> 感谢您的阅读(/≧▽≦)/
           </div>
           {% endif %}
         </div>
@@ -405,7 +405,7 @@
 
         {% if (theme.vkontakte_api.enable and theme.vkontakte_api.like) or (theme.facebook_sdk.enable and theme.facebook_sdk.like_button) %}
           {% if theme.rating.enable %}
-            <span class="post-meta-divider">|</span>
+            <span class="post-meta-divider">·</span>
           {% endif %}
           <div class="social-like">
             {% if theme.vkontakte_api.enable and theme.vkontakte_api.like %}
@@ -424,7 +424,7 @@
 
         {% if (theme.needmoreshare2.enable and theme.needmoreshare2.postbottom.enable) or (theme.baidushare.type === "button") %}
           {% if theme.rating.enable or (theme.vkontakte_api.enable and theme.vkontakte_api.like) or (theme.facebook_sdk.enable and theme.facebook_sdk.like_button) %}
-            <span class="post-meta-divider">|</span>
+            <span class="post-meta-divider">·</span>
           {% endif %}
           <div class="social_share">
             {% if theme.baidushare.type === "button" %}

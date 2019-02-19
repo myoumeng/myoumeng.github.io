@@ -112,7 +112,7 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 0
+  limit: 100000
 
 symbols_count_time:
   symbols: true
