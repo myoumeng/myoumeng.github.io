@@ -579,12 +579,12 @@ valine:
   enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
   app_id: Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz
   app_key: GCYOgHw2hfysPvXPwn7f2gJH
-  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
+  notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: true # Verification code
   placeholder: 目前支持留言了哟！还可以留下你的联系方式呢，要是有回复就可以及时通知你啦 # comment box placeholder
-  avatar: wavatar # gravatar style
+  avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
+  pageSize: 15  # pagination size
   visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
