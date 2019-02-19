@@ -2116,7 +2116,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8e08;
+  background: #8a7fc9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2402,6 +2402,19 @@ pre .javascript .function {
     -o-transform: scale(1.1);
     transform: scale(1.1);
   }
+}
+#gitment-display-button {
+  display: inline-block;
+  padding: 0 15px;
+  color: #0a9caf;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #0a9caf;
+  border-radius: 4px;
+}
+#gitment-display-button:hover {
+  color: #fff;
+  background: #0a9caf;
 }
 .local-search-pop-overlay {
   position: fixed;
@@ -3490,33 +3503,23 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
   color: #ef4e7b;
 }
 #posts article header div time.post-time {
-  position: fixed;
   font-size: 12px;
   right: 20px;
   top: 20px;
   color: #aa96da;
   margin: 0px 0 0 30px;
 }
+.posts-collapse .post-meta {
+  position: absolute;
+  font-size: 12px;
+  right: 20px;
+  top: 20px;
+}
 a.post-title-link {
   padding: 20px 340px 20px 10px;
 }
 #posts article {
   margin: 0;
-}
-.posts-collapse .post-header::before {
-  content: " ";
-  position: fixed;
-  left: 0;
-  top: 30px;
-  width: 10px;
-  height: 10px;
-  margin-left: 40px;
-  border-radius: 50%;
-  border: 0px solid #fff;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  transition-property: background;
 }
 .posts-collapse .post-title {
   font-size: 16px;
@@ -3573,7 +3576,7 @@ a.post-title-link {
 }
 .posts-collapse .post-header::before {
   content: " ";
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 30px;
   width: 8px;
@@ -3680,7 +3683,7 @@ code {
   word-wrap: break-word;
   padding: 2px 4px;
   color: #4051b5;
-  background: rgba(252,186,211,0.4);
+  background: #eee;
   border-radius: 5px;
   font-size: 16px;
 }
