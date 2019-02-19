@@ -128,7 +128,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":"flase","transition":{"post_block":"perspectiveLeftIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"perspectiveLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -228,10 +228,10 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
-<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -546,6 +546,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">·</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/post/27698.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/post/27698.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -822,8 +835,8 @@
 
         <div>
           
-          <div style="text-align:center;color: #ff2e63;font-size:16px;margin:20px 0px;letter-spacing: 4px;">
-          😋本文结束咯 <i class="fa fa-star"></i> 感谢您的阅读🤗
+          <div style="text-align:center;color: #999;font-size:16px;margin:20px 0px;letter-spacing: 4px;">
+          本文结束咯(oﾟ▽ﾟ)o感谢您的阅读
           </div>
           
         </div>
@@ -847,7 +860,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/3724.html" rel="bookmark">用HEXO打造更个性化的个人博客4：文章内容折叠功能，鼠标放置后图片放大，分类和标签界面显示年份，十二生肖，分类层级显示，阅读后评分，侧栏加音乐</a></div>
+      <div class="popular-posts-title"><a href="/post/3724.html" rel="bookmark">用HEXO打造更个性化的个人博客4</a></div>
       
     </li>
   
@@ -932,6 +945,8 @@
         <div class="post-widgets">
         
           <div class="wp_rating">
+            <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;看完后(/≧▽≦)/记得五星好评哦&lt;)</div>
+
             <div id="wpac-rating"></div>
           </div>
         
@@ -982,6 +997,13 @@
           
 
   
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
 
 
 
@@ -1024,7 +1046,7 @@
            <a href="/">
               <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="欧萌">
           </a>
-          
+
             
               <p class="site-author-name" itemprop="name">欧萌</p>
               <p class="site-description motion-element" itemprop="description">胡思乱想与胡言乱语<br>爱闹爱玩爱吃也爱学</p>
@@ -1198,6 +1220,34 @@
                   </li>
                 
               </ul>
+            
+<div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("02/16/2019 00:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
             </div>
           
 
@@ -1205,6 +1255,32 @@
             
           
           
+<div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("02/16/2019 00:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
 
         </div>
       </div>
@@ -1413,6 +1489,47 @@
 
   
 
+
+  
+    <!-- LOCAL: You can save these files to your site and update links -->
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+<!-- END LOCAL -->
+
+<style>
+#gitment-container a {
+  border-bottom: none;
+}
+
+</style>
+
+<script>
+  function renderGitment() {
+    var gitment = new Gitmint({
+      id: window.location.pathname,
+      owner: 'myoumeng',
+      repo: 'https://github.com/myoumeng/blogbackup',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+      
+      oauth: {
+      
+      
+        client_secret: '4b67647e16869584daf26389a09984b61e4ba443',
+      
+        client_id: 'd7e898c8635f87381a68'
+      }
+    });
+    gitment.render('gitment-container');
+  }
+
+  
+    renderGitment();
+  
+</script>
 
   
 
@@ -1628,7 +1745,7 @@
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('1');
+                  var upperBound = parseInt('-1');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }

@@ -33,15 +33,25 @@
   </entry>
   
   <entry>
-    <title>用HEXO打造更个性化的个人博客4：文章内容折叠功能，鼠标放置后图片放大，分类和标签界面显示年份，十二生肖，分类层级显示，阅读后评分，侧栏加音乐</title>
+    <title>用HEXO打造更个性化的个人博客4</title>
     <link href="http://myoumeng.github.io/post/3724.html"/>
     <id>http://myoumeng.github.io/post/3724.html</id>
     <published>2019-02-14T02:18:24.000Z</published>
-    <updated>2019-02-16T13:29:25.811Z</updated>
+    <updated>2019-02-17T02:48:07.465Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;第四波攻势来临啦~&lt;br&gt;还是对hexo-next做优化、美化♣️&lt;br&gt;这次我想加入折叠功能、鼠标放置后图片放大、分类和标签界面显示年份、可爱的十二生肖、分类层级显示、文章阅读后评分、侧栏加音乐&lt;/p&gt;
+&lt;p&gt;Todo list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 折叠功能&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 鼠标放置后图片放大&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 分类和标签界面显示年份&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 年份后显示十二生肖&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 分类&amp;amp;标签层级显示&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 文章阅读后评分&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 侧栏加音乐&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -285,7 +295,7 @@
     <link href="http://myoumeng.github.io/post/32375.html"/>
     <id>http://myoumeng.github.io/post/32375.html</id>
     <published>2019-01-31T11:30:08.000Z</published>
-    <updated>2019-02-16T12:33:27.790Z</updated>
+    <updated>2019-02-17T02:38:06.119Z</updated>
     
     <summary type="html">
     
