@@ -576,7 +576,7 @@ changyan:
 # Install valine
 # npm install valine --save
 valine:
-  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
   app_id: Q15z7u38rTd35u8JVNxW8aR1-gzGzoHsz
   app_key: GCYOgHw2hfysPvXPwn7f2gJH
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
@@ -590,7 +590,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80Mjc3MC8xOTMxNw==
 
 # Gitment
 # Introduction: https://github.com/imsun/gitment
