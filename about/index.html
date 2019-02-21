@@ -158,6 +158,8 @@
 <meta name="twitter:description" content="让我为你点歌吧！٩(๑&amp;gt;◡&amp;lt;๑)۶让歌曲陪伴着你      瞎想我时常觉得生命太脆弱，没有意义。尤其是人类，不知道人这一生走完以后，是否真的…就不再能够“体验”到自己的存在了？人死后，还能够体验吗？那会是什么样的光景？ 如果，“死亡”就是死亡，入土为安后，没有了作为一个人的记忆和思考，那我的这一辈子，真的太珍贵了…… 每一个人都是一个独立的个体。我无法拥有别人的记忆和思考，反之亦然。当">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="彼岸遇见欧萌" type="application/atom+xml">
 
@@ -610,7 +612,7 @@
         
         
           <p>让我为你点歌吧！٩(๑&gt;◡&lt;๑)۶让歌曲陪伴着你<br>
-    <div id="aplayer-zFHJzWeS" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="113655500" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div></p>
+    <div id="aplayer-NXeLdzIP" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="113655500" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div></p>
 <h1 id="瞎想"><a href="#瞎想" class="headerlink" title="瞎想"></a>瞎想</h1><blockquote class="blockquote-center"><p>我时常觉得生命太脆弱，没有意义。<br>尤其是人类，不知道人这一生走完以后，是否真的…<br>就不再能够“体验”到自己的存在了？<br>人死后，还能够体验吗？那会是什么样的光景？</p>
 <p>如果，“死亡”就是死亡，入土为安后，没有了作为一个人的记忆和思考，那我的这一辈子，真的太珍贵了……</p>
 <p>每一个人都是一个独立的个体。<br>我无法拥有别人的记忆和思考，反之亦然。<br>当我死去，或者未曾在世，没有我的世界依旧转动吧？</p>
@@ -641,9 +643,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Mjc3MC8xOTMxNw=="></div>
     </div>
 
   
@@ -1172,44 +1172,18 @@ show_date_time();
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
-
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
-
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
-
-</style>
-
-<script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: 'myoumeng',
-      repo: 'comments',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '4b67647e16869584daf26389a09984b61e4ba443',
-      
-        client_id: 'd7e898c8635f87381a68'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+    <script>
+  window.livereOptions = {
+    refer: 'about/index.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
 </script>
 
   

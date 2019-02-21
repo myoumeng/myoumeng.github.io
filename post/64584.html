@@ -717,7 +717,7 @@
 <p>我很喜欢这样的想法，所以才会那么认真的对待我的家🏠，耗费许多心血、精力、时间，去完善它。</p>
 <p>相信，它不会让我失望的。</p>
 <p>让我为你点一首歌吧！<br>♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-IEcsNzkr" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="37653063" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+    <div id="aplayer-IxWnbkVb" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="37653063" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <p>可以看到，我目前用的next主题是v6.7.0，也许以后还会换，目前就记下我常用的一些装点方法吧！如果也对你有用，那就更好了。</p>
 <p>此文主要记录一下我使用的插件</p>
 <p>next有些功能是需要安装插件的，所以，还是要看懂英文注释，然后去相应的网站下载即可。</p>
@@ -965,9 +965,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Mjc3MC8xOTMxNw=="></div>
     </div>
 
   
@@ -1496,44 +1494,18 @@ show_date_time();
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
-
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
-
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
-
-</style>
-
-<script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: 'myoumeng',
-      repo: 'comments',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '4b67647e16869584daf26389a09984b61e4ba443',
-      
-        client_id: 'd7e898c8635f87381a68'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+    <script>
+  window.livereOptions = {
+    refer: 'post/64584.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
 </script>
 
   

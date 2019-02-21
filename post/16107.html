@@ -683,7 +683,7 @@
         <p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==" title="https://hexo.io/">Hexo<i class="fa fa-external-link"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv" title="https://hexo.io/docs/">documentation<i class="fa fa-external-link"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=" title="https://hexo.io/docs/troubleshooting.html">troubleshooting<i class="fa fa-external-link"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==" title="https://github.com/hexojs/hexo/issues">GitHub<i class="fa fa-external-link"></i></span>.</p>
 <a id="more"></a>
 <p>让我为你点一首歌吧！<br>♪一直陪着你ヾ(\^▽\^ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-UojnMZQv" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="32139848" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div><br>当你看到这一份“hello-world”，就应该知道<br>…<br>……<br>我又重装了hexo、next</p>
+    <div id="aplayer-qSgHxnBQ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="32139848" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div><br>当你看到这一份“hello-world”，就应该知道<br>…<br>……<br>我又重装了hexo、next</p>
 <p>ㄒoㄒ</p>
 <p>我的本意很好，就是让我的博客更加好看嘛，更加符合我的需要。<br>谁知道又得重新来过。。。</p>
 <p>反正，我是下定决心要做好备份了，仅仅<code>hexo d</code>并不能满足我的需要啊，因为它只保存了静态文件，最理想的就是全部保存到github上。我本来是想用坚果云的，可是，它没有文件夹对比功能，不能全局显示历史对比版本，我更不可能一个一个去猜我是由于什么操作导致博客出bug了。。</p>
@@ -815,9 +815,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Mjc3MC8xOTMxNw=="></div>
     </div>
 
   
@@ -1346,44 +1344,18 @@ show_date_time();
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
-
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
-
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
-
-</style>
-
-<script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: 'myoumeng',
-      repo: 'comments',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '4b67647e16869584daf26389a09984b61e4ba443',
-      
-        client_id: 'd7e898c8635f87381a68'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+    <script>
+  window.livereOptions = {
+    refer: 'post/16107.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
 </script>
 
   

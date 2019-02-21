@@ -1033,14 +1033,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/64348.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（二）</a></div>
+      <div class="popular-posts-title"><a href="/post/63269.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（三）</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/63269.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（三）</a></div>
+      <div class="popular-posts-title"><a href="/post/64348.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（二）</a></div>
       
     </li>
   
@@ -1165,9 +1165,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Mjc3MC8xOTMxNw=="></div>
     </div>
 
   
@@ -1696,44 +1694,18 @@ show_date_time();
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
-
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
-
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
-
-</style>
-
-<script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: 'myoumeng',
-      repo: 'comments',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '4b67647e16869584daf26389a09984b61e4ba443',
-      
-        client_id: 'd7e898c8635f87381a68'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+    <script>
+  window.livereOptions = {
+    refer: 'post/31045.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
 </script>
 
   
