@@ -252,13 +252,13 @@
       <category term="教程" scheme="http://myoumeng.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Markdown" scheme="http://myoumeng.github.io/tags/Markdown/"/>
-    
       <category term="study" scheme="http://myoumeng.github.io/tags/study/"/>
     
       <category term="atom" scheme="http://myoumeng.github.io/tags/atom/"/>
     
       <category term="snippet" scheme="http://myoumeng.github.io/tags/snippet/"/>
+    
+      <category term="Markdown" scheme="http://myoumeng.github.io/tags/Markdown/"/>
     
   </entry>
   
@@ -640,11 +640,11 @@
     </summary>
     
     
+      <category term="Markdown" scheme="http://myoumeng.github.io/tags/Markdown/"/>
+    
       <category term="Hexo" scheme="http://myoumeng.github.io/tags/Hexo/"/>
     
       <category term="Next" scheme="http://myoumeng.github.io/tags/Next/"/>
-    
-      <category term="Markdown" scheme="http://myoumeng.github.io/tags/Markdown/"/>
     
       <category term="Atom" scheme="http://myoumeng.github.io/tags/Atom/"/>
     
