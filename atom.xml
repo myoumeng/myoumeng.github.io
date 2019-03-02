@@ -188,9 +188,9 @@
     </summary>
     
     
-      <category term="study" scheme="http://myoumeng.github.io/tags/study/"/>
-    
       <category term="note" scheme="http://myoumeng.github.io/tags/note/"/>
+    
+      <category term="study" scheme="http://myoumeng.github.io/tags/study/"/>
     
   </entry>
   
