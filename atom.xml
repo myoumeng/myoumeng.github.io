@@ -199,11 +199,12 @@
     <link href="http://myoumeng.github.io/post/3724.html"/>
     <id>http://myoumeng.github.io/post/3724.html</id>
     <published>2019-02-14T02:18:24.000Z</published>
-    <updated>2019-02-27T14:11:56.781Z</updated>
+    <updated>2019-03-02T13:46:27.966Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;第四波攻势来临啦~&lt;br&gt;还是对hexo-next做优化、美化♣️&lt;br&gt;这次我想加入折叠功能、鼠标放置后图片放大、分类和标签界面显示年份、可爱的十二生肖、分类层级显示、文章阅读后评分、侧栏加音乐&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Todo list:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 折叠功能&lt;/li&gt;
@@ -214,7 +215,6 @@
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 文章阅读后评分&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 侧栏加音乐&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
@@ -282,16 +282,24 @@
   </entry>
   
   <entry>
-    <title>用HEXO打造更个性化的个人博客3：链接持久化，标签云样式，主题自带样式之文本居中引用、note、lable、tabs、按钮、数字块，网页奔溃搞怪特效，顶部加载条，鼠标点击特效</title>
+    <title>用HEXO打造更个性化的个人博客3</title>
     <link href="http://myoumeng.github.io/post/24651.html"/>
     <id>http://myoumeng.github.io/post/24651.html</id>
     <published>2019-02-06T08:49:37.000Z</published>
-    <updated>2019-02-27T14:11:47.513Z</updated>
+    <updated>2019-03-02T13:35:58.706Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;总有些意想不到的好看的样式&lt;br&gt;嘻嘻，我就借鉴过来了吖&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 链接持久化，&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 标签云样式，&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 主题自带样式之文本居中引用、note、lable、tabs、按钮、数字块，&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 网页奔溃搞怪特效，&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 顶部加载条，&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 鼠标点击特效&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -313,16 +321,25 @@
   </entry>
   
   <entry>
-    <title>用HEXO打造更个性化的个人博客2：文章结束标记，摘要图片，博客背景图，修改字体，侧栏头像回到首页，添加音乐，添加视频</title>
+    <title>用HEXO打造更个性化的个人博客2</title>
     <link href="http://myoumeng.github.io/post/27698.html"/>
     <id>http://myoumeng.github.io/post/27698.html</id>
     <published>2019-02-06T08:09:00.000Z</published>
-    <updated>2019-02-27T14:11:37.924Z</updated>
+    <updated>2019-03-02T13:36:07.898Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;我的确花了不少时间在整理自己的博客上，hexo站点的各项配置，更是折腾了我许久，谁让我本身对代码不是很懂呢？全程只能靠自己琢磨、学习，参考了许许多多的教程，有老有新。可是都是混在一起，我也没有太分开，导致自己多次配置出了差错，并且很难修整，天知道，我重新安装hexo以及next主题是否有超过10次了。真是痛苦的经历。&lt;br&gt;还好，最终我获胜了😎&lt;br&gt;这次要介绍与图片、音乐、视频、动效相关的内容哦！&lt;br&gt;期待地搓手手~&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 文章结束标记&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 摘要图片&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 博客背景图&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 修改字体&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 侧栏头像回到首页&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 添加音乐&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 添加视频&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -398,7 +415,7 @@
     <link href="http://myoumeng.github.io/post/31045.html"/>
     <id>http://myoumeng.github.io/post/31045.html</id>
     <published>2019-02-01T07:18:52.000Z</published>
-    <updated>2019-02-27T14:10:07.577Z</updated>
+    <updated>2019-03-02T13:31:00.768Z</updated>
     
     <summary type="html">
     
@@ -425,7 +442,7 @@
     <link href="http://myoumeng.github.io/post/39396.html"/>
     <id>http://myoumeng.github.io/post/39396.html</id>
     <published>2019-02-01T04:49:11.000Z</published>
-    <updated>2019-03-02T13:05:56.819Z</updated>
+    <updated>2019-03-02T13:32:56.416Z</updated>
     
     <summary type="html">
     
@@ -524,7 +541,7 @@
     <link href="http://myoumeng.github.io/post/64348.html"/>
     <id>http://myoumeng.github.io/post/64348.html</id>
     <published>2019-01-30T12:44:07.000Z</published>
-    <updated>2019-03-02T13:01:47.268Z</updated>
+    <updated>2019-03-02T13:19:55.447Z</updated>
     
     <summary type="html">
     
@@ -574,7 +591,7 @@
     <link href="http://myoumeng.github.io/post/63512.html"/>
     <id>http://myoumeng.github.io/post/63512.html</id>
     <published>2019-01-27T03:19:59.000Z</published>
-    <updated>2019-02-27T14:12:48.146Z</updated>
+    <updated>2019-03-02T14:11:21.894Z</updated>
     
     <summary type="html">
     
@@ -605,7 +622,7 @@
     <link href="http://myoumeng.github.io/post/59711.html"/>
     <id>http://myoumeng.github.io/post/59711.html</id>
     <published>2019-01-27T02:25:30.000Z</published>
-    <updated>2019-02-27T14:10:43.064Z</updated>
+    <updated>2019-03-02T13:23:26.610Z</updated>
     
     <summary type="html">
     
@@ -655,11 +672,11 @@
     <link href="http://myoumeng.github.io/post/41786.html"/>
     <id>http://myoumeng.github.io/post/41786.html</id>
     <published>2018-12-09T11:26:02.000Z</published>
-    <updated>2019-02-27T14:12:56.081Z</updated>
+    <updated>2019-03-02T14:11:55.659Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;2018年，我的的最后一场旅行&lt;/p&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;2018年–我的最后一场旅行&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
