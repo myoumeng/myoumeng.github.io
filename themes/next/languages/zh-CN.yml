@@ -18,16 +18,15 @@ menu:
   game: 游戏
   note: 随笔
   #buy: 买
-  fun: 趣
-  ranking: 热
+  fun: 有趣
+  ranking: 熟了
   study: 知之
-  travel: 大千世界
-  life: 鱼之乐
-  tao: 道
-  curiosity: 探索欲
-  collection: 滴答
-  novel: 颜如玉
-  award: 赏
+  travel: 世界
+  life: 非鱼
+  tao: 可道
+  curiosity: 探索
+  serialise: 连载
+  award: 赏赐
 sidebar:
   overview: 站点概览
   toc: 文章目录

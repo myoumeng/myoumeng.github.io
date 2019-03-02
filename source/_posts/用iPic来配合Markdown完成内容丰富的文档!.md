@@ -8,7 +8,7 @@ tags:
   - 图床
   - 推荐
 categories:
-  - markdown
+  - 种草
 image: 'https://ws4.sinaimg.cn/large/006tKfTcgy1g085eqfdoxj31hc0u0hdt.jpg'
 abbrlink: 63512
 date: 2019-01-27 11:19:59

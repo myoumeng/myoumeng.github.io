@@ -7,6 +7,7 @@ tags:
   - 个性化
   - NEXT
   - 插件
+  - serialise
 categories:
   - HEXO
 abbrlink: 27698

@@ -2,7 +2,10 @@
 title: 学习CSS自定义样式，让博客焕然一新（二）
 tags:
   - CSS
-  - 学习笔记
+  - serialise
+  - study
+categories:
+  - css
 abbrlink: 64348
 date: 2019-01-30 20:44:07
 ---
@@ -16,6 +19,11 @@ date: 2019-01-30 20:44:07
 
 目录如下：
 [TOC]
+
+
+让我为你点一首歌吧！♪一直陪着你ヾ(·▽·ヾ)
+开始静静享受歌曲吧！
+{% meting "1217823" "netease" "song" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#000"%}
 
 
 # 轮廓（outline）

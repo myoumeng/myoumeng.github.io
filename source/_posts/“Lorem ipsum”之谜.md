@@ -1,9 +1,7 @@
 ---
 title: “Lorem ipsum”之谜
 tags:
-  - 好奇心爆棚
   - Lorem ipsum
-categories:
   - curiosity
 keywords: 'Lorem ipsum, 好奇'
 abbrlink: 32375

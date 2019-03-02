@@ -12,6 +12,8 @@ override: false
 cache:
   enable: true
 
+
+
 plugins:
   - hexo-footnotes
 # Redefine custom file paths. Introduced in NexT v6.0.2.
@@ -163,14 +165,13 @@ menu:
   ranking: /ranking/ || fire
   tao: /tags/tao/ || star-half-o
   note: /tags/note/ || pencil
-
   #buy: /buy/ || star smile pagelines book-reader grin-squint-tears gem fish
   study: /tags/study/ || signing
   curiosity: /tags/curiosity/ || heart
   travel: /tags/travel/ || globe
   life: /tags/life/ || rocket
-  novel: /tags/novel/ || female
-  collection: /tags/collection/ || tint
+  #novel: /tags/novel/ || female
+  serialise: /tags/serialise/ || tint
   fun: /tags/fun/ || smile-o
   award: /award/ || gift
 # Enable/Disable menu icons / item badges.
@@ -595,7 +596,7 @@ livere_uid: MTAyMC80Mjc3MC8xOTMxNw==
 # Gitment
 # Introduction: https://github.com/imsun/gitment
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button

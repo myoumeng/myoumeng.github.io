@@ -5,6 +5,7 @@ tags:
   - atom
   - snippet
   - Markdown
+  - study
 categories:
   - 教程
 keywords: 'atom,snippet,Markdown'

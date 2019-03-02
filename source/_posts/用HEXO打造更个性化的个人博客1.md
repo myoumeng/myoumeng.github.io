@@ -6,6 +6,7 @@ tags:
   - 个性化
   - 插件
   - NEXT
+  - serialise
 categories:
   - HEXO
 abbrlink: 64584

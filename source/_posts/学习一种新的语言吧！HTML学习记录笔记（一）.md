@@ -2,10 +2,10 @@
 title: 学习一种新的语言吧！HTML学习记录笔记（一）
 tags:
   - HTML
-  - 学习笔记
+  - study
+  - serialise
 categories:
-
-  - HTML
+    - HTML
 abbrlink: 59711
 date: 2019-01-27 10:25:30
 ---

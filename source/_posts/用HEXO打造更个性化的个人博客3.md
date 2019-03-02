@@ -7,6 +7,7 @@ tags:
   - 个性化
   - 插件
   - NEXT
+  - serialise
 categories:
   - HEXO
 keywords: 'keyword1,keyword2'
