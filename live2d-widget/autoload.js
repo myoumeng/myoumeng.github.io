@@ -1,7 +1,5 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>const live2d_path = "https://myoumeng.github.io/live2d-widget/";
+const live2d_path = "https://myoumeng.github.io/live2d-widget/";
 //const live2d_path = "./";
-//<script src="https://myoumeng.github.io/live2d-widget/autoload.js"></script>
-
 
 $("<link>").attr({href: live2d_path + "waifu.css", rel: "stylesheet", type: "text/css"}).appendTo("head");
 //waifu.css的绝对路径
