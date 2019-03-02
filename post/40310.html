@@ -20,6 +20,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
 
 
   
@@ -144,7 +147,6 @@
 
 
 
-
   <meta name="description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省">
 <meta name="keywords" content="atom,snippet,Markdown">
 <meta property="og:type" content="article">
@@ -154,7 +156,7 @@
 <meta property="og:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1g05ub26znoj30fo06mmxs.jpg">
-<meta property="og:updated_time" content="2019-02-16T13:08:35.336Z">
+<meta property="og:updated_time" content="2019-02-27T14:15:43.179Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用atom的snip来创作自定义代码片段，对Markdown也有效哦！">
 <meta name="twitter:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省">
@@ -225,6 +227,7 @@
   .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
+
 
 <link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
@@ -307,7 +310,7 @@
 
     
 
-    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>热</a>
+    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>熟了</a>
 
   </li>
         
@@ -324,7 +327,7 @@
 
     
 
-    <a href="/tags/tao/" rel="section"><i class="menu-item-icon fa fa-fw fa-star-half-o"></i> <br>道</a>
+    <a href="/tags/tao/" rel="section"><i class="menu-item-icon fa fa-fw fa-star-half-o"></i> <br>可道</a>
 
   </li>
         
@@ -375,7 +378,7 @@
 
     
 
-    <a href="/tags/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>探索欲</a>
+    <a href="/tags/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>探索</a>
 
   </li>
         
@@ -392,7 +395,7 @@
 
     
 
-    <a href="/tags/travel/" rel="section"><i class="menu-item-icon fa fa-fw fa-globe"></i> <br>大千世界</a>
+    <a href="/tags/travel/" rel="section"><i class="menu-item-icon fa fa-fw fa-globe"></i> <br>世界</a>
 
   </li>
         
@@ -409,14 +412,14 @@
 
     
 
-    <a href="/tags/life/" rel="section"><i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>鱼之乐</a>
+    <a href="/tags/life/" rel="section"><i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>非鱼</a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-novel">
+          <li class="menu-item menu-item-serialise">
 
     
     
@@ -426,24 +429,7 @@
 
     
 
-    <a href="/tags/novel/" rel="section"><i class="menu-item-icon fa fa-fw fa-female"></i> <br>颜如玉</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-collection">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/collection/" rel="section"><i class="menu-item-icon fa fa-fw fa-tint"></i> <br>滴答</a>
+    <a href="/tags/serialise/" rel="section"><i class="menu-item-icon fa fa-fw fa-tint"></i> <br>连载</a>
 
   </li>
         
@@ -460,7 +446,7 @@
 
     
 
-    <a href="/tags/fun/" rel="section"><i class="menu-item-icon fa fa-fw fa-smile-o"></i> <br>趣</a>
+    <a href="/tags/fun/" rel="section"><i class="menu-item-icon fa fa-fw fa-smile-o"></i> <br>有趣</a>
 
   </li>
         
@@ -477,7 +463,7 @@
 
     
 
-    <a href="/award/" rel="section"><i class="menu-item-icon fa fa-fw fa-gift"></i> <br>赏</a>
+    <a href="/award/" rel="section"><i class="menu-item-icon fa fa-fw fa-gift"></i> <br>赏赐</a>
 
   </li>
 
@@ -618,7 +604,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-16 21:08:35" itemprop="dateModified" datetime="2019-02-16T21:08:35+08:00">2019-02-16</time>
+                <time title="修改时间：2019-02-27 22:15:43" itemprop="dateModified" datetime="2019-02-27T22:15:43+08:00">2019-02-27</time>
               
             
           </span>
@@ -645,19 +631,6 @@
 
           
             
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">·</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/post/40310.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/post/40310.html" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -718,7 +691,7 @@
 <a id="more"></a>
 <p>让我为你点一首歌吧！陪伴你看完这篇文章，或者静静享受歌曲吧！</p>
 
-    <div id="aplayer-QPFkWtkk" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="red"></div>
+    <div id="aplayer-SxFJTZQH" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="red"></div>
 <p>snippet   n. 小片，片段; 不知天高地厚的年轻人;<br>我们可以理解为代码片段<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>。</p>
 <h1 id="snippets-cson中自定义snip"><a href="#snippets-cson中自定义snip" class="headerlink" title="snippets.cson中自定义snip"></a>snippets.cson中自定义snip</h1><p>在atom中可以使用：<code>cmd+shift+p</code> ，然后搜索snip,回车打开第一个选项就是的。</p>
 <p>在snippets.cson文件中输入snip，回车，就得到一个 snippet 模板：</p>
@@ -766,6 +739,13 @@
     <li class="popular-posts-item">
       
       
+      <div class="popular-posts-title"><a href="/post/12969.html" rel="bookmark">为了拿驾驶证！第一关：科目一</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
       <div class="popular-posts-title"><a href="/post/35336.html" rel="bookmark">Hexo,Next,Markdown...Hello!!!</a></div>
       
     </li>
@@ -773,7 +753,42 @@
     <li class="popular-posts-item">
       
       
+      <div class="popular-posts-title"><a href="/post/63321.html" rel="bookmark">hexo基本知识</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/16107.html" rel="bookmark">Hello World</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/65182.html" rel="bookmark">英文论文借鉴句子</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/31045.html" rel="bookmark">学习一种新的语言吧！HTML学习记录笔记（二）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
       <div class="popular-posts-title"><a href="/post/63512.html" rel="bookmark">用iPic来配合Markdown完成内容丰富的文档！</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/39396.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（四）</a></div>
       
     </li>
   
@@ -827,6 +842,8 @@
         <div class="post-tags">
           
             <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
+          
+            <a href="/tags/study/" rel="tag"><i class="fa fa-tag"></i> study</a>
           
             <a href="/tags/atom/" rel="tag"><i class="fa fa-tag"></i> atom</a>
           
@@ -985,17 +1002,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1076,13 +1083,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">37</span>
+                    <span class="site-state-item-count">34</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1268,7 +1269,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">145k</span>
+    <span title="站点总字数">154k</span>
   
 
   
@@ -1279,7 +1280,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:11</span>
+    <span title="站点阅读时长">2:20</span>
   
 </div>
 
@@ -1924,6 +1925,9 @@ show_date_time();
 
 
 
+
+
+
   <!-- 背景  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
   <!-- 鼠标特效  -->
@@ -1931,29 +1935,52 @@ show_date_time();
   <script>
   $("body").backstretch([
       "http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0ndcet43gj31hc0u0wkm.jpg",
       "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0ndcl7waoj31hc0u0gur.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0ndc9u62mj31hc0u0aix.jpg",
       "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
       "http://pic.bizhi360.com/bbpic/92/6792.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nd9gtlw2j31hc0u0agf.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nd9buoggj31hc0u0n66.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0nd7jspolj31hc0u0dlw.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nddlzpa0j31hc0u0afu.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0nddhsiusj31hc0u0guj.jpg",
+      "https://ws2.sinaimg.cn/large/006tKfTcgy1g0nddc22lzj31hc0u0k0h.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcly1g0n55xgke5j31hc0u0wvl.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0n59uo1ocj31400p0drg.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0nd4irib0j31hc0u0gur.jpg",
+      "https://ws2.sinaimg.cn/large/006tKfTcgy1g0nd6pa8ffj31hc0u0dot.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0nd7jspolj31hc0u0dlw.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0nd7bhccij31hc0u0wka.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nd78gxbbj31hc0u0wnm.jpg",
       "https://ws4.sinaimg.cn/large/006tNc79gy1g04od3wnk6j31400p076d.jpg",
       "https://ws1.sinaimg.cn/large/006tNc79gy1g04oe716mvj31hc0u0tmf.jpg",
       "https://ws1.sinaimg.cn/large/006tNc79gy1g04of03rw8j31hc0u0goq.jpg",
       "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc1a09154.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0ndaammv8j31hc0u0agi.jpg",
       "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc169ce59.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0ndadmlwgj31hc0u0thu.jpg",
       "https://ws4.sinaimg.cn/large/006tKfTcgy1g085eqfdoxj31hc0u0hdt.jpg",
+      "https://ws2.sinaimg.cn/large/006tKfTcgy1g0ndantnpaj31hc0u0n33.jpg",
     ], {duration:10000,fade:4000,animateFirst:!0});
   </script>
-  <!--从上到下依次是：
-  m蓝色美女1："http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
-  m2：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
-  m3：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
-  风景1：http://pic.bizhi360.com/bbpic/92/6792.jpg
-  v字仇杀队1，
-  v2
-  v3
-  x星空1
-  x2
-  x3
-  -->
+<!--从上到下依次是：
+m蓝色美女1："http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+m2：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+m3：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+风景1：http://pic.bizhi360.com/bbpic/92/6792.jpg
+f2
+f3
+f4
+f5
+v字仇杀队1，
+v2
+v3
+x星空1
+x2
+x3
+-->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
   <script data-no-instant>InstantClick.init();
   </script>

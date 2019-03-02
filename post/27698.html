@@ -20,6 +20,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
 
 
   
@@ -144,9 +147,8 @@
 
 
 
-
   <meta name="description" content="我的确花了不少时间在整理自己的博客上，hexo站点的各项配置，更是折腾了我许久，谁让我本身对代码不是很懂呢？全程只能靠自己琢磨、学习，参考了许许多多的教程，有老有新。可是都是混在一起，我也没有太分开，导致自己多次配置出了差错，并且很难修整，天知道，我重新安装hexo以及next主题是否有超过10次了。真是痛苦的经历。还好，最终我获胜了😎这次要介绍与图片、音乐、视频、动效相关的内容哦！期待地">
-<meta name="keywords" content="HEXO,博客,个性化,插件,NEXT">
+<meta name="keywords" content="HEXO,博客,个性化,插件,NEXT,serialise">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用HEXO打造更个性化的个人博客2：文章结束标记，摘要图片，博客背景图，修改字体，侧栏头像回到首页，添加音乐，添加视频">
 <meta property="og:url" content="http://myoumeng.github.io/post/27698.html">
@@ -156,7 +158,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3072214-976a8cf36c994dc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
 <meta property="og:image" content="https://cdn.shknn.com/wp-content/uploads/2015/12/20151228111322.png">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1fzvw58dahcj30mz0ctgx6.jpg">
-<meta property="og:updated_time" content="2019-02-16T13:47:15.049Z">
+<meta property="og:updated_time" content="2019-02-27T14:11:37.924Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用HEXO打造更个性化的个人博客2：文章结束标记，摘要图片，博客背景图，修改字体，侧栏头像回到首页，添加音乐，添加视频">
 <meta name="twitter:description" content="我的确花了不少时间在整理自己的博客上，hexo站点的各项配置，更是折腾了我许久，谁让我本身对代码不是很懂呢？全程只能靠自己琢磨、学习，参考了许许多多的教程，有老有新。可是都是混在一起，我也没有太分开，导致自己多次配置出了差错，并且很难修整，天知道，我重新安装hexo以及next主题是否有超过10次了。真是痛苦的经历。还好，最终我获胜了😎这次要介绍与图片、音乐、视频、动效相关的内容哦！期待地">
@@ -227,6 +229,7 @@
   .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
+
 
 <link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
@@ -309,7 +312,7 @@
 
     
 
-    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>热</a>
+    <a href="/ranking/" rel="section"><i class="menu-item-icon fa fa-fw fa-fire"></i> <br>熟了</a>
 
   </li>
         
@@ -326,7 +329,7 @@
 
     
 
-    <a href="/tags/tao/" rel="section"><i class="menu-item-icon fa fa-fw fa-star-half-o"></i> <br>道</a>
+    <a href="/tags/tao/" rel="section"><i class="menu-item-icon fa fa-fw fa-star-half-o"></i> <br>可道</a>
 
   </li>
         
@@ -377,7 +380,7 @@
 
     
 
-    <a href="/tags/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>探索欲</a>
+    <a href="/tags/curiosity/" rel="section"><i class="menu-item-icon fa fa-fw fa-heart"></i> <br>探索</a>
 
   </li>
         
@@ -394,7 +397,7 @@
 
     
 
-    <a href="/tags/travel/" rel="section"><i class="menu-item-icon fa fa-fw fa-globe"></i> <br>大千世界</a>
+    <a href="/tags/travel/" rel="section"><i class="menu-item-icon fa fa-fw fa-globe"></i> <br>世界</a>
 
   </li>
         
@@ -411,14 +414,14 @@
 
     
 
-    <a href="/tags/life/" rel="section"><i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>鱼之乐</a>
+    <a href="/tags/life/" rel="section"><i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>非鱼</a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-novel">
+          <li class="menu-item menu-item-serialise">
 
     
     
@@ -428,24 +431,7 @@
 
     
 
-    <a href="/tags/novel/" rel="section"><i class="menu-item-icon fa fa-fw fa-female"></i> <br>颜如玉</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-collection">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/collection/" rel="section"><i class="menu-item-icon fa fa-fw fa-tint"></i> <br>滴答</a>
+    <a href="/tags/serialise/" rel="section"><i class="menu-item-icon fa fa-fw fa-tint"></i> <br>连载</a>
 
   </li>
         
@@ -462,7 +448,7 @@
 
     
 
-    <a href="/tags/fun/" rel="section"><i class="menu-item-icon fa fa-fw fa-smile-o"></i> <br>趣</a>
+    <a href="/tags/fun/" rel="section"><i class="menu-item-icon fa fa-fw fa-smile-o"></i> <br>有趣</a>
 
   </li>
         
@@ -479,7 +465,7 @@
 
     
 
-    <a href="/award/" rel="section"><i class="menu-item-icon fa fa-fw fa-gift"></i> <br>赏</a>
+    <a href="/award/" rel="section"><i class="menu-item-icon fa fa-fw fa-gift"></i> <br>赏赐</a>
 
   </li>
 
@@ -620,7 +606,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-16 21:47:15" itemprop="dateModified" datetime="2019-02-16T21:47:15+08:00">2019-02-16</time>
+                <time title="修改时间：2019-02-27 22:11:37" itemprop="dateModified" datetime="2019-02-27T22:11:37+08:00">2019-02-27</time>
               
             
           </span>
@@ -647,19 +633,6 @@
 
           
             
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">·</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/post/27698.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/post/27698.html" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -721,7 +694,7 @@
 <h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><p>因为本身对hexo及其不熟悉，所以自定义的过程既长久又艰辛^一把辛酸泪呀^。<br>还好，风风雨雨都经历过来了，这样才有成长和进步嘛。</p>
 <p>磨刀不误砍柴工，一个漂亮的、舒服的博客，总会让人赏心悦目，更有希望坚持写下去。若是我们在能力足够的前提下，还能亲手打造出来，那更是成就感十足！</p>
 <p>让我为你点一首歌吧！<br>♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-eqBZEHWi" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4894309" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+    <div id="aplayer-dlbINupD" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4894309" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <p>接下来，就要好好地打造一个令我们舒适、愉悦的个人博客啦！</p>
 <div class="note info">
             <p>友情提示：我的博客页面右下方的汉堡<i class="fa fa-bars"></i>图标，点击后会有目录大纲出来哦！让你看文更高效！😋</p>
@@ -780,12 +753,12 @@
 <p>那我要用简单的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;https://music.163.com/#/song?id=29722582&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>显示如下：</p>
 
-        <div id="aplayer-MGunILRy" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-ASSDobUt" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-MGunILRy"),
+            element: document.getElementById("aplayer-ASSDobUt"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -803,11 +776,11 @@
 <p>呵呵，发现竟然没有显示，那我就换一个代码，用它（When you use MetingJS, your blog can play musics from Tencent, Netease, Xiami, Kugou, Baidu and more.）<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01vZVBsYXllci9oZXhvLXRhZy1hcGxheWVyI21laW5nanMtc3VwcG9ydC1uZXctaW4tMzA=" title="https://github.com/MoePlayer/hexo-tag-aplayer#meingjs-support-new-in-30">^meting<i class="fa fa-external-link"></i></span></p>
 <p>ok,再试一下，代码如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;29722582&quot; &quot;netease&quot; &quot;song&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#000&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-CjmwlczB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div>
+    <div id="aplayer-wSQyRguu" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div>
 <p>太棒了，能够显示付费下载的单首歌曲。那么，再试下我的歌单！<br>同样，我们播放网易云歌单，然后看到浏览器上的地址为：<span class="exturl" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvbXkvbS9tdXNpYy9wbGF5bGlzdD9pZD0xMTM2NTU1MDDjgILlkI7pnaLlsLHmmK9pZOOAgg==" title="https://music.163.com/#/my/m/music/playlist?id=113655500。后面就是id。">https://music.163.com/#/my/m/music/playlist?id=113655500。后面就是id。<i class="fa fa-external-link"></i></span><br>比如，我的歌单的id=2639061041；然后在一篇博客md文章中，写下如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;id&quot; &quot;netease&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
 <p>用上我的id后，显示如下：</p>
 
-    <div id="aplayer-paBoJMKz" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2639061041" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+    <div id="aplayer-YYGHqHiM" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2639061041" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The &#123;% meting %&#125; options are shown below:</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -962,13 +935,6 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/3724.html" rel="bookmark">用HEXO打造更个性化的个人博客4</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
       <div class="popular-posts-title"><a href="/post/24651.html" rel="bookmark">用HEXO打造更个性化的个人博客3：链接持久化，标签云样式，主题自带样式之文本居中引用、note、lable、tabs、按钮、数字块，网页奔溃搞怪特效，顶部加载条，鼠标点击特效</a></div>
       
     </li>
@@ -976,7 +942,42 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/55367.html" rel="bookmark">终于...确定了，不想再多折腾页面了，还是好好的写Markdown吧</a></div>
+      <div class="popular-posts-title"><a href="/post/3724.html" rel="bookmark">用HEXO打造更个性化的个人博客4</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/65182.html" rel="bookmark">英文论文借鉴句子</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/31045.html" rel="bookmark">学习一种新的语言吧！HTML学习记录笔记（二）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/59711.html" rel="bookmark">学习一种新的语言吧！HTML学习记录笔记（一）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/39396.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（四）</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/64348.html" rel="bookmark">学习CSS自定义样式，让博客焕然一新（二）</a></div>
       
     </li>
   
@@ -1038,6 +1039,8 @@
             <a href="/tags/插件/" rel="tag"><i class="fa fa-tag"></i> 插件</a>
           
             <a href="/tags/NEXT/" rel="tag"><i class="fa fa-tag"></i> NEXT</a>
+          
+            <a href="/tags/serialise/" rel="tag"><i class="fa fa-tag"></i> serialise</a>
           
         </div>
       
@@ -1192,17 +1195,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1283,13 +1276,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">37</span>
+                    <span class="site-state-item-count">34</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1475,7 +1462,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">145k</span>
+    <span title="站点总字数">154k</span>
   
 
   
@@ -1486,7 +1473,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:11</span>
+    <span title="站点阅读时长">2:20</span>
   
 </div>
 
@@ -2131,6 +2118,9 @@ show_date_time();
 
 
 
+
+
+
   <!-- 背景  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
   <!-- 鼠标特效  -->
@@ -2138,29 +2128,52 @@ show_date_time();
   <script>
   $("body").backstretch([
       "http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0ndcet43gj31hc0u0wkm.jpg",
       "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0ndcl7waoj31hc0u0gur.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0ndc9u62mj31hc0u0aix.jpg",
       "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
       "http://pic.bizhi360.com/bbpic/92/6792.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nd9gtlw2j31hc0u0agf.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nd9buoggj31hc0u0n66.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0nd7jspolj31hc0u0dlw.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nddlzpa0j31hc0u0afu.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0nddhsiusj31hc0u0guj.jpg",
+      "https://ws2.sinaimg.cn/large/006tKfTcgy1g0nddc22lzj31hc0u0k0h.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcly1g0n55xgke5j31hc0u0wvl.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0n59uo1ocj31400p0drg.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0nd4irib0j31hc0u0gur.jpg",
+      "https://ws2.sinaimg.cn/large/006tKfTcgy1g0nd6pa8ffj31hc0u0dot.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0nd7jspolj31hc0u0dlw.jpg",
+      "https://ws3.sinaimg.cn/large/006tKfTcgy1g0nd7bhccij31hc0u0wka.jpg",
+      "https://ws1.sinaimg.cn/large/006tKfTcgy1g0nd78gxbbj31hc0u0wnm.jpg",
       "https://ws4.sinaimg.cn/large/006tNc79gy1g04od3wnk6j31400p076d.jpg",
       "https://ws1.sinaimg.cn/large/006tNc79gy1g04oe716mvj31hc0u0tmf.jpg",
       "https://ws1.sinaimg.cn/large/006tNc79gy1g04of03rw8j31hc0u0goq.jpg",
       "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc1a09154.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0ndaammv8j31hc0u0agi.jpg",
       "http://pic1.win4000.com/wallpaper/2018-12-22/5c1ddc169ce59.jpg",
+      "https://ws4.sinaimg.cn/large/006tKfTcgy1g0ndadmlwgj31hc0u0thu.jpg",
       "https://ws4.sinaimg.cn/large/006tKfTcgy1g085eqfdoxj31hc0u0hdt.jpg",
+      "https://ws2.sinaimg.cn/large/006tKfTcgy1g0ndantnpaj31hc0u0n33.jpg",
     ], {duration:10000,fade:4000,animateFirst:!0});
   </script>
-  <!--从上到下依次是：
-  m蓝色美女1："http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
-  m2：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
-  m3：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
-  风景1：http://pic.bizhi360.com/bbpic/92/6792.jpg
-  v字仇杀队1，
-  v2
-  v3
-  x星空1
-  x2
-  x3
-  -->
+<!--从上到下依次是：
+m蓝色美女1："http://img.netbian.com/file/2018/0722/93d1af25f76bc9974dd84c2e033b0eb1.jpg",
+m2：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c614108eb245.jpg",
+m3：    "http://pic1.win4000.com/wallpaper/2019-02-11/5c61410aedcc8.jpg",
+风景1：http://pic.bizhi360.com/bbpic/92/6792.jpg
+f2
+f3
+f4
+f5
+v字仇杀队1，
+v2
+v3
+x星空1
+x2
+x3
+-->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
   <script data-no-instant>InstantClick.init();
   </script>
