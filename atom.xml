@@ -25,7 +25,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;我心爱的大四生活，已经告一段落了，开启最后一学期的旅途~~&lt;br&gt;
+      &lt;p&gt;我心爱的大四生活，已经告一段落了，开启最后一学期的旅途&lt;sub&gt;&lt;/sub&gt;&lt;br&gt;
     
     </summary>
     
@@ -62,7 +62,7 @@
     <link href="http://myoumeng.github.io/post/18415.html"/>
     <id>http://myoumeng.github.io/post/18415.html</id>
     <published>2019-02-19T12:50:56.000Z</published>
-    <updated>2019-02-28T11:34:48.601Z</updated>
+    <updated>2019-03-03T03:49:58.930Z</updated>
     
     <summary type="html">
     
@@ -152,7 +152,7 @@
     <link href="http://myoumeng.github.io/post/12969.html"/>
     <id>http://myoumeng.github.io/post/12969.html</id>
     <published>2019-02-19T08:50:18.000Z</published>
-    <updated>2019-03-01T08:21:12.340Z</updated>
+    <updated>2019-03-04T14:06:27.011Z</updated>
     
     <summary type="html">
     
@@ -179,7 +179,7 @@
     <link href="http://myoumeng.github.io/post/16107.html"/>
     <id>http://myoumeng.github.io/post/16107.html</id>
     <published>2019-02-16T02:47:22.829Z</published>
-    <updated>2019-02-28T08:54:28.923Z</updated>
+    <updated>2019-03-03T03:21:03.616Z</updated>
     
     <summary type="html">
     
@@ -199,7 +199,7 @@
     <link href="http://myoumeng.github.io/post/3724.html"/>
     <id>http://myoumeng.github.io/post/3724.html</id>
     <published>2019-02-14T02:18:24.000Z</published>
-    <updated>2019-03-02T13:46:27.966Z</updated>
+    <updated>2019-03-04T12:43:29.883Z</updated>
     
     <summary type="html">
     
@@ -214,6 +214,8 @@
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 分类&amp;amp;标签层级显示&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 文章阅读后评分&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 侧栏加音乐&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; live2d看板娘&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 推荐两个emoji的复制网站&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -244,7 +246,7 @@
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于&lt;span class=&quot;label info&quot;&gt;思考&amp;amp;打字&lt;/span&gt;，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，&lt;del&gt;咳咳我这也不算多好的钢&lt;/del&gt; 🤦‍♀️&lt;br&gt;要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！&lt;br&gt;聪明的人类（及程序员👨‍💻‍）早就想到了这一点！&lt;/p&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于&lt;span class=&quot;label info&quot;&gt;思考&amp;amp;打字&lt;/span&gt;，反而要花大量时间去回忆使用样式的多个代码&lt;sup&gt;我这脑子经过的锤炼还不够&lt;/sup&gt; ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，&lt;sub&gt;&lt;/sub&gt;咳咳我这也不算多好的钢&lt;sub&gt;&lt;/sub&gt; 🤦‍♀️&lt;br&gt;要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！&lt;br&gt;聪明的人类（及程序员👨‍💻‍）早就想到了这一点！&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -286,7 +288,7 @@
     <link href="http://myoumeng.github.io/post/24651.html"/>
     <id>http://myoumeng.github.io/post/24651.html</id>
     <published>2019-02-06T08:49:37.000Z</published>
-    <updated>2019-03-02T13:35:58.706Z</updated>
+    <updated>2019-03-04T12:27:18.070Z</updated>
     
     <summary type="html">
     
@@ -325,7 +327,7 @@
     <link href="http://myoumeng.github.io/post/27698.html"/>
     <id>http://myoumeng.github.io/post/27698.html</id>
     <published>2019-02-06T08:09:00.000Z</published>
-    <updated>2019-03-02T13:36:07.898Z</updated>
+    <updated>2019-03-03T14:55:49.326Z</updated>
     
     <summary type="html">
     
@@ -380,16 +382,19 @@
   </entry>
   
   <entry>
-    <title>用HEXO打造更个性化的个人博客1：主要插件</title>
+    <title>用HEXO打造更个性化的个人博客1</title>
     <link href="http://myoumeng.github.io/post/64584.html"/>
     <id>http://myoumeng.github.io/post/64584.html</id>
     <published>2019-02-01T07:49:29.000Z</published>
-    <updated>2019-02-27T14:11:32.394Z</updated>
+    <updated>2019-03-04T12:26:03.313Z</updated>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 主要插件&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -446,7 +451,7 @@
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起~所以，学习css，就这样持续到了第四章~&lt;/p&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起&lt;sub&gt;所以，学习css，就这样持续到了第四章&lt;/sub&gt;&lt;/p&gt;
 &lt;p&gt;第三章里面，我们主要学了伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。&lt;br&gt;接下来要讲属性选择器、边框、背景、渐变、文本效果、过渡。&lt;/p&gt;
 &lt;/blockquote&gt;
     
@@ -520,7 +525,7 @@
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;没想到啊，CSS内容还是很多~不过，坚持！👊应该这章就可以写完了~基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~&lt;br&gt;继续勤奋学习css吧~&lt;br&gt;在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。&lt;/p&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;没想到啊，CSS内容还是很多&lt;sub&gt;不过，坚持！👊应该这章就可以写完了&lt;/sub&gt;基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~&lt;br&gt;继续勤奋学习css吧~&lt;br&gt;在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -591,7 +596,7 @@
     <link href="http://myoumeng.github.io/post/63512.html"/>
     <id>http://myoumeng.github.io/post/63512.html</id>
     <published>2019-01-27T03:19:59.000Z</published>
-    <updated>2019-03-02T14:11:21.894Z</updated>
+    <updated>2019-03-04T12:59:38.165Z</updated>
     
     <summary type="html">
     
@@ -622,7 +627,7 @@
     <link href="http://myoumeng.github.io/post/59711.html"/>
     <id>http://myoumeng.github.io/post/59711.html</id>
     <published>2019-01-27T02:25:30.000Z</published>
-    <updated>2019-03-02T13:23:26.610Z</updated>
+    <updated>2019-03-04T12:07:50.243Z</updated>
     
     <summary type="html">
     
@@ -647,11 +652,11 @@
     <link href="http://myoumeng.github.io/post/35336.html"/>
     <id>http://myoumeng.github.io/post/35336.html</id>
     <published>2019-01-26T09:29:55.000Z</published>
-    <updated>2019-02-16T12:31:11.848Z</updated>
+    <updated>2019-03-03T03:20:17.919Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;你好呀!&lt;br&gt;我花了近1周的时间孕育的小生命。&lt;br&gt;对，就是你&lt;br&gt;&lt;span class=&quot;label default&quot;&gt;彼岸遇见欧萌&lt;/span&gt;博客&lt;br&gt;你终于&lt;br&gt;诞！生！！啦！！！&lt;/p&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;你好呀!&lt;br&gt;我花了近1周的时间孕育的小生命。&lt;br&gt;对，就是你&lt;br&gt;&lt;span class=&quot;label default&quot;&gt;彼岸遇见欧萌&lt;/span&gt;博客&lt;br&gt;你终于&lt;sub&gt;&lt;/sub&gt;诞！生！！啦！！！&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -672,7 +677,7 @@
     <link href="http://myoumeng.github.io/post/41786.html"/>
     <id>http://myoumeng.github.io/post/41786.html</id>
     <published>2018-12-09T11:26:02.000Z</published>
-    <updated>2019-03-02T14:11:55.659Z</updated>
+    <updated>2019-03-03T15:24:08.481Z</updated>
     
     <summary type="html">
     

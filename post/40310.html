@@ -142,24 +142,21 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
-  <meta name="description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省">
+  <meta name="description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码我这脑子经过的锤炼还不够 ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省时间">
 <meta name="keywords" content="atom,snippet,Markdown">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用atom的snip来创作自定义代码片段，对Markdown也有效哦！">
 <meta property="og:url" content="http://myoumeng.github.io/post/40310.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
-<meta property="og:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省">
+<meta property="og:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码我这脑子经过的锤炼还不够 ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省时间">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1g05ub26znoj30fo06mmxs.jpg">
 <meta property="og:updated_time" content="2019-02-27T14:15:43.179Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用atom的snip来创作自定义代码片段，对Markdown也有效哦！">
-<meta name="twitter:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省">
+<meta name="twitter:description" content="当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于思考&amp;amp;打字，反而要花大量时间去回忆使用样式的多个代码我这脑子经过的锤炼还不够 ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，咳咳我这也不算多好的钢 🤦‍♀️要是有立即、方便的解决重复输入代码的情况，那多省事省时间">
 <meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1g05ub26znoj30fo06mmxs.jpg">
 
 
@@ -228,7 +225,53 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 </head>
@@ -685,12 +728,12 @@
       
 
       
-        <blockquote class="blockquote-center"><p>当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于<span class="label info">思考&amp;打字</span>，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，<del>咳咳我这也不算多好的钢</del> 🤦‍♀️<br>要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！<br>聪明的人类（及程序员👨‍💻‍）早就想到了这一点！</p>
+        <blockquote class="blockquote-center"><p>当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于<span class="label info">思考&amp;打字</span>，反而要花大量时间去回忆使用样式的多个代码<sup>我这脑子经过的锤炼还不够</sup> ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，<sub></sub>咳咳我这也不算多好的钢<sub></sub> 🤦‍♀️<br>要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！<br>聪明的人类（及程序员👨‍💻‍）早就想到了这一点！</p>
 </blockquote>
 <a id="more"></a>
 <p>让我为你点一首歌吧！陪伴你看完这篇文章，或者静静享受歌曲吧！</p>
 
-    <div id="aplayer-KRggCnfR" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="red"></div>
+    <div id="aplayer-ztAVaoGL" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="red"></div>
 <p>snippet   n. 小片，片段; 不知天高地厚的年轻人;<br>我们可以理解为代码片段<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>。</p>
 <h1 id="snippets-cson中自定义snip"><a href="#snippets-cson中自定义snip" class="headerlink" title="snippets.cson中自定义snip"></a>snippets.cson中自定义snip</h1><p>在atom中可以使用：<code>cmd+shift+p</code> ，然后搜索snip,回车打开第一个选项就是的。</p>
 <p>在snippets.cson文件中输入snip，回车，就得到一个 snippet 模板：</p>
@@ -732,7 +775,7 @@
 
  <div class="post-body">
  <div class="note primary">
-  <div class="popular-posts-header">欢迎阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
+  <div class="popular-posts-header">欢迎你来阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
   <ul class="popular-posts">
   
     <li class="popular-posts-item">
@@ -1268,7 +1311,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -1279,7 +1322,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -1982,7 +2025,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>

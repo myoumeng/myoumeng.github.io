@@ -142,9 +142,6 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
   <meta name="description" content="“Lorem ipsum”以及后面跟着的一长串英文字母，想必大家都不陌生吧。那你有木有想过，它为何经常会在你面前刷好感度呢？">
@@ -236,7 +233,53 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 </head>
@@ -678,7 +721,7 @@
         <blockquote class="blockquote-center"><p>“Lorem ipsum”以及后面跟着的一长串英文字母，想必大家都不陌生吧。那你有木有想过，它为何经常会在你面前刷好感度呢？</p>
 </blockquote>
 <p><i class="fa fa-star fa-1x  fa-fw"></i><br><a id="more"></a><br>让我为你点一首歌吧！<br>φ(≧ω≦*)♪一直陪着你<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-kNyLkyyD" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="454035505" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+    <div id="aplayer-KdATpklB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="454035505" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <p>什么？你不知道、没见过”Lorem ipsum”?好吧，那下面这几幅图和文字，你总该有些印象了吧？</p>
 <p>这是ppt模板上的一页：<br><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzq0il1ttvj30i20a6t9k.jpg" alt><br>这是ibooks author上模板的前几页：<br><img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzq093e78jj30wo0lxnpd.jpg" alt><br><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzq096nwsfj30wg0lb7fv.jpg" alt></p>
 <ul>
@@ -714,7 +757,7 @@
 <li>语言：这文字不是英语，而是拉丁文。</li>
 <li>起源起因：为了专注观察字体或版型；填满空间；减少可读性；西塞罗《善恶之尽》。</li>
 <li>用途：<code>lorem ipsum</code>这文字内容的主要用途就是，测试标题、文章、文本在不同字体、版型下看起来的效果。</li>
-<li>兴衰：15世纪兴起于西方的传统印刷行业；电脑排版盛行后，开始进入电脑屏幕上<del>作妖</del>~。</li>
+<li>兴衰：15世纪兴起于西方的传统印刷行业；电脑排版盛行后，开始进入电脑屏幕上<sub></sub>作妖<sub></sub>~。</li>
 </ul>
 <h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>嚯嚯，这货果然，内容并没有多大的意义。（我当初看不到这拉丁文，当然就不理解其含义，猜测它也是一种体现<br>排版的工具，起到填充文本框的目的）</p>
 <p>毕竟起源于西方，现在又由于电脑排版的盛行，让我们可以在ppt、word等排版、编辑软件中见到它。因为用途是测试文本效果，所以没有必要让它内容有含义，也就意味着，乱数文本只需一段无英语内容含义（降低，又可以看出英文排版效果的文字咯。所以，起源于西方的它，就是拉丁文。（不知道拉丁文的它，是不是真的来源于一段拉丁文书里面的文字呢！）</p>
@@ -1227,7 +1270,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -1238,7 +1281,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -1941,7 +1984,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>

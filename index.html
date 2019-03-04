@@ -142,9 +142,6 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
   <meta name="description" content="胡思乱想与胡言乱语爱闹爱玩爱吃也爱学">
@@ -224,7 +221,53 @@
   </style>
 </noscript>
 
-</head>
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -664,7 +707,7 @@
 
       
         
-          <p>我心爱的大四生活，已经告一段落了，开启最后一学期的旅途~~<br>
+          <p>我心爱的大四生活，已经告一段落了，开启最后一学期的旅途<sub></sub><br>
 
             
 
@@ -1024,7 +1067,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-28 19:34:48" itemprop="dateModified" datetime="2019-02-28T19:34:48+08:00">2019-02-28</time>
+                <time title="修改时间：2019-03-03 11:49:58" itemprop="dateModified" datetime="2019-03-03T11:49:58+08:00">2019-03-03</time>
               
             
           </span>
@@ -1072,7 +1115,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">136</span>
+                <span title="本文字数">135</span>
               
 
               
@@ -1108,8 +1151,7 @@
       
         
           
-            <a id="more"></a>
-<p>没想到在18年年底，接触到了hexo，让我奋不顾身地投入装饰我的小窝。<br>如题，说到19年的心愿和目标，其实我在元旦前不久，就已经想好了不少，可是，毕竟心愿是心愿，目标是目标，他们都是有难度的，不是么？这自然也是因人而异的，若我自制力够强，能力够大，或许，也不会很难了吧。</p>
+            <p>没想到在18年年底，接触到了hexo，让我奋不顾身地投入装饰我的小窝。<br>如题，说到19年的心愿和目标，其实我在元旦前不久，就已经想好了不少，可是，毕竟心愿是心愿，目标是目标，他们都是有难度的，不是么？这自然也是因人而异的，若我自制力够强，能力够大，或许，也不会很难了吧。</p>
 
           
         
@@ -1864,7 +1906,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-01 16:21:12" itemprop="dateModified" datetime="2019-03-01T16:21:12+08:00">2019-03-01</time>
+                <time title="修改时间：2019-03-04 22:06:27" itemprop="dateModified" datetime="2019-03-04T22:06:27+08:00">2019-03-04</time>
               
             
           </span>
@@ -1912,7 +1954,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">5.3k</span>
+                <span title="本文字数">7.1k</span>
               
 
               
@@ -1926,7 +1968,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">5 分钟</span>
+                <span title="阅读时长">6 分钟</span>
               
             </div>
           
@@ -2086,7 +2128,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-28 16:54:28" itemprop="dateModified" datetime="2019-02-28T16:54:28+08:00">2019-02-28</time>
+                <time title="修改时间：2019-03-03 11:21:03" itemprop="dateModified" datetime="2019-03-03T11:21:03+08:00">2019-03-03</time>
               
             
           </span>
@@ -2116,7 +2158,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">924</span>
+                <span title="本文字数">922</span>
               
 
               
@@ -2289,7 +2331,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 21:46:27" itemprop="dateModified" datetime="2019-03-02T21:46:27+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-04 20:43:29" itemprop="dateModified" datetime="2019-03-04T20:43:29+08:00">2019-03-04</time>
               
             
           </span>
@@ -2337,7 +2379,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">7.9k</span>
+                <span title="本文字数">9.2k</span>
               
 
               
@@ -2351,7 +2393,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">7 分钟</span>
+                <span title="阅读时长">8 分钟</span>
               
             </div>
           
@@ -2383,6 +2425,8 @@
 <li style="list-style: none"><input type="checkbox" checked> 分类&amp;标签层级显示</li>
 <li style="list-style: none"><input type="checkbox" checked> 文章阅读后评分</li>
 <li style="list-style: none"><input type="checkbox" checked> 侧栏加音乐</li>
+<li style="list-style: none"><input type="checkbox" checked> live2d看板娘</li>
+<li style="list-style: none"><input type="checkbox" checked> 推荐两个emoji的复制网站</li>
 </ul>
 
             
@@ -2604,7 +2648,7 @@
 
       
         
-          <blockquote class="blockquote-center"><p>当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于<span class="label info">思考&amp;打字</span>，反而要花大量时间去回忆使用样式的多个代码^我这脑子经过的锤炼还不够^ ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，<del>咳咳我这也不算多好的钢</del> 🤦‍♀️<br>要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！<br>聪明的人类（及程序员👨‍💻‍）早就想到了这一点！</p>
+          <blockquote class="blockquote-center"><p>当我发现hexo+next有一些不错的自定义样式，能够给自己的文章增色时，我发现要重复使用许多相同的代码片段。积少成多，每一次写md时，就很难专心于<span class="label info">思考&amp;打字</span>，反而要花大量时间去回忆使用样式的多个代码<sup>我这脑子经过的锤炼还不够</sup> ✧(≖ ◡ ≖✿)嘿嘿，所以我对感觉就像是“好钢没有用在刀刃上”，<sub></sub>咳咳我这也不算多好的钢<sub></sub> 🤦‍♀️<br>要是有立即、方便的解决重复输入代码的情况，那多省事省时间呀！<br>聪明的人类（及程序员👨‍💻‍）早就想到了这一点！</p>
 </blockquote>
 
             
@@ -2947,7 +2991,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 21:35:58" itemprop="dateModified" datetime="2019-03-02T21:35:58+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-04 20:27:18" itemprop="dateModified" datetime="2019-03-04T20:27:18+08:00">2019-03-04</time>
               
             
           </span>
@@ -2995,7 +3039,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">8.7k</span>
+                <span title="本文字数">8.8k</span>
               
 
               
@@ -3177,7 +3221,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 21:36:07" itemprop="dateModified" datetime="2019-03-02T21:36:07+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-03 22:55:49" itemprop="dateModified" datetime="2019-03-03T22:55:49+08:00">2019-03-03</time>
               
             
           </span>
@@ -3570,7 +3614,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/64584.html" class="post-title-link" itemprop="url">用HEXO打造更个性化的个人博客1：主要插件</a>
+                <a href="/post/64584.html" class="post-title-link" itemprop="url">用HEXO打造更个性化的个人博客1</a>
               
             
           </h2>
@@ -3612,7 +3656,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-27 22:11:32" itemprop="dateModified" datetime="2019-02-27T22:11:32+08:00">2019-02-27</time>
+                <time title="修改时间：2019-03-04 20:26:03" itemprop="dateModified" datetime="2019-03-04T20:26:03+08:00">2019-03-04</time>
               
             
           </span>
@@ -3660,7 +3704,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.7k</span>
+                <span title="本文字数">4.8k</span>
               
 
               
@@ -3697,6 +3741,9 @@
         
           <blockquote class="blockquote-center"><p>个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。</p>
 </blockquote>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> 主要插件</li>
+</ul>
 
             
 
@@ -4139,7 +4186,7 @@
 
       
         
-          <blockquote class="blockquote-center"><p>咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起~所以，学习css，就这样持续到了第四章~</p>
+          <blockquote class="blockquote-center"><p>咳咳，一篇笔记，还是不要超过800行的好，太长了，也看不赢，书写的工具也折腾不起<sub>所以，学习css，就这样持续到了第四章</sub></p>
 <p>第三章里面，我们主要学了伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。<br>接下来要讲属性选择器、边框、背景、渐变、文本效果、过渡。</p>
 </blockquote>
 
@@ -4794,7 +4841,7 @@
 
       
         
-          <blockquote class="blockquote-center"><p>没想到啊，CSS内容还是很多~不过，坚持！👊应该这章就可以写完了~基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~<br>继续勤奋学习css吧~<br>在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。</p>
+          <blockquote class="blockquote-center"><p>没想到啊，CSS内容还是很多<sub>不过，坚持！👊应该这章就可以写完了</sub>基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~<br>继续勤奋学习css吧~<br>在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。</p>
 </blockquote>
 
             
@@ -5377,7 +5424,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 22:11:21" itemprop="dateModified" datetime="2019-03-02T22:11:21+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-04 20:59:38" itemprop="dateModified" datetime="2019-03-04T20:59:38+08:00">2019-03-04</time>
               
             
           </span>
@@ -5603,7 +5650,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 21:23:26" itemprop="dateModified" datetime="2019-03-02T21:23:26+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-04 20:07:50" itemprop="dateModified" datetime="2019-03-04T20:07:50+08:00">2019-03-04</time>
               
             
           </span>
@@ -5825,7 +5872,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-16 20:31:11" itemprop="dateModified" datetime="2019-02-16T20:31:11+08:00">2019-02-16</time>
+                <time title="修改时间：2019-03-03 11:20:17" itemprop="dateModified" datetime="2019-03-03T11:20:17+08:00">2019-03-03</time>
               
             
           </span>
@@ -5855,7 +5902,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">863</span>
+                <span title="本文字数">859</span>
               
 
               
@@ -5890,7 +5937,7 @@
 
       
         
-          <blockquote class="blockquote-center"><p>你好呀!<br>我花了近1周的时间孕育的小生命。<br>对，就是你<br><span class="label default">彼岸遇见欧萌</span>博客<br>你终于<br>诞！生！！啦！！！</p>
+          <blockquote class="blockquote-center"><p>你好呀!<br>我花了近1周的时间孕育的小生命。<br>对，就是你<br><span class="label default">彼岸遇见欧萌</span>博客<br>你终于<sub></sub>诞！生！！啦！！！</p>
 </blockquote>
 
             
@@ -6029,7 +6076,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 22:11:55" itemprop="dateModified" datetime="2019-03-02T22:11:55+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-03 23:24:08" itemprop="dateModified" datetime="2019-03-03T23:24:08+08:00">2019-03-03</time>
               
             
           </span>
@@ -6488,7 +6535,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -6499,7 +6546,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -7162,7 +7209,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>

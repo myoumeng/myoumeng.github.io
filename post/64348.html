@@ -142,9 +142,6 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
   <meta name="description" content="前面我们已经学习了CSS的语法、id和class选择器、如何创建及使用、css的背景、文本、字体、链接、列表样式、表格、盒子模型、边框，这些内容实在是丰富。我们要牢记，css就是一个层叠样式表，我们可以利用它来装饰我们的html。所以，使用css的三种方法要熟练。如果不用内联样式或内联样式表，那就要用外联，此时我们就得写一个外部的css文件，还有id、类、元素/标签、包含这4个常见的选择器。想要">
@@ -237,7 +234,53 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 </head>
@@ -700,7 +743,7 @@
 <p>目录如下：<br>[TOC]</p>
 <p>&lt;%- toc(page.content) %&gt;</p>
 <p>让我为你点一首歌吧！♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-JczgKbyc" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1217823" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+    <div id="aplayer-tqGsemtK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1217823" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <h1 id="轮廓（outline）"><a href="#轮廓（outline）" class="headerlink" title="轮廓（outline）"></a>轮廓（outline）</h1><p>轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。轮廓（outline）属性指定元素轮廓的样式、颜色和宽度。</p>
 <table>
 <thead>
@@ -884,7 +927,7 @@
 <li>.marked p{ }: 为所有 <code>class=&quot;marked&quot; 元素内</code>的 p 元素指定一个样式。</li>
 <li>p.marked{ }: 为所有<code>class=&quot;marked&quot;</code> 的 <code>p 元素</code>指定一个样式。</li>
 </ul>
-<p>很拗口吧？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">p</span><br><span class="line">&#123;</span><br><span class="line">	color:blue;</span><br><span class="line">	text-align:center;</span><br><span class="line">&#125;</span><br><span class="line">.marked</span><br><span class="line">&#123;</span><br><span class="line">	background-color:red;</span><br><span class="line">&#125;</span><br><span class="line">.marked p</span><br><span class="line">&#123;</span><br><span class="line">	color:white;</span><br><span class="line">&#125;</span><br><span class="line">p.marked&#123;</span><br><span class="line">  text-decoration:underline;</span><br><span class="line">	color:black;</span><br><span class="line">	background-color:yellow;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p&gt;这个段落是蓝色文本，居中对齐。我是p，p本来就是蓝色文本，居中对齐&lt;/p&gt;</span><br><span class="line">&lt;div class=&quot;marked&quot;&gt;</span><br><span class="line">&lt;p&gt;</span><br><span class="line">	这个段落不是蓝色文本。</span><br><span class="line">	我外头包围的是p，</span><br><span class="line">	p外面是div的class=marked，marked类是背景色为红色，</span><br><span class="line">	并且.marked p这种，字体颜色是白色！~</span><br><span class="line">	因为我是被class=marked的div元素包围的p元素~~~么么哒</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;p&gt;所有 class=&quot;marked&quot;元素内的 p 元素指定一个样式，但有不同的文本颜色。</span><br><span class="line">	我是可爱的p，我p外面没有class，我就是简单的p。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p class=&quot;marked&quot;&gt;带下划线的 p 段落?????????????????????。</span><br><span class="line">	我是p，并且我的class用了marked，要知道，p.marked是下划线，黑字，黄底&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>很拗口吧？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">p</span><br><span class="line">&#123;</span><br><span class="line">	color:blue;</span><br><span class="line">	text-align:center;</span><br><span class="line">&#125;</span><br><span class="line">.marked</span><br><span class="line">&#123;</span><br><span class="line">	background-color:red;</span><br><span class="line">&#125;</span><br><span class="line">.marked p</span><br><span class="line">&#123;</span><br><span class="line">	color:white;</span><br><span class="line">&#125;</span><br><span class="line">p.marked&#123;</span><br><span class="line">  text-decoration:underline;</span><br><span class="line">	color:black;</span><br><span class="line">	background-color:yellow;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p&gt;这个段落是蓝色文本，居中对齐。我是p，p本来就是蓝色文本，居中对齐&lt;/p&gt;</span><br><span class="line">&lt;div class=&quot;marked&quot;&gt;</span><br><span class="line">&lt;p&gt;</span><br><span class="line">	这个段落不是蓝色文本。</span><br><span class="line">	我外头包围的是p，</span><br><span class="line">	p外面是div的class=marked，marked类是背景色为红色，</span><br><span class="line">	并且.marked p这种，字体颜色是白色！~</span><br><span class="line">	因为我是被class=marked的div元素包围的p元素&lt;sub&gt;&lt;/sub&gt;~么么哒</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;p&gt;所有 class=&quot;marked&quot;元素内的 p 元素指定一个样式，但有不同的文本颜色。</span><br><span class="line">	我是可爱的p，我p外面没有class，我就是简单的p。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p class=&quot;marked&quot;&gt;带下划线的 p 段落?????????????????????。</span><br><span class="line">	我是p，并且我的class用了marked，要知道，p.marked是下划线，黑字，黄底&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
 <p><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzoxpuwl2uj30i407qac0.jpg" alt></p>
 <h1 id="组合选择符"><a href="#组合选择符" class="headerlink" title="组合选择符"></a>组合选择符</h1><p>组合选择符说明了两个选择器直接的关系。CSS组合选择符包括各种简单选择符的组合方式。在 CSS3 中包含了四种组合方式:</p>
 <ul>
@@ -994,7 +1037,7 @@
 
  <div class="post-body">
  <div class="note primary">
-  <div class="popular-posts-header">欢迎阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
+  <div class="popular-posts-header">欢迎你来阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
   <ul class="popular-posts">
   
     <li class="popular-posts-item">
@@ -1528,7 +1571,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -1539,7 +1582,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -2242,7 +2285,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>

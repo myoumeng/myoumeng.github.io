@@ -142,23 +142,20 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
-  <meta name="description" content="没想到啊，CSS内容还是很多~不过，坚持！👊应该这章就可以写完了~基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~继续勤奋学习css吧~在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。">
+  <meta name="description" content="没想到啊，CSS内容还是很多不过，坚持！👊应该这章就可以写完了基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~继续勤奋学习css吧~在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。">
 <meta name="keywords" content="study,serialise,CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习CSS自定义样式，让博客焕然一新（三）">
 <meta property="og:url" content="http://myoumeng.github.io/post/63269.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
-<meta property="og:description" content="没想到啊，CSS内容还是很多~不过，坚持！👊应该这章就可以写完了~基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~继续勤奋学习css吧~在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。">
+<meta property="og:description" content="没想到啊，CSS内容还是很多不过，坚持！👊应该这章就可以写完了基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~继续勤奋学习css吧~在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-03-02T13:01:22.984Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习CSS自定义样式，让博客焕然一新（三）">
-<meta name="twitter:description" content="没想到啊，CSS内容还是很多~不过，坚持！👊应该这章就可以写完了~基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~继续勤奋学习css吧~在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。">
+<meta name="twitter:description" content="没想到啊，CSS内容还是很多不过，坚持！👊应该这章就可以写完了基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~继续勤奋学习css吧~在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。">
 
 
 
@@ -226,7 +223,53 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 </head>
@@ -683,14 +726,14 @@
       
 
       
-        <blockquote class="blockquote-center"><p>没想到啊，CSS内容还是很多~不过，坚持！👊应该这章就可以写完了~基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~<br>继续勤奋学习css吧~<br>在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。</p>
+        <blockquote class="blockquote-center"><p>没想到啊，CSS内容还是很多<sub>不过，坚持！👊应该这章就可以写完了</sub>基础部分就会很扎实啦！基本上就可以达到看到css与html结合的样式，也能够分析90%以上啦~<br>继续勤奋学习css吧~<br>在第二章里面，我们学了css轮廓、外边距、填充、分组&amp;嵌套选择器、尺寸、显示与可见性、溢出、组合选择器、定位、对齐。接下来要学：伪类、伪元素、导航栏、下拉菜单、提示工具、图像透明度。</p>
 </blockquote>
 <a id="more"></a>
 <div class="note info">
             <p>友情提示：我的博客页面右下方的汉堡<i class="fa fa-bars"></i>图标，点击后会有目录大纲出来哦！让你看文更高效！😋</p>
           </div>
 <p>让我为你点一首歌吧！♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-jaxkDHZl" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="425295710" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+    <div id="aplayer-FdoHLigI" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="425295710" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <h1 id="CSS-伪类-Pseudo-classes"><a href="#CSS-伪类-Pseudo-classes" class="headerlink" title="CSS 伪类(Pseudo-classes)"></a>CSS 伪类(Pseudo-classes)</h1><p>CSS伪类是用来添加一些选择器的特殊效果。</p>
 <h2 id="所有CSS伪类-元素"><a href="#所有CSS伪类-元素" class="headerlink" title="所有CSS伪类/元素"></a>所有CSS伪类/元素</h2><table>
 <thead>
@@ -770,7 +813,7 @@
 <h3 id="匹配第一个-lt-p-gt-元素"><a href="#匹配第一个-lt-p-gt-元素" class="headerlink" title="匹配第一个&lt;p&gt;元素"></a>匹配第一个<code>&lt;p&gt;</code>元素</h3><p>在下面的例子中，选择器匹配作为任何元素的第一个子元素的<code>&lt;p&gt;</code> 元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:first-child</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="匹配所有-lt-p-gt-元素中的第一个-lt-i-gt-元素"><a href="#匹配所有-lt-p-gt-元素中的第一个-lt-i-gt-元素" class="headerlink" title="匹配所有&lt;p&gt;元素中的第一个&lt;i&gt; 元素"></a>匹配所有<code>&lt;p&gt;</code>元素中的第一个<code>&lt;i&gt;</code> 元素</h3><p>在下面的例子中，选择相匹配的所有<code>&lt;p&gt;</code>元素的第一个 <code>&lt;i&gt;</code>元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p &gt; i:first-child</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="匹配所有作为第一个子元素的-lt-p-gt-元素中的所有-lt-i-gt-元素"><a href="#匹配所有作为第一个子元素的-lt-p-gt-元素中的所有-lt-i-gt-元素" class="headerlink" title="匹配所有作为第一个子元素的&lt;p&gt; 元素中的所有&lt;i&gt;元素"></a>匹配所有作为第一个子元素的<code>&lt;p&gt;</code> 元素中的所有<code>&lt;i&gt;</code>元素</h3><p>在下面的例子中，选择器匹配所有作为元素的第一个子元素的 <code>&lt;p&gt;</code> 元素中的所有 <code>&lt;i&gt;</code>元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:first-child i</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="lang-伪类"><a href="#lang-伪类" class="headerlink" title=":lang 伪类"></a>:lang 伪类</h3><p>:lang 伪类使你有能力为不同的语言定义特殊的规则<br>注意：IE8必须声明<code>&lt;!DOCTYPE&gt;</code>才能支持:lang伪类。<br>在下面的例子中，:lang 类为属性值为 no 的q元素定义引号的类型：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q:lang(no) &#123;quotes: &quot;~&quot; &quot;~&quot;;&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="lang-伪类"><a href="#lang-伪类" class="headerlink" title=":lang 伪类"></a>:lang 伪类</h3><p>:lang 伪类使你有能力为不同的语言定义特殊的规则<br>注意：IE8必须声明<code>&lt;!DOCTYPE&gt;</code>才能支持:lang伪类。<br>在下面的例子中，:lang 类为属性值为 no 的q元素定义引号的类型：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q:lang(no) &#123;quotes: &quot;&lt;sub&gt;&quot; &quot;&lt;/sub&gt;&quot;;&#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h1><p>CSS伪元素是用来添加一些选择器的特殊效果。</p>
 <h2 id="伪元素的语法"><a href="#伪元素的语法" class="headerlink" title="伪元素的语法"></a>伪元素的语法</h2><p>selector:pseudo-element {property:value;}<br>CSS类也可以使用伪元素：<br>selector.class:pseudo-element {property:value;}</p>
 <h2 id="first-line-伪元素"><a href="#first-line-伪元素" class="headerlink" title=":first-line 伪元素"></a>:first-line 伪元素</h2><p>“first-line” 伪元素用于向文本的首行设置特殊样式。</p>
@@ -926,7 +969,7 @@
 
  <div class="post-body">
  <div class="note primary">
-  <div class="popular-posts-header">欢迎阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
+  <div class="popular-posts-header">欢迎你来阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
   <ul class="popular-posts">
   
     <li class="popular-posts-item">
@@ -1460,7 +1503,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -1471,7 +1514,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -2174,7 +2217,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>

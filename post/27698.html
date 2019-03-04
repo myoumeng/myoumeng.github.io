@@ -142,9 +142,6 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
   <meta name="description" content="我的确花了不少时间在整理自己的博客上，hexo站点的各项配置，更是折腾了我许久，谁让我本身对代码不是很懂呢？全程只能靠自己琢磨、学习，参考了许许多多的教程，有老有新。可是都是混在一起，我也没有太分开，导致自己多次配置出了差错，并且很难修整，天知道，我重新安装hexo以及next主题是否有超过10次了。真是痛苦的经历。还好，最终我获胜了😎这次要介绍与图片、音乐、视频、动效相关的内容哦！期待地">
@@ -158,7 +155,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3072214-976a8cf36c994dc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
 <meta property="og:image" content="https://cdn.shknn.com/wp-content/uploads/2015/12/20151228111322.png">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1fzvw58dahcj30mz0ctgx6.jpg">
-<meta property="og:updated_time" content="2019-03-02T13:36:07.898Z">
+<meta property="og:updated_time" content="2019-03-03T14:55:49.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用HEXO打造更个性化的个人博客2">
 <meta name="twitter:description" content="我的确花了不少时间在整理自己的博客上，hexo站点的各项配置，更是折腾了我许久，谁让我本身对代码不是很懂呢？全程只能靠自己琢磨、学习，参考了许许多多的教程，有老有新。可是都是混在一起，我也没有太分开，导致自己多次配置出了差错，并且很难修整，天知道，我重新安装hexo以及next主题是否有超过10次了。真是痛苦的经历。还好，最终我获胜了😎这次要介绍与图片、音乐、视频、动效相关的内容哦！期待地">
@@ -230,7 +227,53 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 <link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
@@ -605,7 +648,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 21:36:07" itemprop="dateModified" datetime="2019-03-02T21:36:07+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-03 22:55:49" itemprop="dateModified" datetime="2019-03-03T22:55:49+08:00">2019-03-03</time>
               
             
           </span>
@@ -700,16 +743,14 @@
 </ul>
 <a id="more"></a>
 <p>让我为你点一首歌吧！♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-zHczefQS" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28718066" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
-<h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><p>因为本身对hexo及其不熟悉，所以自定义的过程既长久又艰辛^一把辛酸泪呀^。<br>还好，风风雨雨都经历过来了，这样才有成长和进步嘛。</p>
+    <div id="aplayer-paITrKOT" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="28718066" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+<h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><p>因为本身对hexo及其不熟悉，所以自定义的过程既长久又艰辛<sup>一把辛酸泪呀</sup>。<br>还好，风风雨雨都经历过来了，这样才有成长和进步嘛。</p>
 <p>磨刀不误砍柴工，一个漂亮的、舒服的博客，总会让人赏心悦目，更有希望坚持写下去。若是我们在能力足够的前提下，还能亲手打造出来，那更是成就感十足！</p>
-<p>让我为你点一首歌吧！<br>♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-TnYrtvMK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4894309" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <p>接下来，就要好好地打造一个令我们舒适、愉悦的个人博客啦！</p>
 <div class="note info">
             <p>友情提示：我的博客页面右下方的汉堡<i class="fa fa-bars"></i>图标，点击后会有目录大纲出来哦！让你看文更高效！😋</p>
           </div>
-<h1 id="在文章末尾添加“文章结束”标记"><a href="#在文章末尾添加“文章结束”标记" class="headerlink" title="在文章末尾添加“文章结束”标记"></a>在文章末尾添加“文章结束”标记</h1><p>在路径<code>Blog\themes\next\layout\_macro</code>文件夹中新建passage-end-tag.swig文件[^文章结束]。<br>[^文章结束]: <span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85ZjBlOTBjYzMyYzI=" title="https://www.jianshu.com/p/9f0e90cc32c2">https://www.jianshu.com/p/9f0e90cc32c2<i class="fa fa-external-link"></i></span></p>
+<h1 id="在文章末尾添加“文章结束”标记"><a href="#在文章末尾添加“文章结束”标记" class="headerlink" title="在文章末尾添加“文章结束”标记"></a>在文章末尾添加“文章结束”标记</h1><p>在路径<code>Blog\themes\next\layout\_macro</code>文件夹中新建passage-end-tag.swig文件 <span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC85ZjBlOTBjYzMyYzI=" title="https://www.jianshu.com/p/9f0e90cc32c2">^文章结束<i class="fa fa-external-link"></i></span>。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//切换到路径_macro</span><br><span class="line">cd [_macro路径]</span><br><span class="line"></span><br><span class="line">//创建passage-end-tag.swig文件</span><br><span class="line">touch passage-end-tag.swig</span><br></pre></td></tr></table></figure>
 <p>在passage-end-tag.swig添加以下内容，直接用文本编辑器打开，粘贴以下内容后保存</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style=&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;</span><br><span class="line">        -------------本文结束啦&lt;i class=&quot;fa fa-paw&quot;&gt;&lt;/i&gt;感谢您的阅读-------------</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
@@ -743,7 +784,7 @@
 <figure class="highlight diff"><figcaption><span>文件位置：~/blog/themes/next/layout/_macro/sidebar.swig</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+        &lt;a href="/"&gt;</span></span><br><span class="line">          &lt;img class="site-author-image" itemprop="image"</span><br><span class="line">               src="&#123;&#123; url_for( theme.avatar | default(theme.images + '/avatar.gif') ) &#125;&#125;"</span><br><span class="line">               alt="&#123;&#123; theme.author &#125;&#125;" /&gt;</span><br><span class="line"><span class="addition">+        &lt;/a&gt;</span></span><br></pre></td></tr></table></figure>
 <p>最后就 OK 了～</p>
 <h1 id="字体设置"><a href="#字体设置" class="headerlink" title="字体设置"></a>字体设置</h1><p><span id="inline-toc">1. </span>主题配置文件中找到font，改为以下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br><span class="line">  # Uri of fonts host. E.g. //fonts.googleapis.com (Default)</span><br><span class="line">  host: https://fonts.loli.net</span><br><span class="line"></span><br><span class="line">  # Font options:</span><br><span class="line">  # `external: true` will load this font family from `host` above.</span><br><span class="line">  # `family: Times New Roman`. Without any quotes.</span><br><span class="line">  # `size: xx`. Use `px` as unit.</span><br><span class="line"></span><br><span class="line">  # Global font settings used on &lt;body&gt; element.</span><br><span class="line">  global:</span><br><span class="line">    external: true</span><br><span class="line">    family: Lato</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  # Font settings for Headlines (h1, h2, h3, h4, h5, h6).</span><br><span class="line">  # Fallback to `global` font settings.</span><br><span class="line">  headings:</span><br><span class="line">    external: true</span><br><span class="line">    family: Roboto Slab</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  # Font settings for posts.</span><br><span class="line">  # Fallback to `global` font settings.</span><br><span class="line">  posts:</span><br><span class="line">    external: true</span><br><span class="line">    family:</span><br><span class="line"></span><br><span class="line">  # Font settings for Logo.</span><br><span class="line">  # Fallback to `global` font settings.</span><br><span class="line">  logo:</span><br><span class="line">    external: true</span><br><span class="line">    family:</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  # Font settings for &lt;code&gt; and code blocks.</span><br><span class="line">  codes:</span><br><span class="line">    external: true</span><br><span class="line">    family: Roboto Mono</span><br><span class="line">    size:</span><br></pre></td></tr></table></figure></p>
-<h1 id="出现鼠标点击后的文字“富强，民主，敬业…”特效"><a href="#出现鼠标点击后的文字“富强，民主，敬业…”特效" class="headerlink" title="出现鼠标点击后的文字“富强，民主，敬业…”特效"></a>出现鼠标点击后的文字“富强，民主，敬业…”特效</h1><p>在填上一段代码：<br><figure class="highlight js"><figcaption><span>位置：blog/themes/hexo-theme-next-6.7.0/layout/_layout.swig</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!-- 鼠标特效  --&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a_idx = <span class="number">0</span>;</span><br><span class="line">jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"body"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span></span><br><span class="line">        (<span class="string">"富强"</span>, <span class="string">"民主"</span>, <span class="string">"文明"</span>, <span class="string">"和谐"</span>,<span class="string">"☀️"</span>,<span class="string">"自由"</span>, <span class="string">"平等"</span>, <span class="string">"公正"</span>, <span class="string">"法治"</span>,<span class="string">"🌎"</span>, <span class="string">"爱国"</span>, <span class="string">"敬业"</span>, <span class="string">"诚信"</span>, <span class="string">"友善"</span>,<span class="string">"🤝"</span>);</span><br><span class="line">        <span class="keyword">var</span> $i = $(<span class="string">"&lt;span/&gt;"</span>).text(a[a_idx]);</span><br><span class="line">        a_idx = (a_idx + <span class="number">1</span>) % a.length;</span><br><span class="line">        <span class="keyword">var</span> x = e.pageX,</span><br><span class="line">        y = e.pageY;</span><br><span class="line">        $i.css(&#123;</span><br><span class="line">            <span class="string">"z-index"</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">"top"</span>: y - <span class="number">20</span>,</span><br><span class="line">            <span class="string">"left"</span>: x,</span><br><span class="line">            <span class="string">"position"</span>: <span class="string">"absolute"</span>,</span><br><span class="line">            <span class="string">"font-weight"</span>: <span class="string">"bold"</span>,</span><br><span class="line">            <span class="string">"color"</span>: s()</span><br><span class="line">        &#125;);</span><br><span class="line">        $(<span class="string">"body"</span>).append($i);</span><br><span class="line">        $i.animate(&#123;</span><br><span class="line">            <span class="string">"top"</span>: y - <span class="number">180</span>,</span><br><span class="line">            <span class="string">"opacity"</span>: <span class="number">0</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="number">3000</span>,</span><br><span class="line">        <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        $i.remove();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">    setTimeout(<span class="string">'delay()'</span>, <span class="number">2000</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delay</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">".buryit"</span>).removeAttr(<span class="string">"onclick"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"rgb("</span> + ~~ (<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + ~~ (<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + ~~ (<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">")"</span></span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script type="text/</span>javascript<span class="string">" src= "</span>/js/src/instantclick.min.js<span class="string">" data-no-instant&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">&lt;script data-no-instant&gt;InstantClick.init();&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="出现鼠标点击后的文字“富强，民主，敬业…”特效"><a href="#出现鼠标点击后的文字“富强，民主，敬业…”特效" class="headerlink" title="出现鼠标点击后的文字“富强，民主，敬业…”特效"></a>出现鼠标点击后的文字“富强，民主，敬业…”特效</h1><p>在填上一段代码：<br><figure class="highlight js"><figcaption><span>位置：blog/themes/hexo-theme-next-6.7.0/layout/_layout.swig</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!-- 鼠标特效  --&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a_idx = <span class="number">0</span>;</span><br><span class="line">jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"body"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span></span><br><span class="line">        (<span class="string">"富强"</span>, <span class="string">"民主"</span>, <span class="string">"文明"</span>, <span class="string">"和谐"</span>,<span class="string">"☀️"</span>,<span class="string">"自由"</span>, <span class="string">"平等"</span>, <span class="string">"公正"</span>, <span class="string">"法治"</span>,<span class="string">"🌎"</span>, <span class="string">"爱国"</span>, <span class="string">"敬业"</span>, <span class="string">"诚信"</span>, <span class="string">"友善"</span>,<span class="string">"🤝"</span>);</span><br><span class="line">        <span class="keyword">var</span> $i = $(<span class="string">"&lt;span/&gt;"</span>).text(a[a_idx]);</span><br><span class="line">        a_idx = (a_idx + <span class="number">1</span>) % a.length;</span><br><span class="line">        <span class="keyword">var</span> x = e.pageX,</span><br><span class="line">        y = e.pageY;</span><br><span class="line">        $i.css(&#123;</span><br><span class="line">            <span class="string">"z-index"</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">"top"</span>: y - <span class="number">20</span>,</span><br><span class="line">            <span class="string">"left"</span>: x,</span><br><span class="line">            <span class="string">"position"</span>: <span class="string">"absolute"</span>,</span><br><span class="line">            <span class="string">"font-weight"</span>: <span class="string">"bold"</span>,</span><br><span class="line">            <span class="string">"color"</span>: s()</span><br><span class="line">        &#125;);</span><br><span class="line">        $(<span class="string">"body"</span>).append($i);</span><br><span class="line">        $i.animate(&#123;</span><br><span class="line">            <span class="string">"top"</span>: y - <span class="number">180</span>,</span><br><span class="line">            <span class="string">"opacity"</span>: <span class="number">0</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="number">3000</span>,</span><br><span class="line">        <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        $i.remove();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">    setTimeout(<span class="string">'delay()'</span>, <span class="number">2000</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delay</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">".buryit"</span>).removeAttr(<span class="string">"onclick"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"rgb("</span> + <span class="xml"><span class="tag">&lt;<span class="name">sub</span>&gt;</span><span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span> (<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + <span class="xml"><span class="tag">&lt;<span class="name">sub</span>&gt;</span><span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span> (<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">","</span> + <span class="xml"><span class="tag">&lt;<span class="name">sub</span>&gt;</span><span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span> (<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">")"</span></span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script type="text/</span>javascript<span class="string">" src= "</span>/js/src/instantclick.min.js<span class="string">" data-no-instant&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">&lt;script data-no-instant&gt;InstantClick.init();&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="页脚使用红色的小爱心动效"><a href="#页脚使用红色的小爱心动效" class="headerlink" title="页脚使用红色的小爱心动效"></a>页脚使用红色的小爱心动效</h1><p>介绍next v6主题，很简单的方法，就是在主题配置中，找到<code>icon:</code>。<br><code>animated：true</code>意味着让图标动起来，有如果换成心脏❤️图标，那就有嘭嘭嘭跳动的效果，根据下面的把代码改一下就OK了！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Icon between year and copyright info.</span><br><span class="line">icon:</span><br><span class="line">  # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/</span><br><span class="line">  # `heart` is recommended with animation in red (#ff0000).</span><br><span class="line">  name: heart</span><br><span class="line">  # If you want to animate the icon, set it to true.</span><br><span class="line">  animated: true</span><br><span class="line">  # Change the color of icon, using Hex Code.</span><br><span class="line">  color: &quot;#ff0000&quot;</span><br></pre></td></tr></table></figure>
 <h1 id="插入音乐"><a href="#插入音乐" class="headerlink" title="插入音乐"></a>插入音乐</h1><p>自从爱上我的博客小屋后，一直在优化、美化，音乐这个动态的美感，总感觉加上后就能够更加个性化、有感觉，好像很有我“自己的味道”，非常让我有归属感。是吧！你应该也赞同，音乐必不可少咯:fa-smile:<br>所以，必须有音乐！精神的寄托，品味的提升，吼吼吼。</p>
@@ -763,12 +804,12 @@
 <p>那我要用简单的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;https://music.163.com/#/song?id=29722582&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>显示如下：</p>
 
-        <div id="aplayer-vsjCicNO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-HvtzlYzK" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-vsjCicNO"),
+            element: document.getElementById("aplayer-HvtzlYzK"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -786,11 +827,11 @@
 <p>呵呵，发现竟然没有显示，那我就换一个代码，用它（When you use MetingJS, your blog can play musics from Tencent, Netease, Xiami, Kugou, Baidu and more.）<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01vZVBsYXllci9oZXhvLXRhZy1hcGxheWVyI21laW5nanMtc3VwcG9ydC1uZXctaW4tMzA=" title="https://github.com/MoePlayer/hexo-tag-aplayer#meingjs-support-new-in-30">^meting<i class="fa fa-external-link"></i></span></p>
 <p>ok,再试一下，代码如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;29722582&quot; &quot;netease&quot; &quot;song&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#000&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-yMknsyfa" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div>
+    <div id="aplayer-LhoOceQL" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="29722582" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div>
 <p>太棒了，能够显示付费下载的单首歌曲。那么，再试下我的歌单！<br>同样，我们播放网易云歌单，然后看到浏览器上的地址为：<span class="exturl" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvbXkvbS9tdXNpYy9wbGF5bGlzdD9pZD0xMTM2NTU1MDDjgILlkI7pnaLlsLHmmK9pZOOAgg==" title="https://music.163.com/#/my/m/music/playlist?id=113655500。后面就是id。">https://music.163.com/#/my/m/music/playlist?id=113655500。后面就是id。<i class="fa fa-external-link"></i></span><br>比如，我的歌单的id=2639061041；然后在一篇博客md文章中，写下如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;id&quot; &quot;netease&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure></p>
 <p>用上我的id后，显示如下：</p>
 
-    <div id="aplayer-jCuEZFSr" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2639061041" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+    <div id="aplayer-fmOEgrlH" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2639061041" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The &#123;% meting %&#125; options are shown below:</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -901,8 +942,7 @@
 <h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><h2 id="way1-直接用-HTML-的标签-1"><a href="#way1-直接用-HTML-的标签-1" class="headerlink" title="way1.直接用 HTML 的标签"></a>way1.直接用 HTML 的标签</h2><p>写法如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;video poster=&quot;https://封面图.jpg&quot; src=&quot;https://什么什么什么.mp4&quot; style=&quot;max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;&quot; controls=&quot;controls&quot; loop=&quot;loop&quot; preload=&quot;meta&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="way2-用插件-1"><a href="#way2-用插件-1" class="headerlink" title="way2.用插件"></a>way2.用插件</h2><p>功能更加强大，比如可以弹幕，非常建议食用。</p>
-<p>首先在站点文件夹根目录安装插件[^dplayer]：</p>
-<p>[^dplayer]<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01vZVBsYXllci9oZXhvLXRhZy1kcGxheWVy" title="https://github.com/MoePlayer/hexo-tag-dplayer">https://github.com/MoePlayer/hexo-tag-dplayer<i class="fa fa-external-link"></i></span></p>
+<p>首先在站点文件夹根目录安装插件<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01vZVBsYXllci9oZXhvLXRhZy1kcGxheWVy" title="https://github.com/MoePlayer/hexo-tag-dplayer">^dplayer<i class="fa fa-external-link"></i></span>：</p>
 <figure class="highlight html"><figcaption><span>所在目录：~/blog/</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-dplayer --save</span><br></pre></td></tr></table></figure>
 <p>然后md文章中的写法：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% dplayer &quot;url=https://什么什么什么.mp4&quot; &quot;https://封面图.jpg&quot; &quot;api=https://api.prprpr.me/dplayer/&quot; &quot;id=&quot; &quot;loop=false&quot; %&#125;</span><br></pre></td></tr></table></figure>
@@ -932,20 +972,13 @@
 
  <div class="post-body">
  <div class="note primary">
-  <div class="popular-posts-header">欢迎阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
+  <div class="popular-posts-header">欢迎你来阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
   <ul class="popular-posts">
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/64584.html" rel="bookmark">用HEXO打造更个性化的个人博客1：主要插件</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/post/24651.html" rel="bookmark">用HEXO打造更个性化的个人博客3</a></div>
+      <div class="popular-posts-title"><a href="/post/64584.html" rel="bookmark">用HEXO打造更个性化的个人博客1</a></div>
       
     </li>
   
@@ -953,6 +986,13 @@
       
       
       <div class="popular-posts-title"><a href="/post/3724.html" rel="bookmark">用HEXO打造更个性化的个人博客4</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/post/24651.html" rel="bookmark">用HEXO打造更个性化的个人博客3</a></div>
       
     </li>
   
@@ -1472,7 +1512,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -1483,7 +1523,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -2186,7 +2226,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>

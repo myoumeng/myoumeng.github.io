@@ -2116,7 +2116,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #756cff;
+  background: #ffaf03;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3282,6 +3282,9 @@ main-inner #sidebar {
 #main > div > div.sidebar-toggle > div > span.sidebar-toggle-line.sidebar-toggle-line-last {
   margin-top: 4px;
 }
+div#days {
+  color: #ffffd2;
+}
 .back-to-top.back-to-top-on {
   visibility: visible;
   transition-duration: 0.2s;
@@ -3360,7 +3363,7 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: #673ab7;
+  color: #ef4e7b;
   text-align: center;
 }
 .fa-rss:before {
@@ -3386,7 +3389,7 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #673ab7;
+  color: #aa96da;
   font-size: 16px;
   letter-spacing: 2px;
   padding: 2px;
@@ -3398,7 +3401,7 @@ site-overview-wrap sidebar-panel sidebar-panel-active back-to-top back-to-top-on
   letter-spacing: 2px;
 }
 .sidebar a {
-  color: #673ab7;
+  color: #aa96da;
 }
 .links-of-blogroll-title {
   margin-top: 20px;
@@ -3682,7 +3685,7 @@ code {
   border: 1px solid #673ab7;
   border-radius: 10px;
   position: absolute;
-  top: -350px;
+  top: -440px;
 }
 .need-share-button_dropdown-middle-right {
   bottom: 440px;
@@ -3876,4 +3879,39 @@ ul.popular-posts .popular-posts-item {
   font-weight: 900;
   color: #673ab7;
   text-align: center;
+}
+.waifu.ui-draggable.ui-draggable-handle {
+  left: 0px;
+  position: fixed !important;
+  top: 335px !important;
+  height: 1px !important;
+  z-index: 9000000 !important;
+}
+.waifu-tips {
+  width: 330px !important;
+  height: 150px !important;
+  font-size: 16px !important;
+  background: linear-gradient(to right, rgba(239,78,123,0.5), rgba(170,150,218,0.5), rgba(250,202,211,0.5)) !important;
+  box-shadow: 0 4px 15px 4px rgba(170,150,218,0.4) !important;
+  border: 1px solid #673ab7 !important;
+  top: 160px !important;
+}
+canvas#live2d {
+  height: 240px;
+  top: 298px;
+  left: 0px;
+  cursor: pointer;
+}
+.waifu-tool {
+  right: -10px !important;
+  position: fixed !important;
+  top: 300px !important;
+  font-size: 20px !important;
+}
+.waifu-tool span {
+  padding: 2px !important;
+  color: #aa96da !important;
+}
+.waifu-tool span:hover {
+  color: #673ab7 !important;
 }

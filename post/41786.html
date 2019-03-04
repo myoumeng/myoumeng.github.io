@@ -142,9 +142,6 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
   <meta name="description" content="2018年–我的最后一场旅行">
@@ -155,7 +152,7 @@
 <meta property="og:site_name" content="彼岸遇见欧萌">
 <meta property="og:description" content="2018年–我的最后一场旅行">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-02T14:11:55.659Z">
+<meta property="og:updated_time" content="2019-03-03T15:24:08.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="趁着研习交流一探宝岛台湾，不虚此行！">
 <meta name="twitter:description" content="2018年–我的最后一场旅行">
@@ -226,7 +223,53 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 </head>
@@ -601,7 +644,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 22:11:55" itemprop="dateModified" datetime="2019-03-02T22:11:55+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-03 23:24:08" itemprop="dateModified" datetime="2019-03-03T23:24:08+08:00">2019-03-03</time>
               
             
           </span>
@@ -669,7 +712,7 @@
 </blockquote>
 <a id="more"></a>
 <p>让我为你点一首歌吧！♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-dynheLyF" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="486544196" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+    <div id="aplayer-qNKRICWa" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="486544196" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <h1 id="前"><a href="#前" class="headerlink" title="前"></a>前</h1><p>　　盼着盼着呀，总算到了12月，心心念念的12月，2018年的12月。为什么对12月这么期盼？大概是，自从台湾的学生来中南访问交流时，我对台湾的好奇就如同野草般的疯长。</p>
 <p>　　时间如细沙一样不急不缓地流走，一转眼，我就与二十多名伙伴一起，坐上了大巴车、上了飞机。坐在飞机上的我，不禁感慨，这简直如梦境一般，画面一转就变成了我就要去到从未接触过的宝岛台湾，于是闭上眼睛思索，以我脑中仅有的那点对台湾的了解，描绘了台湾的美丽风情以及即将体验的多彩生活。</p>
 <h1 id="中"><a href="#中" class="headerlink" title="中"></a>中</h1><h2 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h2><p>　　第一日下午，也就是2018年12月2日，我们抵达台湾，迎接我们的导游姓吕，虽然年过五十，却也不失幽默，责任心忒强。我们是幸运的：按照吕导的说法，他可是公司的“小鲜肉”，别的导游年纪可都是七十、八十了！我们会心一笑，两岸的差异多如牛毛，这仅是其中之一（目前中国的导游都很年轻，20多岁的大有人在，而台湾却几乎在30岁以上，50、60岁的导游十分常见）。坐上导游安排的大巴，心中知道，自己已然踏上了揭开台湾神秘面纱的旅途，带着与台湾高校深入交流研习的心，我的笑容逐渐加深。</p>
@@ -711,7 +754,7 @@
 
  <div class="post-body">
  <div class="note primary">
-  <div class="popular-posts-header">欢迎阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
+  <div class="popular-posts-header">欢迎你来阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
   <ul class="popular-posts">
   
     <li class="popular-posts-item">
@@ -1204,7 +1247,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -1215,7 +1258,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -1918,7 +1961,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>

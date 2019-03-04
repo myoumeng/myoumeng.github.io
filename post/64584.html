@@ -142,23 +142,20 @@
 
   
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 
-  <meta name="description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。">
+  <meta name="description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。    主要插件">
 <meta name="keywords" content="HEXO,博客,个性化,插件,NEXT,serialise">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用HEXO打造更个性化的个人博客1：主要插件">
+<meta property="og:title" content="用HEXO打造更个性化的个人博客1">
 <meta property="og:url" content="http://myoumeng.github.io/post/64584.html">
 <meta property="og:site_name" content="彼岸遇见欧萌">
-<meta property="og:description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。">
+<meta property="og:description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。    主要插件">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-27T14:11:32.394Z">
+<meta property="og:updated_time" content="2019-03-04T12:26:03.313Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用HEXO打造更个性化的个人博客1：主要插件">
-<meta name="twitter:description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。">
+<meta name="twitter:title" content="用HEXO打造更个性化的个人博客1">
+<meta name="twitter:description" content="个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。    主要插件">
 
 
 
@@ -177,7 +174,7 @@
   };
 </script>
 
-  <title>用HEXO打造更个性化的个人博客1：主要插件 | 彼岸遇见欧萌</title>
+  <title>用HEXO打造更个性化的个人博客1 | 彼岸遇见欧萌</title>
   
 
 
@@ -226,7 +223,53 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+
+
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <title>Live2D 看板娘 v1.4 / Demo 1</title>
+                  <link rel="stylesheet" type="text/css" href="/assets/waifu.min.css?v=1.4.2">
+                  <!-- waifu-tips.js 依赖 JQuery 库 -->
+                  <script src="/assets/jquery.min.js?v=3.3.1"></script>
+
+                  <!-- 实现拖动效果，需引入 JQuery UI -->
+                  <script src="/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+                  <div class="waifu">
+                      <div class="waifu-tips"></div>
+                      <canvas id="live2d" class="live2d"></canvas>
+                      <div class="waifu-tool">
+                          <span class="fui-home"></span>
+                          <span class="fui-chat"></span>
+                          <span class="fui-eye"></span>
+                          <span class="fui-user"></span>
+                          <span class="fui-photo"></span>
+                          <span class="fui-info-circle"></span>
+                          <span class="fui-cross"></span>
+                      </div>
+                  </div>
+
+                  <script src="/assets/waifu-tips.min.js?v=1.4.2"></script>
+                  <script src="/assets/live2d.min.js?v=1.0.5"></script>
+                  <script type="text/javascript">
+                      /* 可直接修改部分参数 */
+                      live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                      live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                      live2d_settings['modelStorage'] = true;         // 不储存模型 ID
+                      live2d_settings['canCloseLive2d'] = true;       // 隐藏 关闭看板娘 按钮
+                      live2d_settings['canTurnToHomePage'] = true;    // 隐藏 返回首页 按钮
+                      live2d_settings['waifuSize'] = '600x535';        // 看板娘大小
+                      live2d_settings['waifuTipsSize'] = '570x150';    // 提示框大小
+                      live2d_settings['waifuFontSize'] = '30px';       // 提示框字体
+                      live2d_settings['waifuToolFont'] = '30px';       // 工具栏字体
+                      live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+                      live2d_settings['waifuToolTop'] = '-60px';       // 工具栏顶部边距
+                      live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                      /* 在 initModel 前添加 */
+                      initModel("/assets/waifu-tips.json?v=1.4.2")
+                  </script>
+
+</html><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
 </head>
@@ -558,7 +601,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">用HEXO打造更个性化的个人博客1：主要插件
+          <h2 class="post-title" itemprop="name headline">用HEXO打造更个性化的个人博客1
 
               
             
@@ -601,7 +644,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-27 22:11:32" itemprop="dateModified" datetime="2019-02-27T22:11:32+08:00">2019-02-27</time>
+                <time title="修改时间：2019-03-04 20:26:03" itemprop="dateModified" datetime="2019-03-04T20:26:03+08:00">2019-03-04</time>
               
             
           </span>
@@ -649,7 +692,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.7k</span>
+                <span title="本文字数">4.8k</span>
               
 
               
@@ -685,11 +728,14 @@
       
         <blockquote class="blockquote-center"><p>个人博客，在我的心中，就像一个家一样，它像是我心灵的避港湾。博客里面的文章是构成我家的主要部分，我选择的next主题是家的装饰，来我博客参观的你们，就是远道而来的贵客。</p>
 </blockquote>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> 主要插件</li>
+</ul>
 <a id="more"></a>
 <p>我很喜欢这样的想法，所以才会那么认真的对待我的家🏠，耗费许多心血、精力、时间，去完善它。</p>
 <p>相信，它不会让我失望的。</p>
 <p>让我为你点一首歌吧！<br>♪一直陪着你ヾ(·▽·ヾ)<br>开始静静享受歌曲吧！<br>
-    <div id="aplayer-rIJXDgSK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="37653063" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
+    <div id="aplayer-hlzEUuJB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="37653063" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#000"></div></p>
 <p>可以看到，我目前用的next主题是v6.7.0，也许以后还会换，目前就记下我常用的一些装点方法吧！如果也对你有用，那就更好了。</p>
 <p>此文主要记录一下我使用的插件</p>
 <p>next有些功能是需要安装插件的，所以，还是要看懂英文注释，然后去相应的网站下载即可。</p>
@@ -701,7 +747,7 @@
 <ul>
 <li>hexo-footnotes</li>
 </ul>
-<p>似乎有bug，就是<code>&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;</code>后面，要不然显示不了。</p>
+<p>似乎有bug，就是<code>[&lt;sup&gt;1]:</code>一定要放在<code>[&lt;/sup&gt;1]</code>后面，要不然显示不了。</p>
 <h1 id="分享NeedMoreShare2-for-NexT"><a href="#分享NeedMoreShare2-for-NexT" class="headerlink" title="分享NeedMoreShare2 for NexT"></a>分享NeedMoreShare2 for NexT</h1><p>Step 1 → Go to NexT dir到next主题的根目录<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC1uZWVkbW9yZXNoYXJlMg==" title="https://github.com/theme-next/theme-next-needmoreshare2">^n<i class="fa fa-external-link"></i></span>（而不是hexo哦）<br>Change dir to NexT directory. There must be layout, source, languages and other directories:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes/next</span><br><span class="line">$ ls</span><br><span class="line">bower.json  _config.yml  docs  gulpfile.coffee  languages  layout  LICENSE.md  package.json  README.md  scripts  source  test</span><br></pre></td></tr></table></figure></p>
 <p>Step 2 → Get module安装模块<br>Install module to source/lib directory:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton</span><br></pre></td></tr></table></figure>
@@ -747,15 +793,16 @@
 <li>Support for Markdown</li>
 <li>Extensive configuration</li>
 <li>Faster than the default renderer | hexo-renderer-marked</li>
-<li>sub, 下标：<code>H~2~0</code> H~2~0</li>
-<li>sup, 上标：<code>x^2^</code> x^2</li>
-<li>ins, 插入下划线：<code>++Inserted++</code> ++Inserted++, <code>~~Del~~</code> <del>Del</del></li>
-<li>Katex, 数学公式<span class="exturl" data-url="aHR0cHM6Ly93d3cubnBtanMuY29tL3BhY2thZ2UvQGlrdGFrYWhpcm8vbWFya2Rvd24taXQta2F0ZXg=" title="https://www.npmjs.com/package/@iktakahiro/markdown-it-katex">^math<i class="fa fa-external-link"></i></span>：<code>$\sqrt{3x-1}+(1+x)^2$</code></li>
+<li>sub, 下标：<code>H&lt;sub&gt;2&lt;/sub&gt;0</code> H<sub>2</sub>0</li>
+<li>sup, 上标：<code>x&lt;sup&gt;2&lt;/sup&gt;</code> x^2</li>
+<li>ins, 插入下划线：<code>++Inserted++</code> ++Inserted++, <code>&lt;sub&gt;&lt;/sub&gt;Del&lt;sub&gt;&lt;/sub&gt;</code> <sub></sub>Del<sub></sub></li>
+<li>Katex, 数学公式[<sup>math]：<code>$\sqrt{3x-1}+(1+x)&lt;/sup&gt;2$</code></sup></li>
 <li>emoji, 表情：</li>
 <li>toc&amp;anchor 目录：<code>@[toc]</code></li>
 <li>deflist</li>
 <li>abbr 缩写：<code>*[HTML]:  Hyper Text Markup Language</code></li>
-<li>footnote 页脚、脚注：`<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>  </li>
+<li>footnote 页脚、脚注：<code>[&lt;sup&gt;1]  [&lt;/sup&gt;1]:</code></li>
+<li>mark 标记：<code>==marked== =&gt; &lt;mark&gt;inserted&lt;/mark&gt;</code> ==marked== =&gt; <mark>inserted</mark></li>
 </ul>
 <h1 id="jquery-backstretch"><a href="#jquery-backstretch" class="headerlink" title="jquery-backstretch"></a>jquery-backstretch</h1><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><p>Installation</p>
 <ol>
@@ -767,7 +814,7 @@
 <h2 id="报错1"><a href="#报错1" class="headerlink" title="报错1"></a>报错1</h2><p>我没有想到，在这里用了一个代码<code>$\sqrt{3x-1}+(1+x)^2$</code>，然后我的页面宽度极具扩大！本来博客页面只有上下滚动的嘛，后来，因为宽度扩大，导致我的页面还可以左右动，非常宽。真是bug</p>
 <p>虽然目前不常用数学公式，但是未必未来不用，毕竟理科生，latex、katex可能未来还是要用到的，如果在博客用这些公式出现了差错，就有迹可循了。因为我把这个代码放到了无序列表中一项内容的后面，然后<code>sqrt</code>这个根的上部分就一直..一直…..往右..延长……</p>
 <p>所以，以后要检查、排除一下差错，不要放到无序列表，或者，背景用的代码加上一句width:xxxxxpx<br><code>{ width: 1080, url: &quot;path/to/image1_1080.jpg&quot; }</code></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><code>一定要放在</code></span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><code>- mark 标记：</code>==marked== =&gt; <mark>inserted</mark>` ==marked== =&gt; <mark>inserted</mark></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>
+
       
     </div>
 
@@ -786,13 +833,13 @@
 
  <div class="post-body">
  <div class="note primary">
-  <div class="popular-posts-header">欢迎阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
+  <div class="popular-posts-header">欢迎你来阅读相关文章哦(๑•̀ㅂ•́)و✧</div>
   <ul class="popular-posts">
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/3724.html" rel="bookmark">用HEXO打造更个性化的个人博客4</a></div>
+      <div class="popular-posts-title"><a href="/post/24651.html" rel="bookmark">用HEXO打造更个性化的个人博客3</a></div>
       
     </li>
   
@@ -806,7 +853,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/post/24651.html" rel="bookmark">用HEXO打造更个性化的个人博客3</a></div>
+      <div class="popular-posts-title"><a href="/post/3724.html" rel="bookmark">用HEXO打造更个性化的个人博客4</a></div>
       
     </li>
   
@@ -881,7 +928,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://myoumeng.github.io/post/64584.html" title="用HEXO打造更个性化的个人博客1：主要插件">http://myoumeng.github.io/post/64584.html</a>
+    <a href="http://myoumeng.github.io/post/64584.html" title="用HEXO打造更个性化的个人博客1">http://myoumeng.github.io/post/64584.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
@@ -1326,7 +1373,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">155k</span>
+    <span title="站点总字数">158k</span>
   
 
   
@@ -1337,7 +1384,7 @@ show_date_time();
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:21</span>
+    <span title="站点阅读时长">2:24</span>
   
 </div>
 
@@ -2040,7 +2087,9 @@ x2
 x3
 -->
   <script type="text/javascript" src="/js/src/instantclick.min.js" data-no-instant></script>
-  <script data-no-instant>InstantClick.init()</script>
+  <script data-no-instant>
+    InstantClick.init()
+  </script>
   <!--崩溃欺骗-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 </body>
